@@ -1,0 +1,305 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19 de nov. de 2020, 10:48:03
+    Author     : Admin
+*/
+
+
+@media screen and (max-width: 1024px){
+    
+    .titulopagina{
+        font-size: 14.5pt;   
+    }
+
+    #myBtnTopo {
+        bottom: 5em; 
+        right: -17px; 
+        letter-spacing:1px;
+    }
+
+    /*Espaço entre os icones e texto do inicio tem que colocar fa-lg*/
+    .myBtnTopo i {
+        font-size: 1.2em;
+
+    }
+    .myBtnTopo a {
+        font-size: 0.9em;
+
+    }
+
+    /*Inicio do Inicio*/
+    .inicio{
+        background-size: 100%;
+    }
+    /*Fim do Inicio*/
+
+
+    /*Inicio do sobre*/
+    h3.nome{
+        font-size: 14pt;
+    }
+
+    .sobtexto, .imgsob0{
+        /*Faz o preencimento do texto e img pega a largura completa*/
+        max-width: 100%; 
+    }
+
+    /*Fim do sobre*/
+
+
+    /*Inicio do novo habilidade*/
+
+    #habilidade{
+        padding-bottom: 4em;
+
+    }
+
+    .iconeshabilidade p{
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+    }
+
+
+    /*Fim do novo habilidade*/
+
+    /*///Inicio do Portfolio\\\\*/
+
+    /*Retirar o Espaço nas laterais desde 1024 ate o 320*/
+    .port{ 
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0px;
+
+    }
+
+
+    /*///Inicio do contato\\\\*/
+    .contato{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*///Fim do contato\\\\*/
+
+    /*///Inicio do Footer\\\\*/
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        line-height: 1.5em;
+        align-items: center;
+        font-size: 0.8em; 
+        color: #a2a2a2;
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+    }
+
+    /*///Inicio do menu lateral responsivo\\\\*/
+
+    /*Retirar a coluna do nav para deixar o header, main e footer 100%*/
+    .col-1 {
+        /*Habilitar o absolute para auto preenchimento do background na vertical e 
+ conteudo ao inves de usar o display none para ocultar a coluna nav*/
+        position: absolute;  
+        min-width: 100%;
+    }
+
+    /*Deixa a coluna e conteúdo preenchendo a tela 100% após a saida da .col-1 / nav*/ 
+    .col-2 {
+        margin:0;
+        /*Habilitar o absolute para retirar o espaço na esquerda que não se autoajustar
+       antes de usar a barra de rolagem e fixar a margin: 0 abaixo de 1024px */
+        position: absolute;
+    }
+
+    body {
+        transition: background-color 0.2s;
+
+    }
+
+    .shadow{
+        z-index:0;
+    }
+
+    .sidenav {
+        height: 100%;
+        width:0;
+        z-index:1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.3s;
+    }
+
+    /*Menu*/
+    .closebtn a {
+        text-decoration: none;
+        color: #a2a2a2;
+        transition: 0.3s;
+
+    }
+
+    .closebtn a:hover {
+        color:#33ffcc;
+    }
+
+    /*Posição e formato do X*/
+    .sidenav .closebtn {
+        position: absolute;
+        z-index: 1;
+        top: 1%;
+        right: 10px;
+        font-size: 20px;
+        transition: all ease-out 1.5s;
+    }
+
+    /*Deixa o X e menu visivel para resolução ate 1023px, olha o modo que oculta
+    acima de 1024 em style geral nas class .closebtn, .bt_menulateral*/ 
+    .closebtn, .bt_menulateral{
+        display: block;
+    }
+
+    #mySidenav, .bt_menulateral{
+        /*Deixa o menu lateral e texto menu em 1ºplano 
+        desativado a posição do .closebtn, .bt_menulateral no style geral para as
+        demais resoluções acima*/
+        position: fixed;
+    }
+
+    /*Botão Menu*/
+    .bt_menulateral{
+        color: #28292d;
+        font-size:30px;
+        cursor:pointer;
+        padding: 2.5% 1.5%;
+        /*opacity: 0.5;*/
+        text-shadow: 0px 0px 2.5px #ffffff;
+        cursor: pointer;
+    }
+
+    /*Cor ao passar o mouse no menu*/
+    .bt_menulateral span:hover {
+        color:#33ffcc;
+        transition: all ease-out 1.5s;
+    }
+
+    /*////Fim do menu lateral responsivo\\\\*/
+}
+
+
+/*Paisagem - Altura*/
+@media screen and (max-height: 414px) {
+
+    .topo{
+        /*Auto ajuste para o topo*/
+        margin-top: calc(8% + 0vh);
+    }
+
+    .image{
+        /*Aqui faz o auto ajuste do tamanho da logo substituindo o .shadow e efeito 
+se ajustar perante o flex que não acata espaço das laterais da .col-1 para 
+o responsivo paisagem*/ 
+        margin-left: calc(38% - 1em);
+        margin-right: calc(38% - 1em);
+    }
+
+    .title{
+        /*Distancia da logo com auto ajuste*/
+        padding-top: calc(1% - 0em);
+        font-size: 1.3em;
+    }
+
+    .subtitulo{
+        margin: -0.3em 0 0 0;
+        font-size: 0.95em;
+    }
+
+    #nav ul {
+        margin-right: calc(10% - 0em);
+    }
+
+    /*Efeitos no nav*/
+    nav a {
+        font-size: 1.1em ;
+        /*Auto ajuste da linhas*/
+        line-height: calc(0% + 7vh);
+    }    
+
+    .icons ul {
+        position: absolute;
+        bottom: 0.5em;
+    }
+
+
+}
+
+
+/*Paisagem - Largura*/
+@media screen and (max-width: 414px) {
+
+    .topo{
+        /*Auto ajuste para o topo*/
+        margin-top: calc(15% + 0vh);
+    }
+
+    #nav ul {
+        margin: calc(0% + 3.9vh);
+    }
+
+    /*Efeitos no nav*/
+    nav a {
+        /*Auto ajuste da linhas*/
+        line-height: calc(0% + 7vh);
+    }  
+
+    /*Inicio do novo Educação*/
+
+    /*Oculta a img abaixo do breakpoint*/
+    .imgedu1 {
+        display: none;
+    }
+
+    /*Habilita a img abaixo do breakpoint*/
+    .imgedu3{
+        display: block;
+    }
+
+    .imgedu3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    /*reduzir para 2 tela por linha para os smart retrato*/
+    .columnPort {
+        /*width: 33.33%;*/        
+        /*width: 45%;*/        
+        width: 50%;        
+        /*width: 25%;*/          
+    }
+
+    /*///Fim do Portfolio\\\\*/
+
+    /*Inicio do Contato*/
+
+    /*Aumentando o espamento em altura do background*/
+    .background-cont {    
+        height: 42em;
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,806 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 de nov. de 2020, 17:06:33
+    Author     : Admin
+*/
+
+/*Body*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+/*Sobre*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
+
+/*Contato peso 400*/
+/*@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,400&display=swap');*/
+
+
+/*Texto body*/ 
+@font-face {        
+    font-family: 'Source Sans Pro';
+    src: url("../font/SourceSansPro-Regular.ttf");
+}
+
+/*Texto sobre*/ 
+@font-face {        
+    font-family: 'Source Sans Pro Ital';
+    src: url("../font/SourceSansPro-LightItalic.ttf");
+}
+
+/*Tags sendo zeradas*/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p, a,
+em, img, strong, ul, li, 
+footer, header, nav, section{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style:none;
+    text-decoration: none;
+    color: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+    color: #a2a2a2;
+    font-size: 0.95em;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+/*1° coluna Nav*/
+.col-1 {
+    background: #28292d;
+    color: #a2a2a2;
+    position: fixed;
+    width: 18%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*2° coluna Main*/
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left:17.72%;
+}
+
+
+
+footer {
+    background-color: #28292d;
+    padding: 2em 2em 2em 2em;
+}
+
+/*Borda geral de espaço interno*/
+#sobre, #portfolio  {
+    padding: 0.7em;
+}
+
+/******Inicio efeito para a logo,title e sub*****/
+
+.topo{
+    margin-top: calc(24% + 0vh);
+    text-align: center;
+}
+
+.image {
+    border: 0;
+    position: relative;
+    display: flex;
+    margin-left: calc(35% - 1em);
+    margin-right: calc(35% - 1em);
+
+}
+
+/*Define tamanho da foto da logo*/
+.image.perfil img {
+    border-radius: 100%;
+    width: 100%;
+}
+
+
+.shadow::before, .shadow::after {
+    z-index: -1;
+    content:'';
+    position: absolute;
+    width: calc(100% + 6px); 
+    height: calc(100% + 6px); 
+    top: -3px;
+    left: -3px;
+    background: linear-gradient(45deg, 
+        #a2a2a2, #33ffcc, #28292d,
+        #a2a2a2, #33ffcc, #28292d, 
+        #a2a2a2, #33ffcc, #28292d
+        );
+
+    background-size: 300%;
+    animation: shadow 15s linear infinite;
+
+    border-radius: 100%;
+}
+
+/*Efeito de sombra*/
+.shadow::after {
+    filter:blur(10px);
+
+}
+
+@keyframes shadow {
+    0%{background-position:0 0;}
+    50%{background-position:300%;}
+    100%{background-position:0 0;}
+
+}
+
+.title {
+    padding: 0.3em 0 0 0;
+    color:#efefef;
+    font-size: 1.4em;
+}
+
+.subtitulo {
+    padding: 0 0 0 0;
+    font-size: 1em;
+
+}
+
+/******Fim efeito para a logo,title e sub*****/
+
+/****Inicio do nav*****/
+
+#nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items:  flex-end;
+    margin: calc(2% + 2.2vh);
+}
+
+/*Efeitos no nav*/
+nav a {
+    color: #a2a2a2;
+    text-decoration: none;
+    display:inline-block;
+    padding: 0 0px 0 10px ;
+    background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
+    background-size: 300%;
+    transition: all 0.4s;
+    letter-spacing:2px;
+    border-radius: 3px;
+    line-height: calc(0% + 6vh);
+    white-space:nowrap;
+    font-size: 1.15em ;
+}
+
+
+.nav a:hover{
+    background-position: 100%;
+    color:#28292d;   
+    transform: translateX(16px);
+
+}
+
+.nav i {
+    margin: 0 10px;
+}
+
+/****Fim do nav*****/
+
+/****Inicio icones redes sociais*****/
+
+.icons ul{
+    position: absolute;
+    bottom: 1.5em;
+    align-items:flex-end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: calc(100% - 0vh);
+}
+
+/*Tamanho dos icones para ser o mesmos*/
+.icons i{
+    font-size: 1.15em ;
+}
+
+.icons a {
+    color: #a2a2a2;
+    padding: 0 1em 0 1em;
+}
+
+.icons a:hover {
+    color: #33ffcc;
+}
+
+/****Fim icones redes sociais*****/
+
+.titulopagina{
+    text-align: center;
+    padding: 1em 0 1.2em 0;
+    font-size: 15.5pt;
+    color:  #28292d;
+}
+
+
+/*Inicio - botão Topo*/
+#myBtnTopo {
+    display: none; 
+    position: fixed; 
+    padding: 0.5em;
+    bottom: 7em; 
+    right: -14px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #28292d; 
+    color: #ffffff;  
+    cursor: pointer; 
+    border-radius: 3px; 
+    transform: rotate(-270deg);
+    letter-spacing:1.2px;
+
+}
+
+#myBtnTopo:hover {
+    background-position: 100%;
+    color: #28292d;
+    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-size: 250%;
+    transition: all 0.4s;
+
+}
+
+/*Faz o icone ficar piscando*/
+@keyframes fa-blink {
+    100% { opacity: 0; }
+}
+
+.fa-blink {
+    -webkit-animation: fa-blink .75s linear infinite;
+    -moz-animation: fa-blink .75s linear infinite;
+    -ms-animation: fa-blink .75s linear infinite;
+    -o-animation: fa-blink .75s linear infinite;
+    animation: fa-blink .75s linear infinite;
+}
+
+/*Fim - botão Topo*/
+
+/*///Inicio do menu lateral responsivo\\\\*/
+
+
+/*Oculta o menu e X lateral para resolução acima de 1024px*/
+.closebtn, .bt_menulateral {
+    display: none;
+}
+
+/*///Fim do menu lateral responsivo\\\\*/
+
+/*Inicio do novo Inicio*/
+
+.inicio{
+    display: flex;
+    flex-direction: row;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    padding: calc(36% + 0vh);
+    background-image: url("../img/slider/slider11l.jpg");
+    background-size: 82%;
+    background-position: 100% 0%;
+    border: none;
+    clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+}
+
+
+/*Fim do novo Inicio*/
+
+/*Inicio do novo Sobre*/
+
+#sobre{
+    padding-bottom: 5em; 
+}
+
+.sobtextoimg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2em;
+}
+
+/*Cria uma margem/espaço entre as duas classe*/
+.sobtexto, .imgsob0{
+    padding: calc(0.5% - 0px);
+    /*Reduz o texto e a imagem sem destorcer a qualidade dentro de 100vh da 
+  classe .sobtextoimg */
+    max-width: 50%; 
+}
+
+.sobtexto h3{
+    padding-bottom: 0.5em ;
+}
+
+/*Redimencionamento da imagem sem afetar a qualidade e o objeto acima*/
+.imgsob0 img{
+    max-width: 100%;  
+    padding-top: 2em;
+}
+
+h3.nome{
+    color: #28292d;
+    font-size: 16pt;
+    line-height: 1em;
+    letter-spacing: 0.09em;
+}
+
+.sobtexto p{
+    color: #a2a2a2;
+    line-height: 1.1em;
+    font-family: 'Source Sans Pro Ital';
+
+}
+
+
+/*Fim do novo Sobre*/
+
+/*Inicio do novo Educação*/
+
+#educacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em; 
+
+}
+
+.imgedu1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/*Redimencionamento da imagem sem afetar a qualidade e o objeto acima*/
+.imgedu1 img{
+    max-width: 100%;  
+}
+
+/*Redimencionamento da imagem sem afetar a qualidade e o objeto acima*/
+.imgedu3 img{
+    max-width: 100%;  
+}
+
+.background-educ{
+    background-color: #28292d;
+    width: 100%;
+}
+
+/*Olha o restante no breakpoint max-width: 414px*
+/*Oculta a img acima do breakpoint*/
+.imgedu3 {
+    display: none;
+}
+
+/*Fim do novo Educação*/
+
+
+/*Inicio do novo habilidade*/
+
+#habilidade{
+    padding-bottom: 8em;
+
+}
+
+.iconeshabilidade{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.iconeshabilidade p{
+    padding: 0px 30px 20px 30px;
+    color: #a2a2a2;
+}
+
+.iconeshabilidade, .iconImg h4{
+    text-align: center;
+    padding: 0px 8px 8px 8px;
+}
+
+.iconImg, h4{
+    color: #28292d;
+    font-size: 14px;
+}
+
+/*Fim do novo habilidade*/
+
+/*///Inicio do Portfolio\\\\*/
+
+/*Titulo e botões*/
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.port{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+
+}
+
+
+/*Moldura interna/externa */
+.contentPort {
+    background-color: #28292d ;
+    padding: 1.0px 1.0px 1.0px 1.0px;
+    border-radius: 3px ; 
+
+}
+
+.contentPort h4{
+    color: #a2a2a2;
+    font-size: 0.9em;
+    line-height: 0.9em;
+    margin-top: 0.6em;
+    margin-bottom: 0.6em;
+    text-align: center;
+}
+
+
+/* Moldura externa crie 4 colunas iguais que flutuam 
+próximas uma da outra */
+.columnPort {
+    /*Divisão para 4*/
+    /*width: 33.33%;*/    
+    width: 25%;
+    /*width: 20%;*/
+    display: none; 
+    padding:0.5em 0.5em;
+
+}
+
+/* Limpar flutuadores após linhas */
+.port:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Estilize os botões da galeria */
+.btn_filtro {
+    border: none;
+    outline: none;   
+    padding: 0.8em;
+    margin: 2em 0.17em 3em 0.17em;    
+    background-color: #F6F8F7;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #28292d;
+
+}
+
+/* Adicione uma cor de fundo cinza ao passar o mouse nos botoes */
+.btn_filtro:hover {
+    background-position: 100%;
+    color:#28292d;
+    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-size: 250%;
+    transition: all 0.4s;
+}
+
+
+/* Adicione uma cor de fundo escura ao botão ativo */
+.btn_filtro.active {
+    background-color:#28292d;   
+    color:#F6F8F7;  
+}
+
+/* A classe "show" é adicionada aos elementos filtrados no js*/
+.showPort {
+    display: block;
+}
+
+.contentPort img {
+    border-radius: 3px;
+    width: 100%;
+}
+
+/*////////////MODAL-LIGHTBOX\\\\\\\\\\\\*/ 
+
+
+/*Posição da img em todas a telas e efeito de fundo transparente*/
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    /*efeito de transparencia conforme a cor*/
+    background-color: rgba(0,0,0,0.7);
+    position: fixed;
+    visibility: hidden;
+    /*Tira a imagem dupla*/
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
+
+
+}
+
+/*Posição do button */
+.modal_content, #bt_close {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 4%;
+
+}
+
+#modal_img{
+    max-width: 100vh;
+}
+
+/*Faz a img do modal expandir e se autoajustar no centro e da tela conforme o tamanho dela*/
+.modal_content, #modal_img{
+    max-width: 100%;
+    max-height: 100vh;
+    /*Faz a img ir crescendo e diminuindo ao fechar 
+"ativando valor 1 no .modal_active #modal_img"*/
+    transform: scale(0.8);
+    transition: all linear .3s;
+    border-radius: 3px;
+}
+
+.modal_active{
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal_active #modal_img{
+    transform: scale(1);
+
+}
+
+.small_img{
+    height: 100%;
+    cursor: pointer;
+    /*Deixa a animação mais suave*/
+    transition: all linear 0.3s;
+    border-radius: 3px;
+
+}
+
+/*Animação na imagem em preto e branco 
+e com efeito de zoom*/
+.small_img:hover{
+    filter: grayscale(100%);
+    /*efeito do zoom*/
+    transform: scale(1.1);
+
+}
+
+/*Botão fechar do modal*/
+#bt_close {
+    color: #ffffff;
+    background-color: #28292d;
+    margin: 0 0 0.5em 0;
+    padding: 0.2em 0.4em;
+    font-size: 25px;
+    border-radius: 3px;
+    border: none;
+    outline: none;    
+    transition: all ease-out 1.5s;
+    cursor: pointer;
+}
+
+#bt_close:hover{
+    background-position: 100%;
+    color: #28292d;
+    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-size: 250%;
+    transition: all 0.4s;
+}
+
+/*///Fim do Portfolio\\\\*/
+
+
+/*///Inicio do contato\\\\*/
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6em;
+    margin-bottom: 6em;   
+
+}
+
+.contato i{
+    list-style:none;
+    text-decoration: none;
+    font-weight: 540;   
+}
+
+/*Cria uma margem/espaço entre as duas classe*/
+.continfo, .imgcont1{
+    margin: calc(4% - 0px);
+}
+
+.continfo {
+    text-align: center;
+}
+
+/*Redimencionamento da imagem sem afetar a qualidade e o objeto acima*/
+.imgcont1 img{
+    max-width: 100%;  
+}
+
+.msg{
+    margin: 0 0 1.5em 0;
+}
+
+/*Texto msg contato*/ 
+.msg h2{
+    /*color:#33ffcc;*/
+    color:#28292d;
+    /*color:#a2a2a2;*/
+    font-size: 1.3em;
+    white-space:nowrap;
+    letter-spacing: 0.09em;
+    padding: 0 0 1em 0;
+}
+
+/*seta*/
+.msg i{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color:#28292d;
+}
+
+/*Texto msg contato*/ 
+.msg span{
+    color:#33ffcc;
+    font-weight: 600;
+    font-family: 'Source Sans Pro Ital';
+}
+
+/*Espaço entre o botão*/
+.conttel button{
+    margin: 10px 0px 0px 0px;
+}
+
+.contemail button {
+    color:#ffffff;  
+    background-color: #28292d;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: calc(4% - 0px);
+    width: 100%;
+    white-space:nowrap;
+    letter-spacing: 0.8px;
+    font-size: 0.9em;
+    outline: none; 
+    border: none; 
+}
+
+.conttel button {
+    color:#ffffff;  
+    background-color: #28292d;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: calc(4% - 0px);
+    width: 100%;
+    white-space:nowrap;
+    letter-spacing: 0.8px;
+    font-size: 0.9em;
+    outline: none; 
+    border: none; 
+}
+
+/*Efeito ao passar o mouse*/
+.contemail a :hover {
+    color: #28292d;
+    background-position: 100%;
+    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-size: 250%;
+    transition: all 0.7s;
+}
+
+/*Feito de deslocar ao clicar*/
+.contemail a :active {
+    transform: translateY(4px);
+
+}
+
+.conttel a :hover {
+    color: #28292d;
+    background-position: 100%;
+    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-size: 250%;
+    transition: all 0.7s;
+
+}
+
+/*Feito de deslocar ao clicar*/
+.conttel a :active {
+    background-color: #a2a2a2;
+    box-shadow:  1px #28282d;
+    transform: translateY(4px);
+}
+
+.background-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8f6;
+    width: 100%;
+    line-height: none; 
+}
+
+/*///Fim do contato\\\\*/
+
+
+/*///Inicio do Footer\\\\*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.5em;
+    align-items: center;
+    font-size: 0.95em; 
+    color: #a2a2a2;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
+
+/*///Fim do Footer\\\\*/
+
