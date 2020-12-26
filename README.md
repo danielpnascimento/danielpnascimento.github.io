@@ -2,8 +2,9 @@
 
 Olá a todos!!
 
-Realizei o desenvolvido desse site com apenas html, css, js e uma lib de ícones da fontawesome, com alguns exemplos que peguei e melhorei da w3schools, não utilizei frameworks ou templates prontos, nada contra, mais foi um grande aprendizado, evolução pessoal em realizar passo a passo da construção e não fica apenas contido na troca de texto e imagens. E o mesmo encontra se no refinamento de correções e detalhes finais!
-Itens adicionando no projeto!
+Realizei o desenvolvido desse site com apenas html, css, js e uma lib de ícones da fontawesome, com alguns exemplos que peguei e melhorei da w3schools, não utilizei frameworks ou templates prontos, nada contra, mais foi um grande aprendizado e evolução pessoal em realizar passo a passo da construção e não fica apenas contido na troca de texto e imagens. E o mesmo encontra se no refinamento de correções e detalhes finais!
+
+Itens adicionando no projeto:
 1.	Efeito de paralax na inicial.
 2.	Efeito ao redor da imagem logo.
 3.	Efeito nas opções do nav.
