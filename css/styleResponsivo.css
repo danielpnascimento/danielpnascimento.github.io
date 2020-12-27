@@ -67,6 +67,14 @@ and open the template in the editor.
     /*Fim do novo habilidade*/
 
     /*///Inicio do Portfolio\\\\*/
+    
+     /* Moldura externa crie 4 colunas iguais que flutuam 
+próximas uma da outra */
+    .columnPort {
+        /*Distancia entre as molduras das imagens e top*/
+        padding:0.1em 0.1em;
+
+    }
 
     /*Retirar o Espaço nas laterais desde 1024 ate o 320*/
     .port{ 

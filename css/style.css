@@ -14,8 +14,11 @@ and open the template in the editor.
 /*Sobre*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
 
-/*Contato peso 400*/
-/*@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,400&display=swap');*/
+/*400*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,400&display=swap');
+
+/*300*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 
 /*Texto body*/ 
@@ -24,11 +27,18 @@ and open the template in the editor.
     src: url("../font/SourceSansPro-Regular.ttf");
 }
 
-/*Texto sobre*/ 
+/*Texto sobre e msg contato*/ 
 @font-face {        
     font-family: 'Source Sans Pro Ital';
     src: url("../font/SourceSansPro-LightItalic.ttf");
 }
+
+/*Texto sobre, habilidade e btn contato*/ 
+@font-face {        
+    font-family: 'Source Sans Pro Light';
+    src: url("../font/SourceSansPro-Light.ttf");
+}
+
 
 /*Tags sendo zeradas*/
 html, body, div, span,
@@ -68,7 +78,8 @@ body {
     min-height: 100vh;
     flex-direction: row;
     margin: 0;
-    color: #a2a2a2;
+     /*color: #a2a2a2;*/
+    color: #28292d;
     font-size: 0.95em;
     font-family: "Source Sans Pro", sans-serif;
 }
@@ -100,7 +111,7 @@ footer {
 
 /*Borda geral de espaço interno*/
 #sobre, #portfolio  {
-    padding: 0.7em;
+    padding: 0.4em;
 }
 
 /******Inicio efeito para a logo,title e sub*****/
@@ -363,9 +374,8 @@ h3.nome{
 }
 
 .sobtexto p{
-    color: #a2a2a2;
     line-height: 1.1em;
-    font-family: 'Source Sans Pro Ital';
+    font-family: 'Source Sans Pro Light';
 
 }
 
@@ -431,8 +441,9 @@ h3.nome{
 }
 
 .iconeshabilidade p{
-    padding: 0px 30px 20px 30px;
-    color: #a2a2a2;
+    padding: 0px 70px 20px 70px;
+     line-height: 1.1em;
+    font-family: 'Source Sans Pro Light';
 }
 
 .iconeshabilidade, .iconImg h4{
@@ -440,7 +451,7 @@ h3.nome{
     padding: 0px 8px 8px 8px;
 }
 
-.iconImg, h4{
+.iconImg h4{
     color: #28292d;
     font-size: 14px;
 }
@@ -495,7 +506,7 @@ próximas uma da outra */
     width: 25%;
     /*width: 20%;*/
     display: none; 
-    padding:0.5em 0.5em;
+    padding:0.3em 0.3em;
 
 }
 
@@ -533,7 +544,8 @@ próximas uma da outra */
 /* Adicione uma cor de fundo escura ao botão ativo */
 .btn_filtro.active {
     background-color:#28292d;   
-    color:#F6F8F7;  
+    color:#ffffff;
+    background-image: none;
 }
 
 /* A classe "show" é adicionada aos elementos filtrados no js*/
@@ -663,7 +675,7 @@ e com efeito de zoom*/
 .contato i{
     list-style:none;
     text-decoration: none;
-    font-weight: 540;   
+    /*font-weight: 540;*/   
 }
 
 /*Cria uma margem/espaço entre as duas classe*/
@@ -723,10 +735,11 @@ e com efeito de zoom*/
     padding: calc(4% - 0px);
     width: 100%;
     white-space:nowrap;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.4px;
     font-size: 0.9em;
     outline: none; 
     border: none; 
+    font-family: 'Source Sans Pro Light';
 }
 
 .conttel button {
@@ -737,10 +750,11 @@ e com efeito de zoom*/
     padding: calc(4% - 0px);
     width: 100%;
     white-space:nowrap;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.4px;
     font-size: 0.9em;
     outline: none; 
     border: none; 
+    font-family: 'Source Sans Pro Light';
 }
 
 /*Efeito ao passar o mouse*/
