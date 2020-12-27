@@ -374,7 +374,7 @@ h3.nome{
 }
 
 .sobtexto p{
-    line-height: 1.1em;
+    line-height: 1.15em;
     font-family: 'Source Sans Pro Light';
 
 }
@@ -442,7 +442,7 @@ h3.nome{
 
 .iconeshabilidade p{
     padding: 0px 70px 20px 70px;
-     line-height: 1.1em;
+     line-height: 1.15em;
     font-family: 'Source Sans Pro Light';
 }
 
@@ -697,14 +697,12 @@ e com efeito de zoom*/
 }
 
 /*Texto msg contato*/ 
-.msg h2{
-    /*color:#33ffcc;*/
-    color:#28292d;
-    /*color:#a2a2a2;*/
-    font-size: 1.3em;
+.msg h2{   
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro Ital';
     white-space:nowrap;
-    letter-spacing: 0.09em;
-    padding: 0 0 1em 0;
+    letter-spacing: 0.02em;
+     padding: 0.5em 0 1em 0;
 }
 
 /*seta*/
@@ -717,9 +715,7 @@ e com efeito de zoom*/
 
 /*Texto msg contato*/ 
 .msg span{
-    color:#33ffcc;
-    font-weight: 600;
-    font-family: 'Source Sans Pro Ital';
+     font-size: 1.2em;
 }
 
 /*Espaço entre o botão*/
@@ -732,7 +728,7 @@ e com efeito de zoom*/
     background-color: #28292d;
     cursor: pointer;
     border-radius: 3px;
-    padding: calc(4% - 0px);
+    padding: 0.8em;
     width: 100%;
     white-space:nowrap;
     letter-spacing: 0.4px;
@@ -747,7 +743,7 @@ e com efeito de zoom*/
     background-color: #28292d;
     cursor: pointer;
     border-radius: 3px;
-    padding: calc(4% - 0px);
+   padding: 0.8em;
     width: 100%;
     white-space:nowrap;
     letter-spacing: 0.4px;
