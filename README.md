@@ -1,4 +1,4 @@
-# https://danielpnascimento.github.io/
+# https://danielpnascimento.github.io
 
 Olá a todos!!
 
@@ -15,7 +15,7 @@ CARACTERÍSTICA
 - Layout responsivo para Desktop, Tablet e Mobile.
 - Conteúdo de texto e imagens modificados, foram criados por mim, com a utilização das ferramentas da adobe Photoshop.
 - Redirecionamento de contato via email ou whatsapp ao clicar em seu botão desejado.
--
+
 
 To be continued!!
 
