@@ -78,7 +78,6 @@ body {
     min-height: 100vh;
     flex-direction: row;
     margin: 0;
-     /*color: #a2a2a2;*/
     color: #28292d;
     font-size: 0.95em;
     font-family: "Source Sans Pro", sans-serif;
@@ -383,52 +382,117 @@ h3.nome{
 /*Fim do novo Sobre*/
 
 /*Inicio do novo Educação*/
-
-#educacao {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5em; 
-
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
 }
 
-.imgedu1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-/*Redimencionamento da imagem sem afetar a qualidade e o objeto acima*/
-.imgedu1 img{
-    max-width: 100%;  
-}
-
-/*Redimencionamento da imagem sem afetar a qualidade e o objeto acima*/
-.imgedu3 img{
-    max-width: 100%;  
-}
-
-.background-educ{
-    background-color: #28292d;
+.background-edu{
     width: 100%;
+    background-color: #28292d;
 }
 
-/*Olha o restante no breakpoint max-width: 414px*
-/*Oculta a img acima do breakpoint*/
-.imgedu3 {
-    display: none;
+.container {
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 80%;
+    background: #ffffff;
+    z-index: 0;
+    margin-top: 37px; 
+}
+
+.timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+}
+
+.timeline-block-right {
+    float: right;
+}
+
+.timeline-block-left {
+    float: left;
+    direction: rtl;
+}
+
+.green {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #33ffcc;
+    background: #28292d;
+    z-index: 0;
+}
+
+.white {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    background: #ffffff;
+    z-index: 0;
+}
+
+.green, .white{
+    margin: 10px 0;
+}
+
+.timeline-content {
+    width: 100%;
+    padding: 0 15px;
+    color: #33ffcc;
+}
+
+.timeline-content h3 {
+    margin-top: 7px;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.timeline-content span {
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.timeline-content p {
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: #ffffff;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-weight: 300;
 }
 
 /*Fim do novo Educação*/
-
 
 /*Inicio do novo habilidade*/
 
 #habilidade{
     padding-bottom: 8em;
-
 }
 
 .iconeshabilidade{
@@ -437,12 +501,11 @@ h3.nome{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
 }
 
 .iconeshabilidade p{
     padding: 0px 70px 20px 70px;
-     line-height: 1.15em;
+    line-height: 1.15em;
     font-family: 'Source Sans Pro Light';
 }
 
@@ -454,6 +517,7 @@ h3.nome{
 .iconImg h4{
     color: #28292d;
     font-size: 14px;
+    font-family: 'Source Sans Pro Light';
 }
 
 /*Fim do novo habilidade*/
@@ -476,7 +540,6 @@ h3.nome{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 10px;
-
 }
 
 
@@ -485,11 +548,10 @@ h3.nome{
     background-color: #28292d ;
     padding: 1.0px 1.0px 1.0px 1.0px;
     border-radius: 3px ; 
-
 }
 
 .contentPort h4{
-    color: #a2a2a2;
+    color: #f6f8f7;
     font-size: 0.9em;
     line-height: 0.9em;
     margin-top: 0.6em;
@@ -507,7 +569,6 @@ próximas uma da outra */
     /*width: 20%;*/
     display: none; 
     padding:0.3em 0.3em;
-
 }
 
 /* Limpar flutuadores após linhas */
@@ -516,7 +577,6 @@ próximas uma da outra */
     display: table;
     clear: both;
 }
-
 
 /* Estilize os botões da galeria */
 .btn_filtro {
@@ -528,7 +588,6 @@ próximas uma da outra */
     border-radius: 3px;
     cursor: pointer;
     color: #28292d;
-
 }
 
 /* Adicione uma cor de fundo cinza ao passar o mouse nos botoes */
@@ -569,33 +628,27 @@ próximas uma da outra */
     align-items: center;
     width: 100vw;
     height: 100vh;
-    /*efeito de transparencia conforme a cor*/
     background-color: rgba(0,0,0,0.7);
     position: fixed;
     visibility: hidden;
-    /*Tira a imagem dupla*/
     z-index: 1;
     opacity: 0;
     transition: visibility 0.8s linear, opacity 0.5s linear;
-
-
 }
 
-/*Posição do button */
 .modal_content, #bt_close {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
     margin-top: 4%;
-
 }
 
 #modal_img{
     max-width: 100vh;
 }
 
-/*Faz a img do modal expandir e se autoajustar no centro e da tela conforme o tamanho dela*/
+/*Faz a img do modal expandir e se autoajustar no centro da tela conforme o tamanho dela*/
 .modal_content, #modal_img{
     max-width: 100%;
     max-height: 100vh;
@@ -613,7 +666,6 @@ próximas uma da outra */
 
 .modal_active #modal_img{
     transform: scale(1);
-
 }
 
 .small_img{
@@ -622,16 +674,13 @@ próximas uma da outra */
     /*Deixa a animação mais suave*/
     transition: all linear 0.3s;
     border-radius: 3px;
-
 }
 
 /*Animação na imagem em preto e branco 
 e com efeito de zoom*/
 .small_img:hover{
     filter: grayscale(100%);
-    /*efeito do zoom*/
     transform: scale(1.1);
-
 }
 
 /*Botão fechar do modal*/
@@ -669,13 +718,11 @@ e com efeito de zoom*/
     align-items: center;
     margin-top: 6em;
     margin-bottom: 6em;   
-
 }
 
 .contato i{
     list-style:none;
     text-decoration: none;
-    /*font-weight: 540;*/   
 }
 
 /*Cria uma margem/espaço entre as duas classe*/
@@ -702,7 +749,7 @@ e com efeito de zoom*/
     font-family: 'Source Sans Pro Ital';
     white-space:nowrap;
     letter-spacing: 0.02em;
-     padding: 0.5em 0 1em 0;
+    padding: 0.5em 0 1em 0;
 }
 
 /*seta*/
@@ -715,7 +762,7 @@ e com efeito de zoom*/
 
 /*Texto msg contato*/ 
 .msg span{
-     font-size: 1.2em;
+    font-size: 1.2em;
 }
 
 /*Espaço entre o botão*/
@@ -743,7 +790,7 @@ e com efeito de zoom*/
     background-color: #28292d;
     cursor: pointer;
     border-radius: 3px;
-   padding: 0.8em;
+    padding: 0.8em;
     width: 100%;
     white-space:nowrap;
     letter-spacing: 0.4px;
@@ -765,7 +812,6 @@ e com efeito de zoom*/
 /*Feito de deslocar ao clicar*/
 .contemail a :active {
     transform: translateY(4px);
-
 }
 
 .conttel a :hover {
@@ -774,7 +820,6 @@ e com efeito de zoom*/
     background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
     background-size: 250%;
     transition: all 0.7s;
-
 }
 
 /*Feito de deslocar ao clicar*/
