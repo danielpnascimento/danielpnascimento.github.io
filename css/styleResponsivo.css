@@ -10,7 +10,7 @@ and open the template in the editor.
 
 
 @media screen and (max-width: 1024px){
-    
+
     .titulopagina{
         font-size: 14.5pt;   
     }
@@ -24,11 +24,10 @@ and open the template in the editor.
     /*Espaço entre os icones e texto do inicio tem que colocar fa-lg*/
     .myBtnTopo i {
         font-size: 1.2em;
-
     }
+
     .myBtnTopo a {
         font-size: 0.9em;
-
     }
 
     /*Inicio do Inicio*/
@@ -55,7 +54,6 @@ and open the template in the editor.
 
     #habilidade{
         padding-bottom: 4em;
-
     }
 
     .iconeshabilidade p{
@@ -67,13 +65,12 @@ and open the template in the editor.
     /*Fim do novo habilidade*/
 
     /*///Inicio do Portfolio\\\\*/
-    
-     /* Moldura externa crie 4 colunas iguais que flutuam 
+
+    /* Moldura externa crie 4 colunas iguais que flutuam 
 próximas uma da outra */
     .columnPort {
         /*Distancia entre as molduras das imagens e top*/
         padding:0.1em 0.1em;
-
     }
 
     /*Retirar o Espaço nas laterais desde 1024 ate o 320*/
@@ -81,7 +78,6 @@ próximas uma da outra */
         padding-left: 0;
         padding-right: 0;
         padding-bottom: 0px;
-
     }
 
 
@@ -131,7 +127,6 @@ próximas uma da outra */
 
     body {
         transition: background-color 0.2s;
-
     }
 
     .shadow{
@@ -153,7 +148,6 @@ próximas uma da outra */
         text-decoration: none;
         color: #a2a2a2;
         transition: 0.3s;
-
     }
 
     .closebtn a:hover {
@@ -189,7 +183,6 @@ próximas uma da outra */
         font-size:30px;
         cursor:pointer;
         padding: 2.5% 1.5%;
-        /*opacity: 0.5;*/
         text-shadow: 0px 0px 2.5px #ffffff;
         cursor: pointer;
     }
@@ -203,8 +196,6 @@ próximas uma da outra */
     /*////Fim do menu lateral responsivo\\\\*/
 }
 
-
-/*Paisagem - Altura*/
 @media screen and (max-height: 414px) {
 
     .topo{
@@ -247,11 +238,9 @@ o responsivo paisagem*/
         bottom: 0.5em;
     }
 
-
 }
 
 
-/*Paisagem - Largura*/
 @media screen and (max-width: 414px) {
 
     .topo{
@@ -269,34 +258,50 @@ o responsivo paisagem*/
         line-height: calc(0% + 7vh);
     }  
 
-    /*Inicio do novo Educação*/
+    /*Inicio Educação*/
 
-    /*Oculta a img abaixo do breakpoint*/
-    .imgedu1 {
-        display: none;
+    .timeline-content {
+        width: 95%;
+        padding: 0 15px;
+    }
+    
+    .container {
+        margin-left: 10%;
     }
 
-    /*Habilita a img abaixo do breakpoint*/
-    .imgedu3{
-        display: block;
-    }
-
-    .imgedu3 {
+    .timeline{
         display: flex;
-        align-items: center;
         justify-content: center;
-        flex-direction: row;
+        overflow-x: hidden;
     }
 
+    .container:before {
+        left: 8px;
+        width: 2px;
+    }
+    
+    .timeline-block {
+        width: 100%;
+    }
+
+    .timeline-block-right {
+        float: none;
+    }
+
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+    }
+
+    /*Fim Educação*/
+
+    /*Inicio do Portfolio*/
     /*reduzir para 2 tela por linha para os smart retrato*/
     .columnPort {
-        /*width: 33.33%;*/        
-        /*width: 45%;*/        
-        width: 50%;        
-        /*width: 25%;*/          
+        width: 50%;            
     }
 
-    /*///Fim do Portfolio\\\\*/
+    /*Fim do Portfolio*/
 
     /*Inicio do Contato*/
 
@@ -304,6 +309,7 @@ o responsivo paisagem*/
     .background-cont {    
         height: 42em;
     }
+    /*Fim do Contato*/
 }
 
 
