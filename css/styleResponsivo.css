@@ -114,6 +114,9 @@ and open the template in the editor.
  conteudo ao inves de usar o display none para ocultar a coluna nav*/
         position: absolute;  
         min-width: 100%;
+        /*Habilita o z-index:-1 para deixar a col-1 abaixo no menu hamburger e sua função 
+  em execução*/
+        z-index: -1;
     }
 
     /*Deixa a coluna e conteúdo preenchendo a tela 100% após a saida da .col-1 / nav*/ 
