@@ -1,22 +1,40 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+//function openNav() {
+//  document.getElementById("mySidenav").style.width = "250px";
+//  document.getElementById("mySidenav").style.width = "220px";
+//  document.getElementById("main").style.marginLeft = "250px";
+//  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+//}
+
+//function closeNav() {
+//  document.getElementById("mySidenav").style.width = "0";
+//  document.getElementById("main").style.marginLeft= "0";
+//  document.body.style.backgroundColor = "white";
+//}
+
+var _status = document.getElementById("nav-toggle");
+var _contIn = document.getElementById("mySidenav");
 
 function openNav() {
-//    220 e o tamanho da largura do header lateral
-    document.getElementById("mySidenav").style.width = "220px";
- //Sobrepoem o main
-//  document.getElementById("main").style.marginLeft = "220px";
-//  document.getElementById("Sidenav").style.marginLeft = "200px";
-//Faz um fundo escurecido ao abrir o menu lateral
-//    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    if (!_status.checked) {
+        _contIn.style.transition = "all 0.5s";
+        _contIn.style.width = "220px";
+    } else {
+        _contIn.style.transition = "all 0.5s";
+        _contIn.style.width = "0px";
+    }
+    console.log("function: openNav");
+
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-//    document.getElementById("main").style.marginLeft = "0";
-    //Desloca somente a classe desejada
-//    document.getElementById("bt_menulateral").style.marginLeft = "0";
-//volta com o fundo branco ao abrir o menu lateral
-//    document.body.style.backgroundColor = "white";
-
+    console.log("function: closeNav");
 }
-
 
