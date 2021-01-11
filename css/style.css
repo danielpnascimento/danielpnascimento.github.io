@@ -8,16 +8,16 @@ and open the template in the editor.
     Author     : Admin
 */
 
-/*Body*/
+/*Titulos*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-/*Sobre*/
+/*Body*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,300&display=swap');
 
-/*400*/
+/*Titulos web 400*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@1,400&display=swap');
 
-/*300*/
+/*Body web 300*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 
@@ -80,7 +80,7 @@ body {
     margin: 0;
     color: #28292d;
     font-size: 0.95em;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Source Sans Pro Light';
 }
 
 /*1° coluna Nav*/
@@ -170,9 +170,10 @@ footer {
 }
 
 .title {
-    padding: 0.3em 0 0 0;
-    color:#efefef;
-    font-size: 1.4em;
+    /*Distancia da logo*/ 
+    padding: 0.4em 0 0 0;
+    color:#ffffff;
+    font-size: 1.3em;
 }
 
 .subtitulo {
@@ -194,7 +195,6 @@ footer {
 
 /*Efeitos no nav*/
 nav a {
-    color: #a2a2a2;
     text-decoration: none;
     display:inline-block;
     padding: 0 0px 0 10px ;
@@ -241,7 +241,6 @@ nav a {
 }
 
 .icons a {
-    color: #a2a2a2;
     padding: 0 1em 0 1em;
 }
 
@@ -256,6 +255,7 @@ nav a {
     padding: 1em 0 1.2em 0;
     font-size: 15.5pt;
     color:  #28292d;
+    font-family: 'Source Sans Pro';
 }
 
 
@@ -264,7 +264,7 @@ nav a {
     display: none; 
     position: fixed; 
     padding: 0.5em;
-    bottom: 7em; 
+    bottom: 6em; 
     right: -14px; 
     z-index: 99; 
     border: none; 
@@ -275,6 +275,7 @@ nav a {
     border-radius: 3px; 
     transform: rotate(-270deg);
     letter-spacing:1.2px;
+    box-shadow: 0.1px 0px 0px 1px #ffffff;
 
 }
 
@@ -284,7 +285,7 @@ nav a {
     background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
     background-size: 250%;
     transition: all 0.4s;
-
+    box-shadow: none;
 }
 
 /*Faz o icone ficar piscando*/
@@ -341,13 +342,13 @@ input[type='checkbox']{
     background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 300%;
     transition: all 0.4s;
-    box-shadow: 0px 0.5px 0.5px 0px #ffffff;
-
+    box-shadow: 0.1px 0px 0px 1px #ffffff;
 }
 
 .open:hover, .open:hover::before, .open:hover::after{
     background-position: 100%;
     color:#33ffcc;   
+    box-shadow: none;
 }
 
 .open::before, .open::after{
@@ -445,12 +446,11 @@ h3.nome{
     font-size: 16pt;
     line-height: 1em;
     letter-spacing: 0.09em;
+    font-family: 'Source Sans Pro';
 }
 
 .sobtexto p{
     line-height: 1.15em;
-    font-family: 'Source Sans Pro Light';
-
 }
 
 
@@ -545,21 +545,16 @@ h3.nome{
     margin-top: 7px;
     margin-bottom: 0px;
     font-size: 15px;
-    font-weight: 300;
 }
 
 .timeline-content span {
     color: #ffffff;
-    font-weight: 300;
 }
 
 .timeline-content p {
-    line-height: 1.5em;
-    word-spacing: 1px;
     color: #ffffff;
     margin-top: 5px;
     margin-bottom: 0px;
-    font-weight: 300;
 }
 
 /*Fim do novo Educação*/
@@ -580,8 +575,6 @@ h3.nome{
 
 .iconeshabilidade p{
     padding: 0px 70px 20px 70px;
-    line-height: 1.15em;
-    font-family: 'Source Sans Pro Light';
 }
 
 .iconeshabilidade, .iconImg h4{
@@ -590,9 +583,7 @@ h3.nome{
 }
 
 .iconImg h4{
-    color: #28292d;
-    font-size: 14px;
-    font-family: 'Source Sans Pro Light';
+     font-size: 0.85em;
 }
 
 /*Fim do novo habilidade*/
@@ -626,7 +617,7 @@ h3.nome{
 }
 
 .contentPort h4{
-    color: #a2a2a2;
+    color: #ffffff;
     font-size: 0.9em;
     line-height: 0.9em;
     margin-top: 0.6em;
@@ -639,8 +630,8 @@ h3.nome{
 próximas uma da outra */
 .columnPort {
     /*Divisão para 4*/
-    /*width: 33.33%;*/    
-    width: 25%;
+    width: 33.33%;    
+    /*width: 25%;*/
     /*width: 20%;*/
     display: none; 
     padding:0.3em 0.3em;
@@ -838,6 +829,7 @@ e com efeito de zoom*/
 /*Texto msg contato*/ 
 .msg span{
     font-size: 1.2em;
+      font-family: 'Source Sans Pro';
 }
 
 /*Espaço entre o botão*/
