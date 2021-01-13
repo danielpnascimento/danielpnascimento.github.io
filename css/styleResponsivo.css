@@ -30,11 +30,36 @@ and open the template in the editor.
         font-size: 0.9em;
     }
 
-    /*Inicio do Inicio*/
+    /*Inicio do novo Inicio*/
     .inicio{
         background-size: 100%;
     }
-    /*Fim do Inicio*/
+    .inicio h1{
+        left: 41%;
+        /*Auto ajuste do tamanho da fonte perante as telas*/
+        font-size: calc(1vw + 1vw + 0.8vmin);
+    }
+
+    .inicio h3{
+        left: 32%;
+        /*Auto ajuste do tamanho da fonte perante as telas*/
+        font-size: calc(0.6vw + 0.6vw + 0.15vmin);
+    }
+
+    button.btnInicio{
+        left: 32%;
+        /*mantem na posição fixa e se autoajusta*/
+        font-size: calc(0.6vw + 0.6vw + 0vmin);
+        transform: translate(-50%, 90%);
+    }
+
+    .palavra{
+        left: 8.0%;
+        /*mantem na posição fixa e se autoajusta*/
+        transform: translate(-50%, -77%);
+    }
+
+    /*Fim do novo Inicio*/
 
 
     /*Inicio do sobre*/
@@ -66,19 +91,19 @@ and open the template in the editor.
 
     /*///Inicio do Portfolio\\\\*/
 
-    /* Moldura externa crie 4 colunas iguais que flutuam próximas uma da outra */
-    .columnPort {
-        /*Distancia entre as molduras das imagens e top*/
-        padding:0.1em 0.1em;
-    }
 
     /*Retirar o Espaço nas laterais desde 1024 ate o 320*/
     .port{ 
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 5px;
+        padding-right: 5px;
         padding-bottom: 0px;
     }
 
+    /* Moldura externa crie 4 colunas iguais que flutuam próximas uma da outra */
+    .columnPort {
+        /*Distancia entre as molduras das imagens e top*/
+        padding:0.15em 0.15em;
+    }
 
     /*///Inicio do contato\\\\*/
     .contato{

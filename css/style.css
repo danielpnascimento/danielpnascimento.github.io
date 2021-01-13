@@ -275,7 +275,7 @@ nav a {
     border-radius: 3px; 
     transform: rotate(-270deg);
     letter-spacing:1.2px;
-    box-shadow: 0.1px 0px 0px 1px #ffffff;
+    box-shadow: 0.1px 0px 0px 0.7px #ffffff;
 
 }
 
@@ -398,13 +398,97 @@ input[type="checkbox"]:checked + label .open::after{
     align-items: center;
     justify-content: center;
     padding: calc(36% + 0vh);
-    background-image: url("../img/slider/slider11l.jpg");
+    background-image: url("../img/slider/slider11p.jpg");
     background-size: 82%;
     background-position: 100% 0%;
     border: none;
-    clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);
+    clip-path: polygon(100% 0, 100% 90%, 31.5% 100%, 0 90%, 0 0);
+
+}
+/*Inicio Texto*/
+
+/*Texto nome*/
+.inicio h1{
+    text-transform: uppercase;
+    position: fixed;
+    left: 51.5%;
+    /*mantem na posição fixa e se autoajusta*/
+    transform: translate(-50%, -130%);
+    /*Auto ajuste do tamanho da fonte perante as telas*/
+    font-size: calc(1vw + 1vw + 0.1vmin);
+    letter-spacing:0.40em;
 }
 
+/*Texto desenvolvedor*/
+.inicio h3{
+    text-transform: uppercase;
+    position: fixed;
+    left: 44.3%;
+    /*mantem na posição fixa e se autoajusta*/
+    transform: translate(-48%, 0%);
+    /*Auto ajuste do tamanho da fonte perante as telas*/
+    font-size: calc(0.5vw + 0.5vw + 0.1vmin);
+    letter-spacing:0.40em;
+
+}
+
+/*.inicio button{*/
+button.btnInicio{
+    position: fixed; 
+    border: none; 
+    outline: none; 
+    background-color: #28292d; 
+    color: #ffffff;  
+    cursor: pointer; 
+    border-radius: 3px; 
+    left: 44.3%;
+    /*mantem na posição fixa e se autoajusta*/
+    font-size: calc(0.3vw + 0.3vw + 0.2vmin);
+    transform: translate(-50%, 90%);
+    /*Desativa a seleção após o clique e não fica preso na seleção*/
+    background-image: none;
+    padding: 1em ;
+
+}
+
+.btnInicio:hover {
+    /*Adicione um fundo cinza escuro ao passar o mouse */
+    background-position: 100%;
+    color: #28292d;
+    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-size: 250%;
+    transition: all 0.4s;
+    box-shadow: none;
+}
+
+/*Feito de deslocar ao clicar*/
+.inicio a :active {
+    transform: translateY(4px);
+    /*transform: translateX(4px);*/
+    /*Usado essa transform para limitar o deslocamento referente o posicionamento setado
+    do proprio botão para o efeito funcionar  transform: translate(-50%, 90%);*/
+    transform: translate(-50%, 100%);
+}
+
+.palavra{
+    position: fixed; 
+    left: 24.8%;
+    /*mantem na posição fixa e se autoajusta*/
+    transform: translate(-50%, -63%);
+    /*Auto ajuste do tamanho da fonte perante as telas*/
+    font-size: calc(0.4vw + 0.4vw + 0vmin);
+    text-align: center;
+
+}
+
+#linha-horizontal {
+    max-width: 30px;
+    padding: 0.05px;
+    background-color: #28292d;
+    border-radius: 3px;
+    margin: 0.8em 0 0.8em 0;
+    box-sizing:border-box;
+}
 
 /*Fim do novo Inicio*/
 
@@ -583,7 +667,7 @@ h3.nome{
 }
 
 .iconImg h4{
-     font-size: 0.85em;
+    font-size: 0.8em;
 }
 
 /*Fim do novo habilidade*/
@@ -603,8 +687,8 @@ h3.nome{
     flex-direction: row;
     flex-wrap:wrap;
     justify-content: center;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
     padding-bottom: 10px;
 }
 
@@ -829,7 +913,7 @@ e com efeito de zoom*/
 /*Texto msg contato*/ 
 .msg span{
     font-size: 1.2em;
-      font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro';
 }
 
 /*Espaço entre o botão*/
