@@ -266,7 +266,7 @@ nav a {
     padding: 0.5em;
     bottom: 6em; 
     right: -14px; 
-    z-index: 99; 
+    z-index: 0; 
     border: none; 
     outline: none; 
     background-color: #28292d; 
@@ -402,7 +402,7 @@ input[type="checkbox"]:checked + label .open::after{
     background-size: 82%;
     background-position: 100% 0%;
     border: none;
-    clip-path: polygon(100% 0, 100% 90%, 31.5% 100%, 0 90%, 0 0);
+    clip-path: polygon(100% 0, 100% 90%, 32% 100%, 0 90%, 0 0);
 
 }
 /*Inicio Texto*/
@@ -664,6 +664,10 @@ h3.nome{
 .iconeshabilidade, .iconImg h4{
     text-align: center;
     padding: 0px 8px 8px 8px;
+}
+
+.iconImg img{
+    max-width: 100%;
 }
 
 .iconImg h4{

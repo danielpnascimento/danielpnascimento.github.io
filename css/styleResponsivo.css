@@ -51,6 +51,7 @@ and open the template in the editor.
         /*mantem na posição fixa e se autoajusta*/
         font-size: calc(0.6vw + 0.6vw + 0vmin);
         transform: translate(-50%, 90%);
+        border-radius: 2px; 
     }
 
     .palavra{
@@ -103,6 +104,10 @@ and open the template in the editor.
     .columnPort {
         /*Distancia entre as molduras das imagens e top*/
         padding:0.15em 0.15em;
+    }
+
+    .modal{
+        z-index: -1;
     }
 
     /*///Inicio do contato\\\\*/
