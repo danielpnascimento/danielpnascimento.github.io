@@ -601,7 +601,7 @@ h3.nome{
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 2px solid #33ffcc;
+    border: 1px solid #33ffcc;
     background: #28292d;
     z-index: 0;
 }
@@ -610,7 +610,7 @@ h3.nome{
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    border: 2px solid #ffffff;
+    border: 1px solid #ffffff;
     background: #ffffff;
     z-index: 0;
 }
