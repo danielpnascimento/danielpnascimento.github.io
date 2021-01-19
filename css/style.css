@@ -33,12 +33,12 @@ and open the template in the editor.
     src: url("../font/SourceSansPro-LightItalic.ttf");
 }
 
-
 /*Texto sobre, habilidade e btn contato*/ 
 @font-face {        
     font-family: 'Source Sans Pro Light';
     src: url("../font/SourceSansPro-Light.ttf");
 }
+
 
 /*Tags sendo zeradas*/
 html, body, div, span,
@@ -48,19 +48,13 @@ footer, header, nav, section{
     margin: 0;
     padding: 0;
     border: 0;
-    /*Desativando as bolinhas da lista*/
     list-style:none;
-    /*Retira o sublinhado*/
     text-decoration: none;
-    /*Retira a cor azul default*/
     color: inherit;
-
 }
 
 html {
-    /*permite incluir o preenchimento e a borda na largura e altura total de um elemento*/
     box-sizing: border-box;
-    /*Efeito de rolagem suave*/
     scroll-behavior: smooth;
 }
 
@@ -70,7 +64,6 @@ html {
     padding: 0;
 }
 
-/*Tamanho das tag*/
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
@@ -85,94 +78,52 @@ body {
     min-height: 100vh;
     flex-direction: row;
     margin: 0;
-    /*color: #a2a2a2;*/
     color: #28292d;
     font-size: 0.95em;
-    /*background-color:#ffffff;*/
-    /*font-family: "Source Sans Pro", sans-serif;*/
     font-family: 'Source Sans Pro Light';
-    /*Espaço entre as linhas do texto*/
-    /*line-height: 0.5em;*/
-
 }
 
 /*1° coluna Nav*/
 .col-1 {
     background: #28292d;
-    /*Tamanho da coluna referente a quantidade da outra*/
-    /*flex: 1;*/
     color: #a2a2a2;
-    /*Mantem a coluna sem barra de overflow*/ 
     position: fixed;
     width: 18%;
-    /*width: 17%;*/
     min-height: 100vh;
-    /*max-height: 100vh;*/
-    /*height: 100vh;*/
-    /*height: 100%;*/
-
     display: flex;
     flex-direction: column;
-    /*Desativado o beteween para colocar somente o ultimo filho "icons" na 
-      parte inferior que não estava acatando com o flex align-self: flex-end; e outros */
-    /*justify-content:space-between;*/
-    /*justify-content:space-around;*/
-
 }
 
 /*2° coluna Main*/
 .col-2 {
     display: flex;
     flex-direction: column;
-    /*Tamanho da coluna referente a quantidade da outra anterior*/
-    /*flex: 4.55;*/    
-    /*Ajusta o conteudo que esta dentro do main e deixar colado a .col-2 na .col-1 ao 
-    clicar no menu lateral e deixar ele extendindo e ao sair do responsivo não criar 
-    deixar margem de separação entre as colunas*/
-    /*margin-left:18%;*/
     margin-left:17.72%;
-    /*margin-left: calc(18% + 0px);*/
-    /*mantem as tag nas posições com o header no inicio e o footer no fim 
-    retirar caso afetar quando for colocar os conteudos*/
-    /*justify-content:space-between;*/
 }
 
 
 
 footer {
     background-color: #28292d;
-    /*height: 12vh;*/
-    /*height: 18vh;*/
-    /*Ajusta o tamanho da barra do rodape*/
     padding: 2em 2em 2em 2em;
-
 }
 
-/*Borda geral de espaço interno - retirar depois caso afetar o conteudo*/
+/*Borda geral de espaço interno*/
 #sobre, #portfolio  {
     padding: 0.4em;
 }
 
 /******Inicio efeito para a logo,title e sub*****/
 
-/*Jogar depois dentro da classe acima e eliminar aqui*/
 .topo{
-    /*Distancia a logo e o efeito shadow do topo*/
-    /*padding: 25% 0 0 0;*/
-    /*Auto ajuste para o topo*/
-    /*padding-top: calc(24% - 0em);*/
     margin-top: calc(24% + 0vh);
     text-align: center;
 }
 
 .image {
     border: 0;
-    /*display: inline-block;*/
     position: relative;
     display: flex;
-    /*Aqui faz o auto ajuste do tamanho da logo substituindo o .shadow e efeito 
-    se ajustar perante o flex que não acata espaço das laterais da .col-1 para 
-    o reponsivo paisagem*/ 
     margin-left: calc(35% - 1em);
     margin-right: calc(35% - 1em);
 
@@ -180,17 +131,10 @@ footer {
 
 /*Define tamanho da foto da logo*/
 .image.perfil img {
-    /*Faz a foto ficar redonda*/
     border-radius: 100%;
-    /*Tamanho da foto e ajusta para ficar dentro do shadow*/
     width: 100%;
 }
 
-/*Tamanho da logo pegando o efeito junto*/
-.shadow { 
-    /*width: 126px;*/
-    /*height: 126px;*/
-}
 
 .shadow::before, .shadow::after {
     z-index: -1;
@@ -209,7 +153,6 @@ footer {
     background-size: 300%;
     animation: shadow 15s linear infinite;
 
-    /*Faz a foto ficar redonda*/
     border-radius: 100%;
 }
 
@@ -243,53 +186,36 @@ footer {
 
 /****Inicio do nav*****/
 
-/*Habilitei o flex para evitar breakpoint de @media screen*/
 #nav ul {
     display: flex;
     flex-direction: column;
     align-items:  flex-end;
-    /*padding-top: 2.5em;*/
-    /*Auto ajuste para o topo*/
-    /*padding-top: calc(10% - 0vh);*/
-    /*cria um margin ao redor que vai se ajustando com o flex no responsivo*/
-    /*margin-right: calc(10% - 0em);*/
     margin: calc(2% + 2.2vh);
-
 }
 
 /*Efeitos no nav*/
 nav a {
-    /*color: #a2a2a2;*/
     text-decoration: none;
     display:inline-block;
-    /*Espaço da lateral direita do texto*/
     padding: 0 0px 0 10px ;
     background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 300%;
     transition: all 0.4s;
-    /*Espaço entre as letras*/
     letter-spacing:2px;
     border-radius: 3px;
-    /*line-height: 3.0em;*/
-    /*Auto ajuste da linhas*/
     line-height: calc(0% + 6vh);
-    /*Não deixa o texto quebrar*/
     white-space:nowrap;
     font-size: 1.15em ;
-    /*font-weight: 300;*/
 }
 
 
-/*Efeito ao passar o mouse no menu*/
 .nav a:hover{
     background-position: 100%;
     color:#28292d;   
-    /*Faz o efeito de deslocamento do botão*/
     transform: translateX(16px);
 
 }
 
-/*Espaço entre os icones do nav*/
 .nav i {
     margin: 0 10px;
 }
@@ -306,9 +232,6 @@ nav a {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: center;
-    /*Centralização do flex não acatou 100% 
-   quando habilita o absolute para ficar em baixo
-   então sendo realizado width de calc para auto ajuste*/
     width: calc(100% - 0vh);
 }
 
@@ -318,12 +241,9 @@ nav a {
 }
 
 .icons a {
-    /*color: #a2a2a2;*/
-    /*Espaço entre eles*/
     padding: 0 1em 0 1em;
 }
 
-/*os efeitos nos icones da rede sociais*/
 .icons a:hover {
     color: #33ffcc;
 }
@@ -331,62 +251,35 @@ nav a {
 /****Fim icones redes sociais*****/
 
 .titulopagina{
-    /*centraliza o elemento na coluna*/
-    /*align-self: center;*/
     text-align: center;
-    /*padding: 3em 0 2.5em 0;*/
     padding: 1em 0 1.2em 0;
-    /*font-size: 14.5pt;*/
     font-size: 15.5pt;
     color:  #28292d;
-    /*font-weight: 600;*/
-    /*Espaço entre as letras*/
-    /*letter-spacing: 0.2em;*/
     font-family: 'Source Sans Pro';
 }
 
 
 /*Inicio - botão Topo*/
 #myBtnTopo {
-    /* Oculto por padrão */
     display: none; 
-    /* Posição fixa / aderente */
     position: fixed; 
     padding: 0.5em;
-    /* Coloque o botão na parte inferior da página */
     bottom: 6em; 
-    /* Coloque o botão 30px da direita */
     right: -14px; 
-    /*Retirar esse -30px e alterar nos breakpoint*/
-    /* Verifique se ele não se sobrepõe */
-    /*z-index: 99;*/ 
-    /*z-index: 0;*/ 
     z-index: 1; 
-    /* Remover bordas */
     border: none; 
-    /* Remover contorno */
     outline: none; 
-    /* Definir uma cor de fundo */
     background-color: #28292d; 
-    /*Text color */
     color: #ffffff;  
-    /*color: #a2a2a2;*/  
-    /*Adicionar um ponteiro do mouse ao passar o mouse*/ 
     cursor: pointer; 
-    /* Cantos arredondados */
     border-radius: 3px; 
-    /*Realiza a rotação para deixar o botão na vertical*/
     transform: rotate(-270deg);
-    /*Espaço entre as letras*/
     letter-spacing:1.2px;
     box-shadow: 0.1px 0px 0px 0.7px #ffffff;
-
 
 }
 
 #myBtnTopo:hover {
-    /*Adicione um fundo cinza escuro ao passar o mouse */
-    /*background-color: #33ffcc;*/ 
     background-position: 100%;
     color: #28292d;
     background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
@@ -394,7 +287,6 @@ nav a {
     transition: all 0.4s;
     box-shadow: none;
 }
-
 
 /*Faz o icone ficar piscando*/
 @keyframes fa-blink {
@@ -413,6 +305,13 @@ nav a {
 
 /*///Inicio do menu lateral responsivo\\\\*/
 
+
+/*Oculta o menu e X lateral para resolução acima de 1024px*/
+.closebtn, .bt_menulateral {
+    display: none;
+}
+
+
 /*Inicio botão animado do menu responsivo*/
 
 /*Oculta o menu e X lateral para resolução acima de 1024px*/
@@ -421,12 +320,10 @@ nav a {
 }
 
 /*Inicio botão animado do menu responsivo*/
-/*Colocar o z-index: -1; no .col-1 do 1024px*/
 input[type='checkbox']{
     display: none;    
 }
 
-/*Tamanho da barra interna do icone*/
 .open{
     width: 30px;
     position: relative;
@@ -435,100 +332,61 @@ input[type='checkbox']{
 
 }
 
-/*Personalização e efeito das barras do icone*/
 .open, .open::before, .open::after{
     height: 3px;
-    /*color: #28292d;*/
-    /*background-color: #515151;*/
     background-color: #28292d;
-    /*background-color: #33ffcc;*/
-    /*background-color: #ffffff;*/
-    /*background-color: #f6f8f7;*/
-    /*background-color: #a2a2a2;*/
     display: inline-block;
     transition: all 0.5s cubic-bezier(0.50,-0.05,0.60,0.53);
     border-radius: 3px;
-    /*text-shadow: 0px 0px 2.5px #ffffff;*/
     cursor: pointer;
-
-    /*Faz o efeito de sombra interna*/ 
     background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 300%;
     transition: all 0.4s;
-    /*border: 0.01px solid #ffffff;*/
-    /*box-shadow: 1em #33ffcc;*/
-    /*border: 1px solid #ffffff;*/
-    /*outline: 1px solid #ffffff;*/
-    /*box-shadow: 0px 1px 1px 1px rgba(184,175,184,1);*/
-    /*Efeito para deixar uma sobra quando passar em cima do #28292d não ficar oculto*/
-    /*box-shadow: 0px 0.2px 0.2px 0px #ffffff;*/
-    /*box-shadow: 0px 0.5px 0.5px 0px #33ffcc;*/
-    /*box-shadow: 0px 0.5px 0.5px 0px #ffffff;*/
     box-shadow: 0.1px 0px 0px 0.2px #ffffff;
-
-
 }
 
-/*Classe nova para o efeito ao passar o mouse no menu*/
-/*.nav a:hover{*/
-/*.open:hover {*/
 .open:hover, .open:hover::before, .open:hover::after{
     background-position: 100%;
-    /*color:#28292d;*/   
     color:#33ffcc;   
     box-shadow: none;
 }
 
-/*Tamanho das barras externas do icone*/
 .open::before, .open::after{
     content: "";
     width: 15px;
     position: absolute;
-
 }
 
-/*Distancia e posição da barra superior da barra interna do icone*/
 .open::before{
     transform: translateY(-9px);
     transform-origin: right;
 }
 
-/*Distancia e posição da barra inferior da barra interna do icone*/
 .open::after{
     transform: translateY(9px);
     right: 0;
     transform-origin: left;
 }
 
-/*Efeito do movimento da barra superior do icone*/
 input[type="checkbox"]:checked + label .open::before{
     transform: translate(0) rotate(450deg);  
-    /*Deixa fixo a cor ao clicar sem utilizar o :active para fica fixo nessa cor*/
-    /*background-color: #33ffcc;*/
     background-color: #ffffff;
-    /*background-color: #a2a2a2;*/
 }
 
-/*Efeito do movimento da barra interna do icone*/
 input[type="checkbox"]:checked + label .open{
     transform: rotate(45deg);
-    /*background-color: #33ffcc;*/
     background-color: #ffffff;
-    /*background-color: #a2a2a2;*/
 }
 
-/*Efeito do movimento da barra inferior do icone*/
 input[type="checkbox"]:checked + label .open::after{
     transform: translate(0) rotate(450deg); 
-    /*background-color: #33ffcc;*/
     background-color: #ffffff;
-    /*background-color: #a2a2a2;*/
 }
 
 /*Fim botão animado do menu responsivo*/
 
-
 /*///Fim do menu lateral responsivo\\\\*/
+
 
 /*Inicio do novo Inicio*/
 
@@ -540,20 +398,10 @@ input[type="checkbox"]:checked + label .open::after{
     align-items: center;
     justify-content: center;
     padding: calc(36% + 0vh);
-    /*background-image: url("../img/slider/slider11l.jpg");*/
     background-image: url("../img/slider/slider11p.jpg");
-    /*background-size: 100%;*/
     background-size: 82%;
-    /*Ajuste da posição da img sem cortar a laterais*/
     background-position: 100% 0%;
     border: none;
-    /*Efeito da barra inferior quebrada
-    30% e o eixo do meio para posicionar
-    90% e as pontas da esquerda e direita
-    100% e o tamanho de preenchimento
-    */
-    /*clip-path: polygon(100% 0, 100% 90%, 69% 100%, 0 85%, 0 0);*/
-    /*clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);*/
     clip-path: polygon(100% 0, 100% 90%, 32% 100%, 0 90%, 0 0);
 
 }
@@ -562,61 +410,37 @@ input[type="checkbox"]:checked + label .open::after{
 /*Texto nome*/
 .inicio h1{
     text-transform: uppercase;
-    /*color: #313131;*/
-    /*color: #28292d;*/
     position: fixed;
-    /*top: 50%;*/
-    /*top: 45%;*/
-    /*left: 50%;*/
-    /*left: 33%;*/
-    /*left: 41%;*/
     left: 51.5%;
     /*mantem na posição fixa e se autoajusta*/
     transform: translate(-50%, -130%);
     /*Auto ajuste do tamanho da fonte perante as telas*/
-    /*font-size: calc(1vw + 1vw + 0.8vmin);*/
     font-size: calc(1vw + 1vw + 0.1vmin);
-    /*Espaço entre as letras*/
     letter-spacing:0.40em;
-
 }
 
 /*Texto desenvolvedor*/
 .inicio h3{
     text-transform: uppercase;
-    /*color: #313131;*/
-    /*color: #28292d;*/
     position: fixed;
-    /*top: 50%;*/
-    /*top: 45%;*/
-    /*left: 50%;*/
-    /*left: 33%;*/
-    /*left: 32%;*/
     left: 44.3%;
     /*mantem na posição fixa e se autoajusta*/
     transform: translate(-48%, 0%);
     /*Auto ajuste do tamanho da fonte perante as telas*/
     font-size: calc(0.5vw + 0.5vw + 0.1vmin);
-    /*Espaço entre as letras*/
     letter-spacing:0.40em;
 
 }
 
 /*.inicio button{*/
 button.btnInicio{
-    /* Posição fixa / aderente */
     position: fixed; 
-    /* Remover bordas */
     border: none; 
-    /* Remover contorno */
     outline: none; 
     background-color: #28292d; 
     color: #ffffff;  
-    /*Adicionar um ponteiro do mouse ao passar o mouse*/ 
     cursor: pointer; 
-    /* Cantos arredondados */
     border-radius: 3px; 
-    /*left: 32%;*/
     left: 44.3%;
     /*mantem na posição fixa e se autoajusta*/
     font-size: calc(0.3vw + 0.3vw + 0.2vmin);
@@ -635,7 +459,6 @@ button.btnInicio{
     background-size: 250%;
     transition: all 0.4s;
     box-shadow: none;
-
 }
 
 /*Feito de deslocar ao clicar*/
@@ -662,14 +485,9 @@ button.btnInicio{
     max-width: 30px;
     padding: 0.05px;
     background-color: #28292d;
-    /*border: 0.1px solid #28292d;*/
-    /*border: 0.1px solid #a2a2a2;*/
     border-radius: 3px;
-    /*Espaço entre eles*/
     margin: 0.8em 0 0.8em 0;
-    /*border-color:#28292d;*/
     box-sizing:border-box;
-
 }
 
 /*Fim do novo Inicio*/
@@ -681,21 +499,16 @@ button.btnInicio{
 }
 
 .sobtextoimg{
-    /*Habilitando uma personalização para deixar essas duas colunas em linha texto e img*/ 
     display: flex;
     flex-direction: row;
-    /*Faz a linha com a texto e img quebrar sem precisar de um breapoint*/
     flex-wrap: wrap;
-    /*justify-content: space-around;*/
     justify-content: space-evenly;
-    /*justify-content: space-between;*/
     align-items: center;
     padding-top: 2em;
 }
 
 /*Cria uma margem/espaço entre as duas classe*/
 .sobtexto, .imgsob0{
-    /*Caso precise de bordas de espaçamento*/
     padding: calc(0.5% - 0px);
     /*Reduz o texto e a imagem sem destorcer a qualidade dentro de 100vh da 
   classe .sobtextoimg */
@@ -709,16 +522,11 @@ button.btnInicio{
 /*Redimencionamento da imagem sem afetar a qualidade e o objeto acima*/
 .imgsob0 img{
     max-width: 100%;  
-    /*Trava para a img não subir acima da caixa do texto quando estiver acima de 2k
-  e para força o alinhamento*/
     padding-top: 2em;
 }
 
 h3.nome{
-    /*Definindo uma personalização de espaço esquerdo igual o texto*/
-    /*padding: 0 0 0 5%;*/
     color: #28292d;
-    /*font-weight: 600;*/
     font-size: 16pt;
     line-height: 1em;
     letter-spacing: 0.09em;
@@ -726,73 +534,13 @@ h3.nome{
 }
 
 .sobtexto p{
-    /*color: #a2a2a2;*/
-    /*color: #28292d;*/
-    /*font-style: italic;*/
-    /*text-align:justify;*/
-    /*text-align:center;*/
-    /*font-weight: 300;*/
-    /*font-size: 12pt;*/
-    /*font-size: 0.95em;*/
-    line-height: 1.2em;
-    /*letter-spacing: 0.01em;*/
-    /*font-family: 'Source Sans Pro Ital';*/
-    /*font-family: 'Source Sans Pro Light';*/
-
-
+   line-height: 1.2em;
 }
 
 
 /*Fim do novo Sobre*/
 
 /*Inicio do novo Educação*/
-/*
-#educacao {
-    Habilita o flexbox
-    display: flex;
-    define como coluna
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5em; 
-
-}
-
-.imgedu1{
-    Habilitando uma personalização para deixar essas duas colunas em linha texto e img 
-    display: flex;
-    Centralização da img sem expandir e estourar a img
-    align-items: center;
-    justify-content: center;
-    Deixando ela em linha
-    flex-direction: row;
-    flex-direction: column;
-    background-color: #28292d;
-
-}
-
-Redimencionamento da imagem sem afetar a qualidade e o objeto acima
-.imgedu1 img{
-    max-width: 100%;  
-}
-
-Redimencionamento da imagem sem afetar a qualidade e o objeto acima
-.imgedu3 img{
-    max-width: 100%;  
-}
-
-.background-educ{
-    background-color: #28292d;
-    Faz o preenchimento do fundo na largura total da tela
-    width: 100%;
-}
-
-Olha o restante no breakpoint max-width: 414px*
-/*Oculta a img acima do breakpoint
-.imgedu3 {
-    display: none;
-}*/
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -800,35 +548,18 @@ Olha o restante no breakpoint max-width: 414px*
     outline: none;
 }
 
-/*.educacao{*/
 .background-edu{
     width: 100%;
     background-color: #28292d;
 }
 
 .container {
-    /*.background-edu{*/
-    /*width: 80%;*/
-    /*width: 100%;*/
-    /*max-width: 100%;*/
-    /*min-width: 100%;*/
     padding: 50px 0;
-    /*padding: 50px auto;*/
     margin: 50px auto;
-    /*margin: 0px auto;*/
     position: relative;
     overflow: hidden;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items: center;*/
-    /*align-self: center;*/
-    /*align-content: center;*/
-    /*background: #28292d;*/
-
 }
 
-/*Linha*/
-/*.container:before {*/
 .container:before {
     content: '';
     position: absolute;
@@ -836,12 +567,9 @@ Olha o restante no breakpoint max-width: 414px*
     left: 50%;
     margin-left: -1px;
     width: 2px;
-    /*height: 100%;*/
     height: 80%;
-    /*background: #CCD1D9;*/
     background: #ffffff;
     z-index: 0;
-    /*padding: 10px 0 0 0;*/
     margin-top: 37px; 
 }
 
@@ -860,112 +588,67 @@ Olha o restante no breakpoint max-width: 414px*
     clear: both;
 }
 
-/*Bloco direito*/
 .timeline-block-right {
     float: right;
 }
 
-/*Bloco esquerdo*/
 .timeline-block-left {
     float: left;
     direction: rtl;
 }
 
-/*Bolinha-Pontos Verde*/
 .green {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    /*border: 2px solid #F5F7FA;*/
     border: 2px solid #33ffcc;
-    /*background: #4FC1E9;*/
     background: #28292d;
-    /*margin-top: 10px;*/
-    /*z-index: 9999;*/
     z-index: 0;
 }
 
-/*Bolinha-Pontos Brancos*/
 .white {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    /*border: 2px solid #F5F7FA;*/
     border: 2px solid #ffffff;
-    /*background: #4FC1E9;*/
     background: #ffffff;
-    /*margin-top: 10px;*/
-    /*z-index: 9999;*/
     z-index: 0;
 }
 
-/*Separação igual dos pontos*/
 .green, .white{
     margin: 10px 0;
-
 }
 
-/*Titulo*/
 .timeline-content {
-    /*width: 97%;*/
     width: 100%;
     padding: 0 15px;
-    /*padding-left: 10px;*/
-    /*color: #666;*/
     color: #33ffcc;
 }
 
-/*Posicionamento do Titulo*/
 .timeline-content h3 {
     margin-top: 7px;
-    /*remove o espaço entre o titulo e h3 fazendo ele subir*/
     margin-bottom: 0px;
-    /*margin-bottom: -15px;*/
-    /*font-size: 25px;*/
     font-size: 15px;
-    /*font-size: 1.1em;*/
-    /*font-weight: 500;*/
-    /*font-weight: 300;*/
 }
-
 
 .timeline-content span {
-    /*font-size: 15px;*/
-    /*font-size: 0.8em;*/
-    /*color: #a4a4a4;*/
     color: #ffffff;
-    /*font-weight: 300;*/
-
 }
 
-/*Tag temporaria para poder centralizar o texto da graduação entre os pontos sem
-afetar o p que está vinculado com o h3 do titulo*/ 
-/*Texto*/
 .timeline-content p {
-    /*font-size: 15px;*/
-    /*line-height: 1.5em;*/
-    /*word-spacing: 1px;*/
-    /*color: #888;*/
     color: #ffffff;
     margin-top: 5px;
     margin-bottom: 0px;
-    /*font-weight: 300;*/
-
 }
 
-
 /*Fim do novo Educação*/
-
 
 /*Inicio do novo habilidade*/
 
 #habilidade{
-    /*padding: 0 0 5em 0;*/
     padding-bottom: 8em;
-
 }
 
-/*habilitando o flexbox e centralizando com quebra de linha*/
 .iconeshabilidade{
     display: flex;
     flex-direction: row;
@@ -975,56 +658,22 @@ afetar o p que está vinculado com o h3 do titulo*/
 }
 
 .iconeshabilidade p{
-    /*formato do texto*/
-    /*text-align:  justify;*/
-    /*text-align: left;*/
-    /*padding: 3em 3em 2em 3em;*/
-    /*padding-left: 2em;*/
-    /*padding-left: 5em;*/
-    /*padding-right: 2em;*/
-    /*padding-right: 5em;*/
-    /*padding-top: 3em;*/
-    /*padding: 0px 30px 20px 30px;*/
     padding: 0px 70px 20px 70px;
-    /*padding: 0 5em 5em 5em;*/
-    /*padding: calc(4% - 0px);*/
-    /*padding-bottom: 2em;*/
-    /*color: #a2a2a2;*/
-    /*line-height: 1.15em;*/
-    /*font-family: 'Source Sans Pro Light';*/
 }
 
-/*centralizando img com o texto e dando espaços*/
-/*.iconeshabilidade, .iconImg h4{*/
 .iconeshabilidade, .iconImg{
-    /*.iconeshabilidade h4{*/
-    /*.icon, h4{*/
     text-align: center;
-    /*justify-content: space-around;*/
-    /*margin: 10px 0px 0 0 ;*/
-    /*margin: 0px 10px 10px 10px;*/
     padding: 0px 8px 8px 8px;
-    /*padding: 0px 12px 12px 12px;*/
 }
 
-/*setando tamanho da img sem corta ou deixar diferentes um do outro*/
-.iconImg img{
-    /*width: 80px;*/
+.iconImg img{  
     min-width:40px;
-    /*height: 51px;*/
-    /*height: 39px;*/
     max-height: 40px;
-    /*fill: #33ffcc;*/
     filter: invert(10%) sepia(9%) saturate(600%) hue-rotate(190deg) brightness(100%) contrast(86%);    
-    /*filter: invert(74%) sepia(11%) saturate(2340%) hue-rotate(108deg) brightness(115%) contrast(101%);*/
-
 }
 
 .iconImg h4{
-    /*color: #28292d;*/
     font-size: 0.8em;
-    /*font-family: 'Source Sans Pro Light';*/
-
 }
 
 /*Fim do novo habilidade*/
@@ -1043,42 +692,26 @@ afetar o p que está vinculado com o h3 do titulo*/
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
-    /*Divisão para 4*/
-    /*width: 25%;*/
-    /*width: 33.33%;*/
     justify-content: center;
-    /*Distancia entre as molduras das imagens das laterais da pagina*/
     padding-left: 40px;
-    /*padding-left: 170px;*/
     padding-right: 40px;
-    /*padding-right: 170px;*/
     padding-bottom: 10px;
-
 }
 
 
 /*Moldura interna/externa */
 .contentPort {
-    background-color: #28292d;
-    /*background-color: #f6f8f7;*/
-    /*Distancia da imagem dentro da moldura*/
+    background-color: #28292d ;
     padding: 1.0px 1.0px 1.0px 1.0px;
     border-radius: 3px ; 
-
 }
 
-/*Texto da legenda da galeria*/
-/*.contentPort h4, p{*/
 .contentPort h4{
     color: #ffffff;
-    /*color: #a2a2a2;*/
-    /*color: #28292d;*/
     font-size: 0.9em;
     line-height: 0.9em;
     margin-top: 0.6em;
-    /*padding-top: 0.5em;*/
     margin-bottom: 0.6em;
-    /*padding-bottom: 0.5em;*/
     text-align: center;
 }
 
@@ -1087,17 +720,11 @@ afetar o p que está vinculado com o h3 do titulo*/
 próximas uma da outra */
 .columnPort {
     /*Divisão para 4*/
-    /*Deixa em horizontal*/
-    /*float: left;*/
-    /*Divisão para 3*/
     width: 33.33%;    
     /*width: 25%;*/
     /*width: 20%;*/
     display: none; 
-    /*Distancia entre as molduras das imagens e top*/
     padding:0.3em 0.3em;
-
-
 }
 
 /* Limpar flutuadores após linhas */
@@ -1107,18 +734,15 @@ próximas uma da outra */
     clear: both;
 }
 
-
 /* Estilize os botões da galeria */
 .btn_filtro {
     border: none;
     outline: none;   
     padding: 0.8em;
-    /*Distancia do botões*/
     margin: 2em 0.17em 3em 0.17em;    
     background-color: #F6F8F7;
     border-radius: 3px;
     cursor: pointer;
-    /*Cor do subtitulo e texto*/
     color: #28292d;
 }
 
@@ -1129,18 +753,13 @@ próximas uma da outra */
     background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
     background-size: 250%;
     transition: all 0.4s;
-
 }
 
 
 /* Adicione uma cor de fundo escura ao botão ativo */
 .btn_filtro.active {
     background-color:#28292d;   
-    color:#ffffff; 
-    /*color:#F6F8F7;*/ 
-    /*color:#28292d;*/ 
-    /*color:#a2a2a2;*/ 
-    /*Desativa a seleção após o clique e não fica preso na seleção*/
+    color:#ffffff;
     background-image: none;
 }
 
@@ -1149,8 +768,6 @@ próximas uma da outra */
     display: block;
 }
 
-/*Arredonda as bordas da galeria*/
-/*.contentPort, img {*/
 .contentPort img {
     border-radius: 3px;
     width: 100%;
@@ -1160,97 +777,42 @@ próximas uma da outra */
 
 
 /*Posição da img em todas a telas e efeito de fundo transparente*/
-/*.modal-port {*/
 .modal{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*align-self: center;*/
     width: 100vw;
-    /*width: 100vh;*/
-    /*width: 100%;*/
     height: 100vh;
-    /*height: 100%;*/
-    /*efeito de transparencia conforme a cor*/
     background-color: rgba(0,0,0,0.7);
     position: fixed;
     visibility: hidden;
-    /*Tira a imagem dupla*/
     z-index: 1;
     opacity: 0;
-    /*Ao clicar na imagem ela vem devagar e com efeito*/
     transition: visibility 0.8s linear, opacity 0.5s linear;
 }
 
-/*Posição do button */
 .modal_content, #bt_close {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
-    /*Distancia do top*/
-    /*margin: 3% 0% 0% 0%;*/
     margin-top: 4%;
 }
 
 #modal_img{
-    /*width: 100%;*/
     max-width: 100vh;
-
-    /*max-width: 120vh;*/
-    /*width: 100vh;*/
-    /*width: 140vh;*/
-    /*width: 100vw;*/
-    /*max-width: 100%;*/
-    /*min-width: 100%;*/
-    /*    margin: 0 auto;*/
-    /*height: 100vh;*/
-    /*height: 100%;*/
-    /*max-height: 100%;*/
-    /*align-self: center;*/
-
 }
 
-
-/*Faz a img do modal expandir e se autoajustar no centro e da tela conforme o tamanho dela*/
+/*Faz a img do modal expandir e se autoajustar no centro da tela conforme o tamanho dela*/
 .modal_content, #modal_img{
-    /*Aqui que faz o auto ajuste do tamanho da imagem perante a tela*/
-    /*min-width: 60%;*/
-    /*min-width: 100%;*/
-    /*margin: 0 auto;*/
-    /*width: 60%;*/
     max-width: 100%;
-
-    /*min-width: 100%;*/
-    /*width: 100%;*/
-    /*max-width: 100vh;*/
-    /*min-width: 100vh;*/
-    /*width: 120vh;*/
-    /*width: 80%;*/
-    /*max-width: 60%;*/
-    /*min-height: 100%;*/
-    /*max-height: 100%;*/
     max-height: 100vh;
-
-    /*max-height: 100vw;*/
-    /*height: 100%;*/
-    /*height: 100vh;*/
-    /*height: 100vw;*/
-
     /*Faz a img ir crescendo e diminuindo ao fechar 
 "ativando valor 1 no .modal_active #modal_img"*/
     transform: scale(0.8);
-    /*tempo*/
     transition: all linear .3s;
-    /*Arredonda a imagem da img do visualização sem afetar a do slider*/
     border-radius: 3px;
-    /*Distancia do top*/
-    /*margin: 3% 0% 0% 0%;*/
-    /*margin-left: 1em;*/
-    /*margin-right: 1em;*/
-
-
 }
 
 .modal_active{
@@ -1260,7 +822,6 @@ próximas uma da outra */
 
 .modal_active #modal_img{
     transform: scale(1);
-
 }
 
 .small_img{
@@ -1268,20 +829,15 @@ próximas uma da outra */
     cursor: pointer;
     /*Deixa a animação mais suave*/
     transition: all linear 0.3s;
-    /*Arrendondamento na galeria*/
     border-radius: 3px;
-
 }
 
 /*Animação na imagem em preto e branco 
 e com efeito de zoom*/
 .small_img:hover{
     filter: grayscale(100%);
-    /*efeito do zoom*/
     transform: scale(1.1);
-
 }
-
 
 /*Botão fechar do modal*/
 #bt_close {
@@ -1289,14 +845,10 @@ e com efeito de zoom*/
     background-color: #28292d;
     margin: 0 0 0.5em 0;
     padding: 0.2em 0.4em;
-    /*Tamanho do X*/
     font-size: 25px;
     border-radius: 3px;
-    /*Tirando as bordas*/
     border: none;
-    /*Tira contorno ao clicar no botão*/
     outline: none;    
-    /*Tempo de efeito de cor ao passar o mouse*/
     transition: all ease-out 1.5s;
     cursor: pointer;
 }
@@ -1317,33 +869,16 @@ e com efeito de zoom*/
 .contato{
     display: flex;
     flex-direction: row;
-    /*flex-direction: column;*/
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    /*Altura do contato sem mexer no tamanho da section*/
-    /*height: 37em;*/
-    /*height: calc(0vh + 40em);*/
-    /*height: 40em;*/
-    /*margin: calc(4% - 0px);*/
-    /*Autoajuste perante a classe interna colocando um margin em cima e embaixo 
-    deixando o background-cont com espaço para se ajustar sem ficar diferente e
-    se colocar um height na section ou na classe ele não se autoajusta*/ 
     margin-top: 6em;
     margin-bottom: 6em;   
-
 }
 
-/*.contato a{*/
 .contato i{
-    /*.conttel i{*/
-    /*Desativando as bolinhas da lista*/
     list-style:none;
-    /*Retira o sublinhado*/
     text-decoration: none;
-    /*Faz o ajuste do tom de negrito que o icone de email afeta a class*/
-    /*font-weight: 540;*/   
-    /*font-weight: 600;*/   
 }
 
 /*Cria uma margem/espaço entre as duas classe*/
@@ -1360,39 +895,17 @@ e com efeito de zoom*/
     max-width: 100%;  
 }
 
-/*Titulo*/
-.titulopagina2 h2{
-    /*color:#28292d;*/
-    /*font-size: 1.8em;*/
-    /*white-space:nowrap;*/
-    /*margin:0;*/
-    /*padding: 0 0 0.5em 0;*/
-}
-
 .msg{
     margin: 0 0 1.5em 0;
 }
 
 /*Texto msg contato*/ 
-.msg h2{
-    /*color:#33ffcc;*/
-    /*color:#28292d;*/
-    /*color:#a2a2a2;*/
-    /*font-size: 1.3em;*/
-    /*font-size: 1.4em;*/
+.msg h2{   
     font-size: 1.5em;
-    /*font-style: italic;*/
-    /*font-weight: 100;*/
     font-family: 'Source Sans Pro Ital';
     white-space:nowrap;
-    /*text-transform:  uppercase;*/
     letter-spacing: 0.02em;
-    /*padding: 0 0 1em 0;*/
     padding: 0.5em 0 1em 0;
-    /*text-align: left;*/
-    /*text-align: right;*/
-    /*text-align:justify;*/
-    /*line-height: 1.3em;*/
 }
 
 /*seta*/
@@ -1405,19 +918,8 @@ e com efeito de zoom*/
 
 /*Texto msg contato*/ 
 .msg span{
-    /*color:#33ffcc;*/
-    /*color:#28292d;*/
-    font-size: 1.2em; 
-    /*font-style: italic;*/
-    /*font-weight: 400;*/
+    font-size: 1.2em;
     font-family: 'Source Sans Pro';
-    /*font-family: 'Source Sans Pro Ital';*/
-    /*background-color: #33ffcc;*/
-    /*border-radius: 3px;*/
-    /*padding: 1px 5px;*/
-    /*padding: 0.1em 0.4em;*/
-    /*text-align: left;*/
-    /*text-align: right;*/
 }
 
 /*Espaço entre o botão*/
@@ -1427,109 +929,70 @@ e com efeito de zoom*/
 
 .contemail button {
     color:#ffffff;  
-    /*background-color: #f6f8f7;*/
     background-color: #28292d;
     cursor: pointer;
-    /*border: 1px solid #28292d;*/
     border-radius: 3px;
-    /*padding: calc(4% - 0px);*/
-    /*padding: 10px 12px;*/
     padding: 0.8em;
     width: 100%;
     white-space:nowrap;
-    /*letter-spacing: 0.8px;*/
     letter-spacing: 0.4px;
     font-size: 0.9em;
-    /*font-size: 0.85em;*/
-    /* Remover contorno */
     outline: none; 
-    /* Remover bordas */
     border: none; 
     font-family: 'Source Sans Pro Light';
 }
 
 .conttel button {
     color:#ffffff;  
-    /*background-color: #f6f8f7;*/
     background-color: #28292d;
     cursor: pointer;
-    /*border: 1px solid #28292d;*/
     border-radius: 3px;
-    /*padding: calc(4% - 0px);*/
     padding: 0.8em;
     width: 100%;
     white-space:nowrap;
-    /*letter-spacing: 0.8px;*/
     letter-spacing: 0.4px;
     font-size: 0.9em;
-    /* Remover contorno */
     outline: none; 
-    /* Remover bordas */
     border: none; 
     font-family: 'Source Sans Pro Light';
 }
 
 /*Efeito ao passar o mouse*/
 .contemail a :hover {
-    /*color: #ffffff;*/
     color: #28292d;
-    /*color: #a2a2a2;*/
-    /*color: #f6f8f7;*/
-    /*background-color: #28292d;*/
-    /*Faz o efeito prencher 100%*/
     background-position: 100%;
-    /*posição e cor*/
     background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
-    /*Tamnho do prenchimento interno*/
     background-size: 250%;
-    /*Tempo*/
     transition: all 0.7s;
 }
 
 /*Feito de deslocar ao clicar*/
 .contemail a :active {
-    /*background-color: #f6f8f7;*/
-    /*background-color: #a2a2a2;*/
-    /*box-shadow:  1px #28282d;*/
     transform: translateY(4px);
-
 }
 
 .conttel a :hover {
-    /*color: #ffffff;*/
     color: #28292d;
-    /*color: #a2a2a2;*/
-    /*color: #f6f8f7;*/
-    /*background-color: #28292d;*/
-    /*Faz o efeito prencher 100%*/
     background-position: 100%;
-    /*posição e cor*/
     background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
-    /*Tamnho do prenchimento interno*/
     background-size: 250%;
-    /*Tempo*/
     transition: all 0.7s;
-
 }
 
 /*Feito de deslocar ao clicar*/
 .conttel a :active {
-    /*background-color: #f6f8f7;*/
     background-color: #a2a2a2;
     box-shadow:  1px #28282d;
     transform: translateY(4px);
 }
 
-/*Habilitado o flex igual a class contato para não travar os filhos*/
 .background-cont {
     display: flex;
     flex-direction: row;
-    /*flex-direction: column;*/
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     background-color: #f7f8f6;
-    /*Faz o preenchimento do fundo na largura total da tela*/
     width: 100%;
     line-height: none; 
 }
@@ -1547,72 +1010,40 @@ footer{
     align-items: center;
     font-size: 0.95em; 
     color: #a2a2a2;
-    /*padding: 0 0.35em 0 0.35em;*/
     padding-left: 0.3em;
     padding-right: 0.3em;
 }
 
 /*///Fim do Footer\\\\*/
 
-/*///Inicio do efeito do scroll animando\\\\*/
-[data-animation]{
-    /*z-index: -1;*/
-}
 
+/*///Inicio do efeito do scroll animando\\\\*/
 [data-animation] {
     opacity: 0;
-    /*opacity: 0.1;*/
-    /*transition: 600ms;*/
     transition: 800ms;
 }
 
 [data-animation="top"] {
-    /*transform: translate3D(0, 60px, 0);*/
-    /*transform: translate3D(0, 20px, 0);*/
     transform: translateY(-150px);
 }
 
 [data-animation="bottom"] {
-    /*transform: translate3D(0, 60px, 0);*/
-    /*transform: translate3D(0, 20px, 0);*/
     transform: translateY(150px);
 }
 
 [data-animation="left"] {
-    /*transform: translate3D(-60px, 0, 0);*/
-    /*transform: translate3D(-20px, 0, 0);*/
     transform: translateX(-20px);
-    /*transform: translateX(-10px);*/
 }
 
 [data-animation="right"] {
-    /*transform: translate3D(60px, 0, 0);*/
-    /*transform: translate3D(20px, 0, 0);*/
-    /*transform: translateX(12px);*/
     transform: translateX(20px);
 }
 
 [data-animation].complete {
     opacity: 1;
-    /*transform: translate3D(0, 0, 0);*/
     transform: translateX(0);
 }
 
-/*.animacol-1 {*/
-.col-1 {
-    /*[data-animation="animacol"]{*/
-    /*transform: translate3D(-60px, 0, 0);*/
-    /*transform: translate3D(-20px, 0, 0);*/
-    /*transform: translateX(-80px);*/
-    /*transform: translateX(-50%);*/ 
-    /*transition: 800ms;*/  
-    /*transition: all .3s;*/
-    /*transition: all 800ms;*/
-    /*duration: 10ms;*/
-    /*Faz o icone ficar piscando*/
-
-
-}
 
 
 /*///Fim do efeito do scroll animando\\\\*/
