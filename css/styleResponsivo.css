@@ -136,6 +136,23 @@ and open the template in the editor.
         padding-right: 0.3em;
     }
 
+    
+    /*////Fim do menu lateral responsivo\\\\*/
+    
+    
+     /*///Inicio do efeito do scroll animando\\\\*/
+   
+    [data-animation="left"] {
+        transform: translateX(-6px);
+    }
+
+    [data-animation="right"] {
+        transform: translateX(6px);
+    }
+   
+    /*///Fim do efeito do scroll animando\\\\*/
+    
+    
     /*///Inicio do menu lateral responsivo\\\\*/
 
     /*Retirar a coluna do nav para deixar o header, main e footer 100%*/
