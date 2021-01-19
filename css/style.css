@@ -1177,7 +1177,7 @@ próximas uma da outra */
     position: fixed;
     visibility: hidden;
     /*Tira a imagem dupla*/
-    /*z-index: 1;*/
+    z-index: 1;
     opacity: 0;
     /*Ao clicar na imagem ela vem devagar e com efeito*/
     transition: visibility 0.8s linear, opacity 0.5s linear;
