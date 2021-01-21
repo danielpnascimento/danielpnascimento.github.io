@@ -1,6 +1,6 @@
 Olá a todos!!
 
-Realizei o desenvolvido desse portifólio com apenas html, css, js e uma lib de ícones da fontawesome, não utilizei frameworks ou templates prontos, nada contra, mais optei em desenvolver sem utiliza los no momento para consolidar o meu aprendizado e evolução profissional em realizar passo a passo da construção e não fica apenas contido na busca de templates prontos, troca de texto e imagens. Mais já está 98% pronto e encontra se no refinamento de correções e perfumarias!
+Realizei o desenvolvido do meu portfólio com apenas html, css, js e uma lib de ícones da fontawesome, não utilizei frameworks ou templates prontos, nada contra, pq vou usar um dia, mais optei em desenvolver sem utiliza los no momento para consolidar o meu aprendizado e evolução profissional, em realizar passo a passo da construção e não fica apenas contido na busca de templates prontos, troca de texto e imagens. Mais já está 98% pronto e encontra se no refinamento de correções e perfumarias!
 
 CARACTERÍSTICA:
 
@@ -18,7 +18,7 @@ CARACTERÍSTICA:
 
 To be continued!!
 
-Fonte onde peguei algumas linhas de código e inspirações para as modifições, realizadas de algumas das minhas ideias:
+Fonte onde peguei algumas linhas de código e inspirações para as modifições, realizadas de algumas das minhas ideias nesse projeto e recomendo!
 
 https://www.w3schools.com/
 https://codepen.io/

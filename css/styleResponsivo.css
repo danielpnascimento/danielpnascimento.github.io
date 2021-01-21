@@ -9,31 +9,44 @@ and open the template in the editor.
 */
 
 
+/*@media screen and (max-width: 980px){*/
 @media screen and (max-width: 1024px){
+    /*@media screen and (max-width: 1023px){*/
 
+    /*Borda geral de espaço interno - retirar depois caso afetar o conteudo*/
+    #habilidade, #portfolio  {
+        /*padding: 0.7em;*/
+        /*padding: 0em;*/
+    }
     .titulopagina{
-        font-size: 14.5pt;   
+        font-size: 14.5pt;
+        /*font-size: 15.5pt;*/          
     }
 
     #myBtnTopo {
+        /* Coloque o botão na parte inferior da página */
         bottom: 4em; 
+        /* Coloque o botão 30px da direita */
         right: -17px; 
+        /*Espaço entre as letras*/
         letter-spacing:1px;
     }
 
     /*Espaço entre os icones e texto do inicio tem que colocar fa-lg*/
     .myBtnTopo i {
         font-size: 1.2em;
-    }
 
+    }
     .myBtnTopo a {
         font-size: 0.9em;
+
     }
 
     /*Inicio do novo Inicio*/
     .inicio{
         background-size: 100%;
     }
+
     .inicio h1{
         left: 41%;
         /*Auto ajuste do tamanho da fonte perante as telas*/
@@ -51,6 +64,7 @@ and open the template in the editor.
         /*mantem na posição fixa e se autoajusta*/
         font-size: calc(0.6vw + 0.6vw + 0vmin);
         transform: translate(-50%, 90%);
+        /*colocado 2px pq 3px está deixando arredondado demais no mobile*/
         border-radius: 1px; 
     }
 
@@ -62,24 +76,30 @@ and open the template in the editor.
 
     /*Fim do novo Inicio*/
 
-
-    /*Inicio do sobre*/
+    /*Inicio do novo sobre*/
     h3.nome{
         font-size: 14pt;
+        /*line-height: 1em;*/
     }
 
     .sobtexto, .imgsob0{
-        /*Faz o preencimento do texto e img pega a largura completa*/
+        /*Faz o preencimento do texto e img pegar a largura completa*/
         max-width: 100%; 
+        /*width: 100%;*/ 
+        /*margin-left: 1.0em;*/
+        /*margin-right: 1.0em;*/
+
     }
 
-    /*Fim do sobre*/
+    /*Fim do novo sobre*/
 
 
     /*Inicio do novo habilidade*/
 
     #habilidade{
+        /*padding: 0 0 5em 0;*/
         padding-bottom: 4em;
+
     }
 
     .iconeshabilidade p{
@@ -92,20 +112,24 @@ and open the template in the editor.
 
     /*///Inicio do Portfolio\\\\*/
 
-
     /*Retirar o Espaço nas laterais desde 1024 ate o 320*/
     .port{ 
         padding-left: 5px;
         padding-right: 5px;
         padding-bottom: 0px;
+
     }
 
-    /* Moldura externa crie 4 colunas iguais que flutuam próximas uma da outra */
+    /* Moldura externa crie 4 colunas iguais que flutuam 
+próximas uma da outra */
     .columnPort {
         /*Distancia entre as molduras das imagens e top*/
         padding:0.15em 0.15em;
+
     }
 
+    /*Habilitado apenas para deixar o menu lateral como 
+    principal acima dos demais no modo mobile*/
     .modal{
         z-index: -1;
     }
@@ -114,9 +138,17 @@ and open the template in the editor.
     .contato{
         display: flex;
         flex-direction: row;
+        /*flex-direction: column;*/
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        /*Altura do contato sem mexer no tamanho da section*/
+        /*height: 45em;*/
+        /*height: calc(0vh + 40em);*/
+        /*height: calc(0vh + 50em);*/
+        /*height: calc(0vh + 45em);*/
+        /*height: 40em;*/
+        /*margin: calc(4% - 0px);*/ 
     }
 
     /*///Fim do contato\\\\*/
@@ -132,34 +164,25 @@ and open the template in the editor.
         align-items: center;
         font-size: 0.8em; 
         color: #a2a2a2;
+        /*padding: 0 0.35em 0 0.35em;*/
         padding-left: 0.3em;
         padding-right: 0.3em;
     }
-
     
-    /*////Fim do menu lateral responsivo\\\\*/
-    
-    
-     /*///Inicio do efeito do scroll animando\\\\*/
-   
-    [data-animation="left"] {
-        transform: translateX(-6px);
-    }
-
-    [data-animation="right"] {
-        transform: translateX(6px);
-    }
-   
-    /*///Fim do efeito do scroll animando\\\\*/
+    /*///Fim do Footer\\\\*/
     
     
     /*///Inicio do menu lateral responsivo\\\\*/
 
     /*Retirar a coluna do nav para deixar o header, main e footer 100%*/
     .col-1 {
+        /*display: none;*/
+        /*Ajuste para o top,direita,inferior e esquerda*/ 
+        /*position: relative;*/    
         /*Habilitar o absolute para auto preenchimento do background na vertical e 
- conteudo ao inves de usar o display none para ocultar a coluna nav*/
-        position: absolute;  
+        conteudo ao inves de usar o display none para ocultar a coluna nav*/
+        position: absolute;        
+        /*width: 100%;*/
         min-width: 100%;
         /*Habilita o z-index:-1 para deixar a col-1 abaixo no menu hamburger e sua função 
   em execução*/
@@ -169,27 +192,119 @@ and open the template in the editor.
     /*Deixa a coluna e conteúdo preenchendo a tela 100% após a saida da .col-1 / nav*/ 
     .col-2 {
         margin:0;
-        /*Habilitar o absolute para retirar o espaço na esquerda que não se autoajustar
+        /*padding:0;*/
+
+        /*habilitar o absolute para retirar o espaço na esquerda que não se autoajustar
        antes de usar a barra de rolagem e fixar a margin: 0 abaixo de 1024px */
         position: absolute;
     }
 
+    #mySidenav{
+        /*display: flex;*/
+        /*flex-direction: column;*/
+    }
+
     body {
         transition: background-color 0.2s;
+
+    }
+
+    .topo{
+        /*Distancia a logo e o efeito shadow do topo*/
+        /*padding: 6% 0 0 0;*/
+    }
+
+    .title{
+        /*Distancia da logo*/ 
+        /*margin: -0.3em 0 0 0;*/
+        /*font-size: 1.3em;*/
+    }
+
+    .subtitulo{
+        /*margin: -0.5em 0 0 0;*/
+
+    }
+
+    #nav ul {
+        /*padding-top: 0.7em;*/
+        /*cria um margin ao redor que vai se ajustando com o flex no responsivo*/
+        /*margin-right: calc(10% - 0em);*/
+    }
+
+    /*Efeitos no nav*/
+    nav a {
+        /*padding: 0 0px 0 10px ;*/
+        /*background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);*/
+        /*background-size: 250%;*/
+        /*transition: all 0.4s;*/
+        /*Espaço entre as letras*/
+        /*letter-spacing:1px;*/
+        /*border-radius: 3px;*/
+        /*line-height: 1.8em;*/
+        /*Não deixa o texto quebrar*/
+        /*white-space:nowrap;*/
+        /*font-size: 1.0em ;*/
+    }
+
+    .icons ul{
+        /*bottom: 0.5em;*/
+
+    }
+
+    /*Tamanho dos icones para ser o mesmos*/
+    .icons i{
+        /*font-size: 1em ;*/
     }
 
     .shadow{
+        /*Faz aparecer o efeito da logo de fundo no menulateral*/
         z-index:0;
+        /*Define tamanho da logo e efeito de fundo*/
+        /*width: 80px;*/
+        /*height: 80px;*/
+        /*width: 100px;*/
+        /*height: 100px;*/
     }
 
     .sidenav {
+        /*Tamanho da barra vertical*/
         height: 100%;
         width:0;
+        /*sobrepoem sobre o main*/
         z-index:1;
         top: 0;
         left: 0;
         overflow-x: hidden;
+        /*tempo ao aparecer mais afeta o aparecimento rapido do nav, reduzi 
+        para ambos .sidenav a */
         transition: 0.5s;
+    }
+
+    /*Menu*/
+    .closebtn a {
+        /*text-decoration: none;*/
+        /*color: #a2a2a2;*/
+        /*transition: 0.3s;*/
+
+    }
+
+    /*Cor ao passar o mouse no menu e X*/
+    .closebtn a:hover {
+        /*color:#33ffcc;*/
+    }
+
+    /*Posição e formato do X*/
+    .sidenav .closebtn {
+        /*position: absolute;*/
+        /*z-index: 1;*/
+        /*top: 1%;*/
+        /*right: 10px;*/
+        /*font-size: 20px;*/
+        /*padding: 2.5px 10px;*/
+        /*Arredondamento*/
+        /*border-radius: 3px;*/
+        /*Tempo de efeito de cor ao passar o mouse*/
+        /*transition: all ease-out 1.5s;*/
     }
 
     /*Deixa o X e menu visivel para resolução ate 1023px, olha o modo que oculta
@@ -205,9 +320,63 @@ and open the template in the editor.
         position: fixed;
     }
 
+    /*Botão Menu*/
+    .bt_menulateral{
+        /*color: #28292d;*/
+        /*font-size:30px;*/
+        /*cursor:pointer;*/
+        /*padding: 2.5% 1.5%;*/
+        /*opacity: 0.5;*/
+        /*text-shadow: 0px 0px 2.5px #ffffff;*/
+
+    }
+
+    /*Cor ao passar o mouse no menu*/
+    .bt_menulateral span:hover {
+        /*color:#33ffcc;*/
+        /*Tempo de efeito de cor ao passar o mouse*/
+        /*transition: all ease-out 1.5s;*/
+    }
+
     /*////Fim do menu lateral responsivo\\\\*/
+
+
+    /*///Inicio do efeito do scroll animando\\\\*/
+    [data-animation]{
+        /*z-index: -1;*/
+    }
+
+    [data-animation] {
+        /*opacity: 0;*/
+        /*opacity: 1;*/
+        /*transition: 600ms;*/
+    }
+
+    [data-animation="top"] {
+        /*transform: translate3D(0, 60px, 0);*/
+        /*transform: translateX(6px);*/
+    }
+
+    [data-animation="left"] {
+        /*transform: translate3D(-60px, 0, 0);*/
+        transform: translateX(-6px);
+    }
+
+    [data-animation="right"] {
+        /*transform: translate3D(60px, 0, 0);*/
+        transform: translateX(6px);
+    }
+
+    [data-animation].complete {
+        /*opacity: 1;*/
+        /*transform: translateX(0, 0, 0);*/
+        /*transform: translateX(0);*/
+    }
+    /*///Fim do efeito do scroll animando\\\\*/
 }
 
+
+/*Paisagem - Altura*/
 @media screen and (max-height: 414px) {
 
     .topo{
@@ -218,7 +387,7 @@ and open the template in the editor.
     .image{
         /*Aqui faz o auto ajuste do tamanho da logo substituindo o .shadow e efeito 
 se ajustar perante o flex que não acata espaço das laterais da .col-1 para 
-o responsivo paisagem*/ 
+o reponsivo paisagem*/ 
         margin-left: calc(38% - 1em);
         margin-right: calc(38% - 1em);
     }
@@ -235,6 +404,8 @@ o responsivo paisagem*/
     }
 
     #nav ul {
+        /*padding-top: 0em;*/
+        /*cria um margin ao redor que vai se ajustando com o flex no responsivo*/
         margin-right: calc(10% - 0em);
     }
 
@@ -250,17 +421,24 @@ o responsivo paisagem*/
         bottom: 0.5em;
     }
 
+
+
 }
 
 
+/*Paisagem - Largura*/
 @media screen and (max-width: 414px) {
 
     .topo{
         /*Auto ajuste para o topo*/
+        /*margin-top: calc(8% + 0vh);*/
         margin-top: calc(15% + 0vh);
     }
 
     #nav ul {
+        /*cria um margin ao redor que vai se ajustando com o flex no responsivo*/
+        /*margin-right: calc(100% - 1em);*/
+        /*margin-right: calc(20% + 10.5vh);;*/
         margin: calc(0% + 3.9vh);
     }
 
@@ -270,32 +448,75 @@ o responsivo paisagem*/
         line-height: calc(0% + 7vh);
     }  
 
-    /*Inicio Educação*/
+    /*Inicio do novo Educação*/
 
-    .timeline-content {
-        width: 95%;
-        padding: 0 15px;
+    /*Oculta a img abaixo do breakpoint*/
+    .imgedu1 {
+        /*display: none;*/
     }
 
+    /*Habilita a img abaixo do breakpoint*/
+    .imgedu3{
+        /*display: block;*/
+    }
+
+    .imgedu3 {
+        /*display: flex;*/
+        /*align-items: center;*/
+        /*justify-content: center;*/
+        /*align-content: center;*/
+        /*Deixando ela em linha*/
+        /*flex-direction: row;*/
+    }
+    /*Inicio Educação*/
+
+    /*Titulo*/
+    .timeline-content {
+        width: 95%;
+        /*width: 100%;*/
+        padding: 0 15px;
+    }
     .container {
+        /*.background-edu {*/
+        /*width: 30%;*/
+        /*margin-left: 10%;*/
         margin-left: 10%;
+        /*left: 10px;*/
+        /*padding: 0 0 0 10px;*/
+        /*height: 100vh;*/
+        /*position: relative;*/
     }
 
     .timeline{
+        /*width: 100%;*/
+        /*background: #28292d;*/
         display: flex;
+        /*flex-direction: column;*/
+        /*padding-left: 1em;*/
+        /*padding-right: 1em;*/
         justify-content: center;
+        /*align-items: center;*/
+        /*align-content: center;*/
+        /*align-self: center;*/
+        /*overflow-x:  no-content;*/
+        /*overflow-x:  no-display;*/
         overflow-x: hidden;
+
     }
 
     .container:before {
+        /*    .background-edu:before {*/
         left: 8px;
         width: 2px;
     }
-
     .timeline-block {
         width: 100%;
+        /*width: 80%;*/
+        /*margin-bottom: 30px;*/
+        /*margin-bottom: 10px;*/
+        /*padding-left: 5px;*/
+        /*margin-left: 5px;*/
     }
-
     .timeline-block-right {
         float: none;
     }
@@ -307,13 +528,21 @@ o responsivo paisagem*/
 
     /*Fim Educação*/
 
-    /*Inicio do Portfolio*/
-    /*reduzir para 2 tela por linha para os smart retrato*/
-    .columnPort {
-        width: 50%;            
+    /*Borda geral de espaço interno - retirar depois caso afetar o conteudo*/
+    #portfolio {
+        /*padding: 0.7em;*/
+        /*padding: 0em;*/
     }
 
-    /*Fim do Portfolio*/
+    /*reduzir para 2 tela por linha para os smart retrato*/
+    .columnPort {
+        /*width: 33.33%;*/        
+        /*width: 45%;*/        
+        width: 50%;        
+        /*width: 25%;*/          
+    }
+
+    /*///Fim do Portfolio\\\\*/
 
     /*Inicio do Contato*/
 
@@ -321,7 +550,8 @@ o responsivo paisagem*/
     .background-cont {    
         height: 42em;
     }
-    /*Fim do Contato*/
+
+
 }
 
 
