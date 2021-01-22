@@ -51,7 +51,6 @@ and open the template in the editor.
         /*mantem na posição fixa e se autoajusta*/
         font-size: calc(0.6vw + 0.6vw + 0vmin);
         transform: translate(-50%, 90%);
-        /*border-radius: 1px;*/ 
     }
 
     .palavra{
@@ -278,6 +277,10 @@ o responsivo paisagem*/
         line-height: calc(0% + 7vh);
     }  
 
+     button.btnInicio{
+        border-radius: 1.5px; 
+    }
+    
     /*Botão do sobre*/
     .leia{
         font-size: calc(0.6vw + 0.6vw + 1vmin);
