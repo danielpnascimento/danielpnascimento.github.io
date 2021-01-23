@@ -5,16 +5,17 @@ Realizei o desenvolvido do meu portfólio com apenas html, css, js e uma lib de 
 CARACTERÍSTICA:
 
 - Efeito de paralax na inicial.
-- Efeito ao redor da imagem logo.
-- Efeitos nas opções do nav.
+- Efeito ao redor da imagem logo com redimensionamento autoajustavél.
+- Efeitos nas opções do nav com redimensionamento autoajustavél.
 - Efeitos dos elementos até seus destinos ao rola o scroll.
 - Efeitos de decodificação com troca de texto na inicial.
 - Filtro de categoria na galeria de portfólio.
 - Efeito de zoom em preto e branco ao passar o mouse na imagem da galeria.
+- Sobre reduzido ao clicar se expande para saber mais.
 - Modal para visualização nas imagens clicadas da galeria do portfólio.
 - Layout responsivo para Desktop, Tablet e Mobile.
-- Conteúdo de texto e imagens modificados, foram realizados por mim, com a utilização das ferramentas da adobe Photoshop.
-- Redirecionamento de contato via email ou whatsapp ao clicar em seu botão escolhido para o contato.
+- Conteúdo de texto e imagens modificados, foram realizados por mim, com a utilização da ferramenta da adobe Photoshop.
+- Redirecionamento para o email ou whatsapp ao clicar em seu botão escolhido para o contato.
 
 To be continued!!
 

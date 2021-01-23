@@ -558,9 +558,8 @@ h3.nome{
 }
 
 /*Feito de deslocar ao clicar*/
-.leia:active {
+.leia :active {
     transform: translateY(4px);
-    /*transform: translateX(4px);*/
     /*Usado essa transform para limitar o deslocamento referente o posicionamento setado
     do proprio botão para o efeito funcionar  transform: translate(-50%, 90%);*/
     transform: translate(-50%, 100%);
