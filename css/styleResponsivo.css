@@ -73,7 +73,7 @@ and open the template in the editor.
         max-width: 100%; 
     }
 
-    .leia{
+    .leia {
         font-size: calc(0.6vw + 0.6vw + 0vmin);
     }
 
