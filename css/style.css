@@ -409,7 +409,6 @@ input[type="checkbox"]:checked + label .open::after{
 
 /*Texto desenvolvedor*/
 .inicio h3{
-    text-transform: uppercase;
     position: fixed;
     left: 44.3%;
     /*mantem na posição fixa e se autoajusta*/
