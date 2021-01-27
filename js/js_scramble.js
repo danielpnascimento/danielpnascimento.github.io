@@ -58,7 +58,11 @@ const phrases = [
 
 'Desenvolvedor',
 'Programador',
-'Dev Jr.'
+'Dev Jr.',
+'Focado em',
+'Aplicações',
+'Web e Mobile.'
+
 
 ];
 

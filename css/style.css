@@ -269,7 +269,6 @@ nav a {
     transform: rotate(-270deg);
     letter-spacing:1.2px;
     box-shadow: 0.1px 0px 0px 0.7px #ffffff;
-
 }
 
 #myBtnTopo:hover {
@@ -332,7 +331,6 @@ input[type='checkbox']{
     cursor: pointer;
     background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 300%;
-    transition: all 0.4s;
     box-shadow: 0.1px 0px 0px 0.2px #ffffff;
 }
 
@@ -394,7 +392,6 @@ input[type="checkbox"]:checked + label .open::after{
     background-position: 100% 0%;
     border: none;
     clip-path: polygon(100% 0, 100% 90%, 32% 100%, 0 90%, 0 0);
-
 }
 
 /*Inicio Texto*/
@@ -423,7 +420,6 @@ input[type="checkbox"]:checked + label .open::after{
     letter-spacing:0.40em;
 }
 
-/*.inicio button{*/
 button.btnInicio{
     position: fixed; 
     border: none; 
@@ -531,7 +527,7 @@ h3.nome{
     display: none;
 }
 
-.leia{
+.leia {
     border: none;
     outline: none;   
     padding: 0.5em;
@@ -554,7 +550,6 @@ h3.nome{
     background-size: 250%;
     transition: all 0.4s;
     box-shadow: none;
-
 }
 
 /*Feito de deslocar ao clicar*/
@@ -564,8 +559,6 @@ h3.nome{
     do proprio botão para o efeito funcionar  transform: translate(-50%, 90%);*/
     transform: translate(-50%, 100%);
 }
-
-
 
 /*Fim do Sobre*/
 
