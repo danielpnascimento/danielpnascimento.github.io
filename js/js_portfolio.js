@@ -49,9 +49,6 @@ for (var y = 0; y < btnsRealce.length; y++) {
     btnsRealce[y].addEventListener("click", function () {
         var current = document.getElementsByClassName("active");
 
-//  Em caso de conflito do btn realce com Slider alterar o array 0 para 1
-//  current[0].className = current[0].className.replace(" active", "");
-
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
     });

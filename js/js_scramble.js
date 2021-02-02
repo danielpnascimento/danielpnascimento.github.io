@@ -13,7 +13,6 @@ class TextScramble {
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || '';
       const to = newText[i] || '';
-//     40 e a velocidade
       const start = Math.floor(Math.random() * 60);
       const end = start + Math.floor(Math.random() * 60);
       this.queue.push({ from, to, start, end });
@@ -72,7 +71,6 @@ const fx = new TextScramble(el);
 let counter = 0;
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
-//      800 e o tempo de troca de cada palavra
     setTimeout(next, 4000);
   });
   counter = (counter + 1) % phrases.length;

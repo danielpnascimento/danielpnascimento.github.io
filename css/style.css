@@ -297,12 +297,6 @@ nav a {
 
 /*///Inicio do menu lateral responsivo\\\\*/
 
-
-/*Oculta o menu e X lateral para resolução acima de 1024px*/
-.closebtn, .bt_menulateral {
-    display: none;
-}
-
 /*Inicio botão animado do menu responsivo*/
 
 /*Oculta o menu e X lateral para resolução acima de 1024px*/
@@ -394,7 +388,6 @@ input[type="checkbox"]:checked + label .open::after{
     clip-path: polygon(100% 0, 100% 90%, 32% 100%, 0 90%, 0 0);
 }
 
-/*Inicio Texto*/
 
 /*Texto nome*/
 .inicio h1{
