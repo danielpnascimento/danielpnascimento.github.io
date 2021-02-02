@@ -9,9 +9,9 @@ CARACTERÍSTICA:
 - Efeitos nas opções do nav com redimensionamento autoajustavél.
 - Efeitos dos elementos até seus destinos ao rola o scroll.
 - Efeitos de decodificação com troca de texto na inicial.
-- Filtro de categoria na galeria de portfólio.
 - Efeito de zoom em preto e branco ao passar o mouse na imagem da galeria.
-- Sobre reduzido ao clicar se expande para saber mais.
+- Texto do Sobre, sendo reduzido e ao clicar se expande para saber mais.
+- Filtro de categoria na galeria de portfólio.
 - Modal para visualização nas imagens clicadas da galeria do portfólio.
 - Layout responsivo para Desktop, Tablet e Mobile.
 - Conteúdo de texto e imagens modificados, foram realizados por mim, com a utilização da ferramenta da adobe Photoshop.
@@ -19,7 +19,7 @@ CARACTERÍSTICA:
 
 To be continued!!
 
-Fonte onde peguei algumas linhas de código e inspirações para as modifições, realizadas de algumas das minhas ideias nesse projeto e recomendo!
+Segue a fonte onde peguei algumas linhas de código e inspirações para as modifições, realizadas de algumas das minhas ideias nesse projeto e a recomendo!
 
 https://www.w3schools.com/
 https://codepen.io/
