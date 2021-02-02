@@ -103,12 +103,6 @@ and open the template in the editor.
         padding-bottom: 0px;
     }
 
-    /* Moldura externa crie 4 colunas iguais que flutuam próximas uma da outra */
-    .columnPort {
-        /*Distancia entre as molduras das imagens e top*/
-        padding:0.15em 0.15em;
-    }
-
     .modal{
         z-index: -1;
     }
@@ -277,10 +271,10 @@ o responsivo paisagem*/
         line-height: calc(0% + 7vh);
     }  
 
-     button.btnInicio{
+    button.btnInicio{
         border-radius: 1.2px; 
     }
-    
+
     /*Botão do sobre*/
     .leia{
         font-size: calc(0.6vw + 0.6vw + 1vmin);
