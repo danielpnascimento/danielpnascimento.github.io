@@ -16,18 +16,19 @@ and open the template in the editor.
     }
 
     #myBtnTopo {
+        padding: 0.24em;
         bottom: 4em; 
-        right: -17px; 
+        right: -12px; 
         letter-spacing:1px;
     }
 
     /*Espaço entre os icones e texto do inicio tem que colocar fa-lg*/
     .myBtnTopo i {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .myBtnTopo a {
-        font-size: 0.9em;
+        font-size: 0.7em;
     }
 
     /*Inicio do Inicio*/
