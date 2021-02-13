@@ -469,6 +469,15 @@ button.btnInicio{
     box-sizing:border-box;
 }
 
+#linha-horizontal-2 {
+    max-width: 30px;
+    padding: 0.05px;
+    background-color: #28292d;
+    border-radius: 3px;
+    margin: 0.8em 0 0.8em 0;
+    box-sizing:border-box;
+}
+
 /*Fim da page Inicio*/
 
 /*Inicio do Sobre*/
