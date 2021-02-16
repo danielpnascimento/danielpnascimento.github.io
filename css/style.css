@@ -269,6 +269,7 @@ nav a {
     transform: rotate(-270deg);
     letter-spacing:1.2px;
     box-shadow: 0.1px 0px 0px 0.7px #ffffff;
+    font-family: 'Source Sans Pro';
 }
 
 #myBtnTopo:hover {
@@ -428,6 +429,7 @@ button.btnInicio{
     /*Desativa a seleção após o clique e não fica preso na seleção*/
     background-image: none;
     padding: 1em;
+    font-family: 'Source Sans Pro';
 }
 
 .btnInicio:hover {
@@ -542,6 +544,7 @@ h3.nome{
     color: #ffffff;
     /*mantem na posição fixa e se autoajusta*/
     font-size: calc(0.3vw + 0.3vw + 0.2vmin);
+    font-family: 'Source Sans Pro';
 }
 
 .leia:hover {
@@ -766,6 +769,7 @@ h3.nome{
     border-radius: 3px;
     cursor: pointer;
     color: #28292d;
+    font-family: 'Source Sans Pro';
 }
 
 /* Adicione uma cor de fundo cinza ao passar o mouse nos botoes */
