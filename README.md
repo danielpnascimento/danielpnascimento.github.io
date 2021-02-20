@@ -17,6 +17,6 @@ CARACTERÍSTICA:
 - Conteúdo de texto e imagens modificados, foram realizados por mim, com a utilização da ferramenta da adobe Photoshop.
 - Redirecionamento para o email ou whatsapp ao clicar em seu botão escolhido para o contato.
 
-To be continued!!
+To be continued!!!
 
 
