@@ -22,13 +22,8 @@ and open the template in the editor.
         letter-spacing:1px;
     }
 
-    /*Espaço entre os icones e texto do inicio tem que colocar fa-lg*/
-    .myBtnTopo i {
-        font-size: 1.2em;
-    }
-
     .myBtnTopo a {
-        font-size: 0.8em;
+         font-size: 0.94em;
     }
 
     /*Inicio do Inicio*/

@@ -272,6 +272,10 @@ nav a {
     font-family: 'Source Sans Pro';
 }
 
+.myBtnTopo i {
+    font-size: 1.3em;
+}
+
 #myBtnTopo:hover {
     background-position: 100%;
     color: #28292d;
