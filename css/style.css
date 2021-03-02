@@ -386,7 +386,7 @@ input[type="checkbox"]:checked + label .open::after{
     align-items: center;
     justify-content: center;
     padding: calc(36% + 0vh);
-    background-image: url("../img/slider/slider11p.jpg");
+    background-image: url("../img/slider/slider14.jpg");
     background-size: 82%;
     background-position: 100% 0%;
     border: none;
