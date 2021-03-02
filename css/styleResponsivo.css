@@ -23,7 +23,7 @@ and open the template in the editor.
     }
 
     .myBtnTopo a {
-         font-size: 0.94em;
+        font-size: 0.94em;
     }
 
     /*Inicio do Inicio*/
@@ -273,7 +273,7 @@ o responsivo paisagem*/
 
     /*Botão do sobre*/
     .leia{
-        font-size: calc(0.6vw + 0.6vw + 1vmin);
+        font-size: calc(0.6vw + 0.6vw + 1.5vmin);
     }
 
     /*Inicio Educação*/
