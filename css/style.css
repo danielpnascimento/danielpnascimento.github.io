@@ -774,6 +774,7 @@ h3.nome{
     cursor: pointer;
     color: #28292d;
     font-family: 'Source Sans Pro';
+    font-size: 0.95em;
 }
 
 /* Adicione uma cor de fundo cinza ao passar o mouse nos botoes */
@@ -1037,7 +1038,7 @@ footer{
     text-align: center;
     line-height: 1.5em;
     align-items: center;
-    font-size: 0.95em; 
+    font-size: 0.9em; 
     color: #a2a2a2;
     padding-left: 0.3em;
     padding-right: 0.3em;
