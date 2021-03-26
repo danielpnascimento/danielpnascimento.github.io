@@ -20,4 +20,3 @@ RECURSOS E FUNCIONALIDADES:
 To be continued!!!
 
 
-https://github.com/danielpnascimento/danielpnascimento.github.io/blob/901de5b4794a7e6da4931101aecfb77ee7c06789/img/logo/logo9a.jpg
