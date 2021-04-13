@@ -12,7 +12,7 @@ RECURSOS E FUNCIONALIDADES:
 - Texto do Sobre, sendo reduzido e um botão ao clicar se expande para saber mais.
 - Linha do tempo com histórico em Educação.
 - Detalhes das ferramentas de desenvolvimento utilizada em Habilidades.
-- Portfólio com js da Swiper sendo personalizado para conter a exibição de páginas.
+- Portfólio realizado com uma API da Swiper e sendo personalizado para conter a exibição de páginas.
 - Portfólio com efeito 3d em carrousel, tendo descrição com um botão de redirecionamento para o site criado em exibição.
 - Portfólio tendo funcionalidade tanto de setas de controles e para arrasto de mouse e indicado de páginas.
 - Redirecionamento para o email ou whatsapp ao clicar em seu botão escolhido para o contato via mobile e whatsapp web.
