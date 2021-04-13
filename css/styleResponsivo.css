@@ -5,7 +5,7 @@ and open the template in the editor.
 */
 /* 
     Created on : 17 de nov. de 2020, 17:25:23
-    Author     : Admin
+    Author     : DAN
 */
 
 
@@ -82,26 +82,12 @@ and open the template in the editor.
         padding-bottom: 4em;
     }
 
-    .iconeshabilidade p{
-        padding-left: 0.2em;
-        padding-right: 0.2em;
+    .habilidade p{
+        padding-left: 0.9em;
+        padding-right: 0.9em;
     }
 
     /*Fim do habilidade*/
-
-
-    /*///Inicio do Portfolio\\\\*/
-
-    /*Retirar o Espaço nas laterais desde 1024 ate o 320*/
-    .port{ 
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-bottom: 0px;
-    }
-
-    .modal{
-        z-index: -1;
-    }
 
     /*///Inicio do contato\\\\*/
     .contato{
@@ -113,24 +99,6 @@ and open the template in the editor.
     }
 
     /*///Fim do contato\\\\*/
-
-    /*///Inicio do Footer\\\\*/
-
-    footer{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        text-align: center;
-        line-height: 1.5em;
-        align-items: center;
-        font-size: 0.85em; 
-        color: #a2a2a2;
-        padding-left: 0.3em;
-        padding-right: 0.3em;
-    }
-
-    /*////Fim do do Footer\\\\*/
-
 
     /*///Inicio do efeito do scroll animando\\\\*/
 
@@ -161,9 +129,6 @@ and open the template in the editor.
     /*Deixa a coluna e conteúdo preenchendo a tela 100% após a saida da .col-1 / nav*/ 
     .col-2 {
         margin:0;
-        /*Habilitar o absolute para retirar o espaço na esquerda que não se autoajustar
-       antes de usar a barra de rolagem e fixar a margin: 0 abaixo de 1024px */
-        position: absolute;
     }
 
     body {
@@ -314,9 +279,23 @@ o responsivo paisagem*/
     /*Fim Educação*/
 
     /*Inicio do Portfolio*/
-    /*reduzir para 2 tela por linha para os smart retrato*/
-    .columnPort {
-        width: 50%;            
+
+    /*Pontos da paginação*/
+    .swiper-pagination-bullet{
+        width: 20px;
+    }
+
+    /*Distancia das laterais*/
+    .swiper-button-prev,
+    .swiper-container-rtl .swiper-button-next {
+        left: 2px;
+        right: auto;
+    }
+
+    .swiper-button-next,
+    .swiper-container-rtl .swiper-button-prev {
+        right: 2px;
+        left: auto;
     }
 
     /*Fim do Portfolio*/
@@ -328,6 +307,14 @@ o responsivo paisagem*/
         height: 42em;
     }
     /*Fim do Contato*/
+
+    /*///Inicio do Footer\\\\*/
+
+    footer{
+        font-size: 0.77em; 
+    }
+
+    /*////Fim do do Footer\\\\*/
 }
 
 
