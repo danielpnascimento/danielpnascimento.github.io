@@ -4,13 +4,13 @@ var swiper = new Swiper(".swiper-container", {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-//Faz o card passado girar
+
+//  Faz o card passar e girar
     coverflowEffect: {
 //        rotate: 20,
         rotate: 35,
         stretch: 0,
-//    Efeito de profundidade
-//    depth: 350,
+//  Efeito de profundidade
         depth: 300,
         modifier: 1,
         slideShadows: true
@@ -22,23 +22,20 @@ var swiper = new Swiper(".swiper-container", {
     },
 
 //  Faz o slider correr sozinho e ele reinicia sozinho tbm
-//    autoplay: {
-//        delay: 4000
-//    },
+    autoplay: {
+        delay: 4000
+    },
 
-//Habilita função das setas via teclado
+//  Habilita função das setas via teclado
     keyboard: {
         enabled: true,
         onlyInViewport: false
     },
 
-//  habilitar a função dos controles
+//  Habilitar a função dos controles
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
     }
-
-//  habiltar , no final do } caso for adcionar mais js
-
 
 });
