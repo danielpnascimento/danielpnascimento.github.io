@@ -21,11 +21,6 @@ var swiper = new Swiper(".swiper-container", {
         el: ".swiper-pagination"
     },
 
-//  Faz o slider correr sozinho e ele reinicia sozinho tbm
-    autoplay: {
-        delay: 4000
-    },
-
 //  Habilita função das setas via teclado
     keyboard: {
         enabled: true,
