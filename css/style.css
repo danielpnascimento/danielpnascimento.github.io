@@ -682,14 +682,14 @@ h3.nome{
 .swiper-slide {
     background-position: center;
     background-size: cover;
-    width: 320px;
+    width: 280px;
     overflow: hidden;
     border-radius: 6px;
     border: 1px solid #28292d;
 }
 
 .card img{
-    width: 320px;
+    width: 280px;
     height: 500px;
     overflow: hidden;
     display: block;
