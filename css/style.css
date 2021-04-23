@@ -365,7 +365,7 @@ input[type="checkbox"]:checked + label .open::after{
 
 /*Fim botão animado do menu responsivo*/
 
-/*Inicio do novo Inicio*/
+/*Inicio do Inicio*/
 
 .inicio{
     display: flex;
@@ -454,9 +454,9 @@ button.btnInicio{
     box-sizing:border-box;
 }
 
-/*Fim do novo Inicio*/
+/*Fim do Inicio*/
 
-/*Inicio do novo Sobre*/
+/*Inicio do Sobre*/
 
 #sobre{
     padding-bottom: 5em; 
@@ -529,29 +529,42 @@ h3.nome{
 }
 
 
-/*Fim do novo Sobre*/
+/*Fim do Sobre*/
 
-/*Inicio do novo Educação*/
+/*Inicio do Educação*/
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    outline: none;
+/*Tamanho do background conforme as telas*/
+#educacao{
+    height: 600px;
+    margin-bottom: 50px;
 }
 
+/*limita a altura geral do background e #particle*/ 
 .background-edu{
-    width: 100%;
+    width: 100%;   
+    max-height: 80%;
     background-color: #28292d;
+    top: 50px;    
 }
 
-.container {
-    padding: 50px 0;
-    margin: 50px auto;
+/*Animação "efeito" conforme o tamanho do local que irá ficar*/
+.background-edu, #particle-canvas{
+    height: 100%;
+    width: 100%;  
     position: relative;
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
 }
 
+/* Comprimento da Linha*/
+.container {
+    position: absolute;
+    padding: 70px 0;
+}
+
+/*Largura da Linha*/
 .container:before {
     content: '';
     position: absolute;
@@ -559,10 +572,9 @@ h3.nome{
     left: 50%;
     margin-left: -1px;
     width: 2px;
-    height: 80%;
+    height: 100%;
     background: #ffffff;
     z-index: 0;
-    margin-top: 37px; 
 }
 
 .timeline-block {
@@ -577,18 +589,20 @@ h3.nome{
     -webkit-justify-content: space-between;
     -moz-box-pack: justify;
     justify-content: space-between;
-    clear: both;
 }
 
+/*Bloco direito*/
 .timeline-block-right {
     float: right;
 }
 
+/*Bloco esquerdo*/
 .timeline-block-left {
     float: left;
     direction: rtl;
 }
 
+/*Bolinha-Pontos Verde*/
 .green {
     width: 16px;
     height: 16px;
@@ -598,6 +612,7 @@ h3.nome{
     z-index: 0;
 }
 
+/*Bolinha-Pontos Brancos*/
 .white {
     width: 16px;
     height: 16px;
@@ -607,37 +622,35 @@ h3.nome{
     z-index: 0;
 }
 
+/*Separação igual dos pontos*/
 .green, .white{
-    margin: 10px 0;
-
+    margin: 15px 0;
 }
 
+/*Titulo*/
 .timeline-content {
     width: 100%;
-    padding: 0 15px;
+    padding: 13px 15px 0;
     color: #33ffcc;
 }
 
+/*Posicionamento do Titulo*/
 .timeline-content h3 {
-    margin-top: 7px;
     margin-bottom: 0px;
     font-size: 15px;
+
 }
 
+/*Texto*/
 .timeline-content span {
     color: #ffffff;
 }
 
-.timeline-content p {
-    color: #ffffff;
-    margin-top: 5px;
-    margin-bottom: 0px;
-}
-
-/*Fim do novo Educação*/
+/*Fim do Educação*/
 
 
-/*Inicio do novo habilidade*/
+
+/*Inicio do habilidade*/
 
 #habilidade{
     padding-bottom: 8em;
@@ -670,7 +683,7 @@ h3.nome{
     filter: invert(10%) sepia(9%) saturate(600%) hue-rotate(190deg) brightness(100%) contrast(86%);    
 }
 
-/*Fim do novo habilidade*/
+/*Fim do habilidade*/
 
 /*///Inicio do Portfolio\\\\*/
 

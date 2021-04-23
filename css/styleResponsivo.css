@@ -163,6 +163,39 @@ and open the template in the editor.
     }
 
     /*////Fim do menu lateral responsivo\\\\*/
+    
+    /*///Inicio do efeito do scroll animando modificado para tela < 1024px\\\\*/
+    [data-animation] {
+        opacity: 1;
+        transition: 1000ms;
+    }
+
+    [data-animation="fade"] {
+        transform: translateY(60px);
+    }
+
+    [data-animation="top"] {
+        transform: translateY(60px);
+    }
+
+    [data-animation="bottom"] {
+        transform: translateY(60px);
+    }
+
+    [data-animation="left"] {
+        transform: translateY(60px);
+    }
+
+    [data-animation="right"] {
+        transform: translateY(60px);
+    }
+
+    [data-animation].complete {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    
 }
 
 @media screen and (max-height: 414px) {
