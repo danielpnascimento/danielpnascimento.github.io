@@ -699,6 +699,7 @@ h3.nome{
     overflow: hidden;
     border-radius: 6px;
     border: 1px solid #28292d;
+    box-sizing:  content-box;
 }
 
 .card img{
