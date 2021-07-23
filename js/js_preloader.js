@@ -2,7 +2,7 @@
 //em segundo plano
 //var preloader = document.getElementById('loading');
 var preloader = document.getElementById('loader');
-function myFunction() {
+function preFunction() {
     preloader.style.display = 'none';
 
 }
