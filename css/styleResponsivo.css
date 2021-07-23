@@ -163,7 +163,7 @@ and open the template in the editor.
     }
 
     /*////Fim do menu lateral responsivo\\\\*/
-    
+
     /*///Inicio do efeito do scroll animando modificado para tela < 1024px\\\\*/
     [data-animation] {
         opacity: 1;
@@ -194,8 +194,8 @@ and open the template in the editor.
         opacity: 1;
         transform: translateX(0);
     }
-    
-    
+
+
 }
 
 @media screen and (max-height: 414px) {

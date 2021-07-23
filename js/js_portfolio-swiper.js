@@ -18,7 +18,8 @@ var swiper = new Swiper(".swiper-container", {
 
 //  Habilita a paginação
     pagination: {
-        el: ".swiper-pagination"
+         el: ".swiper-pagination",
+         clickable: true,
     },
 
 //  Habilita função das setas via teclado
