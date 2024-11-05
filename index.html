@@ -486,51 +486,55 @@
                 <section id="contato">
 
                     <div class="contato">
+
                         <h2 class="titulopagina" data-animation="fade">CONTATO</h2>
 
                         <div class="background-cont">
-                            <div class="continfo">          
 
-                                <div class="msg" data-animation="left">
-                                    <span>Você tem alguma pergunta?</span>
-                                    <h2>Sinta-se<br>à vontade para me<br>contatar!</h2>
+                            <form class="form" name="contact" method="POST" data-netlify="true" data-animation="bottom">
+                                <h2>Opa, a hora e agora!!<br>Como posso te ajudar?</h2>
+                                <span class="barra"></span>
+                                <span class="barra1"></span>
 
-                                    <i class="fas fa-arrow-circle-down fa-lg"></i>
+                                <label class="form-item">
+                                    <input type="text" name="name" placeholder="Nome"/>
+                                </label>
+                                <label class="form-item">
+                                    <input type="email" name="email" placeholder="Email"/>
+                                </label>
+                                <label class="form-item">
+                                    <input type="text" name="assunto" placeholder="Assunto"/>
+                                </label>
+
+                                <label>
+                                    <textarea class="input-text" name="message" placeholder="Escreva sua mensagem"></textarea>
+                                </label>
+
+                                <div class="enviar">
+                                    <button type="submit" class="btn">ENVIAR MENSAGEM</button>
                                 </div>
 
-                                <div class="contemail" data-animation="left">
-                                    <a href="mailto:daniel.p.nasciment@gmail.com?subject=Olá, envie sua mensagem, responderei em breve. Obrigado!%20">
+                            </form>
 
-                                        <button>
-                                            <i class="fas fa-envelope"></i>&nbsp daniel.p.nasciment@gmail.com
-                                        </button>
-                                    </a>
-
+                            <div class="contatodireto">
+                                <div class="email" data-animation="left">
+                                    <a href="mailto:daniel.p.nasciment@gmail.com?subject=Olá, envie sua mensagem, responderei em breve. Obrigado!%20" target="_blank"><i class="icon solid fa fa-envelope"></i>&nbsp Email</a>
+                                    <h1>daniel.p.nasciment@gmail.com</h1>
                                 </div>
-
-                                <div class="conttel" data-animation="left">
-                                    <a href="https://api.whatsapp.com/send?phone=5511972197978">
-
-                                        <button>
-                                            <i class="fab fa-whatsapp"></i>&nbsp (11) 972197978
-                                        </button>
-                                    </a>
+                                <div class="whats" data-animation="right">
+                                    <a href="https://api.whatsapp.com/send?phone=5511972197978" target="_blank"><i class="fab fa-whatsapp"></i>&nbsp Whatsapp</a>
+                                    <h1>011 972197978</h1>
                                 </div>
-
                             </div>
-
-                            <div class="imgcont1">
-                                <img src="img/contato/contato10Red7.png" alt="Imagem do Contato" data-animation="right"/>
-                            </div>
-
                         </div>
                     </div>
+
 
                 </section>
 
             </main>
 
-            <!--Footer-->
+
             <footer id="footer">
                 <div id="copyright">
                     <ul class="copyright">
@@ -548,7 +552,7 @@
                             <p>- Visitas</p> 
 
                             <i class="fas fa-tags"></i>
-                            <p>v2.1.17</p>
+                            <p>v2.2.17</p>
                         </li> 
                     </ul>
 
