@@ -89,16 +89,6 @@ and open the template in the editor.
 
     /*Fim do habilidade*/
 
-    /*///Inicio do contato\\\\*/
-    .contato{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-
-    /*///Fim do contato\\\\*/
 
     /*///Inicio do efeito do scroll animando\\\\*/
 
@@ -333,15 +323,7 @@ o responsivo paisagem*/
 
     /*Fim do Portfolio*/
 
-    /*Inicio do Contato*/
-
-    /*Aumentando o espamento em altura do background*/
-    .background-cont {    
-        height: 42em;
-    }
-    /*Fim do Contato*/
-
-    /*///Inicio do Footer\\\\*/
+     /*///Inicio do Footer\\\\*/
 
     footer{
         font-size: 0.77em; 

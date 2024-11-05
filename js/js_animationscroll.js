@@ -8,12 +8,12 @@ function animationOnScroll() {
             element.classList.add('complete');
         } else {
 // Faz o efeito ser reiniciado
-            element.classList.remove('complete')
+            element.classList.remove('complete');
         }
-    })
+    });
 }
 
 window.addEventListener('scroll', function () {
     animationOnScroll();
-})
+});
 

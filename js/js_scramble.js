@@ -1,3 +1,13 @@
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+// ——————————————————————————————————————————————————
+// TextScramble
+// ——————————————————————————————————————————————————
 
 class TextScramble {
   constructor(el) {
@@ -13,6 +23,7 @@ class TextScramble {
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || '';
       const to = newText[i] || '';
+//     40 e a velocidade
       const start = Math.floor(Math.random() * 60);
       const end = start + Math.floor(Math.random() * 60);
       this.queue.push({ from, to, start, end });
@@ -53,8 +64,18 @@ class TextScramble {
   }
 }
 
-const phrases = [
+// ——————————————————————————————————————————————————
+// Example
+// ——————————————————————————————————————————————————
 
+const phrases = [
+//  'Neo,',
+//  'sooner or later',
+//  'you\'re going to realize',
+//  'just as I did',
+//  'that there\'s a difference',
+//  'between knowing the path',
+//  'and walking the path'
 'Desenvolvedor',
 'Programador',
 'Dev Jr.',
@@ -71,6 +92,7 @@ const fx = new TextScramble(el);
 let counter = 0;
 const next = () => {
   fx.setText(phrases[counter]).then(() => {
+//      800 e o tempo de troca de cada palavra
     setTimeout(next, 4000);
   });
   counter = (counter + 1) % phrases.length;
