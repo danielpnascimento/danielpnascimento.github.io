@@ -24,7 +24,7 @@ Realizei o desenvolvido do meu portfólio com apenas Html, Css, Js e uma lib de 
 - Portfólio tendo funcionalidade tanto de setas de controles e para arrasto de mouse e indicador de páginas.
 - Redirecionamento para o email ou whatsapp ao clicar em seu botão escolhido para o contato via mobile e whatsapp web.
 - Layout responsivo para Desktop, Tablet e Mobile.
-- Conteúdo de texto e imagens personalizadas, foram realizadas por mim, com a utilização das ferramentas da Adobe Photoshop e Illustrator.
+- Conteúdo de texto e imagens personalizados, foram realizados por mim, com a utilização das ferramentas da Adobe Photoshop e Illustrator.
 
 To be continued!!!
 ## 🛠 Construção
