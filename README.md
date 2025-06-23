@@ -6,7 +6,7 @@
 
 
 ## 🚀 Sobre o meu Portfólio
-Desenvolvimento esse portfólio com apenas Html, Css, Js e uma lib de ícones da Font Awesome, não utilizei frameworks ou templates prontos, nada contra, mais optei em desenvolver sem utiliza los no momento para consolidar o meu aprendizado e evolução profissional, em realizar passo a passo da construção e não fica apenas contido na busca de templates prontos, troca de texto e imagens. Mais já está 98% pronto e encontra se no refinamento de pequenas correções, otimizações "perfumarias" que estarei adcionando futuramente! 
+Realizei esse portfólio com apenas Html, Css, Js e uma lib de ícones da Font Awesome, não utilizei frameworks ou templates prontos, nada contra, mais optei em desenvolver sem utiliza los no momento para consolidar o meu aprendizado e evolução profissional, em realizar passo a passo da construção e não fica apenas contido na busca de templates prontos, troca de texto e imagens. Mais já está 98% pronto e encontra se no refinamento de pequenas correções, otimizações "perfumarias" que estarei adcionando futuramente! 
 
 
 ## RECURSOS E FUNCIONALIDADES:
