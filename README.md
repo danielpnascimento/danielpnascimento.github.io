@@ -51,10 +51,4 @@ Se você tiver algum feedback, por favor me informe por meio da box daniel.p.nas
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://danielpnascimento.netlify.app/)
 
 
-- Contador de visitantes.
-- Layout responsivo para Desktop, Tablet e Mobile.
-- Conteúdo de texto e imagens personalizadas, foram realizadas por mim, com a utilização da ferramenta da Adobe Photoshop e Illustrator.
-
-To be continued!!!
-
 
