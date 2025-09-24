@@ -38,3 +38,11 @@ function closeNav() {
     console.log("function: closeNav");
 }
 
+//  Fecha o menu ao clicar fora
+document.addEventListener("click", function(event) {
+    // verifica se clicou fora do menu e fora do botão
+    if (!_contIn.contains(event.target) && !event.target.closest("label[for='nav-toggle']")) {
+        closeNav();
+        _status.checked = false; // garante que o checkbox volte pro estado fechado
+    }
+});
