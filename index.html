@@ -4,571 +4,624 @@
 -->
 
 <html lang="pt-BR">
-    <head>
-        <link rel="icon" type="imagem/jpg" href="img/logo/logo9bIcon.png">
-        <title>Daniel Nascimento</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/styleResponsivo.css"/>
 
-        <!--CDN-->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+<head>
+    <link rel="icon" type="imagem/jpg" href="img/logo/logo9bIcon.png">
+    <title>Daniel Nascimento</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styleResponsivo.css" />
 
-        <!--Fonte de Icones local-->
-        <link rel="stylesheet" href="css/fontawesome-free-5.15.1-web/css/all.min.css"/>
+    <!--CDN-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" />
+
+    <!--Fonte de Icones local-->
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.1-web/css/all.min.css" />
 
 
-    </head>
+</head>
 
-    <body onload="preFunction()">
+<body onload="preFunction()">
 
-        <div id="loader">
-            <div class="sk-cube-grid">
-                <div class="sk-cube sk-cube1"></div>
-                <div class="sk-cube sk-cube2"></div>
-                <div class="sk-cube sk-cube3"></div>
-                <div class="sk-cube sk-cube4"></div>
-                <div class="sk-cube sk-cube5"></div>
-                <div class="sk-cube sk-cube6"></div>
-                <div class="sk-cube sk-cube7"></div>
-                <div class="sk-cube sk-cube8"></div>
-                <div class="sk-cube sk-cube9"></div>
-            </div>
-
+    <div id="loader">
+        <div class="sk-cube-grid">
+            <div class="sk-cube sk-cube1"></div>
+            <div class="sk-cube sk-cube2"></div>
+            <div class="sk-cube sk-cube3"></div>
+            <div class="sk-cube sk-cube4"></div>
+            <div class="sk-cube sk-cube5"></div>
+            <div class="sk-cube sk-cube6"></div>
+            <div class="sk-cube sk-cube7"></div>
+            <div class="sk-cube sk-cube8"></div>
+            <div class="sk-cube sk-cube9"></div>
         </div>
 
-        <div id="mySidenav" class="sidenav">
+    </div>
 
-            <div class="bt_menulateral">
+    <div id="mySidenav" class="sidenav">
+
+        <div class="bt_menulateral">
+
+            <input type="checkbox" id="nav-toggle">
+
+            <label for="nav-toggle" onclick="openNav()">
+                <span class="open"></span>
+            </label>
+
+            <div class="closebtn">
 
                 <input type="checkbox" id="nav-toggle">
 
-                <label for="nav-toggle" onclick="openNav()" >
-                    <span class="open"></span>
+                <label for="nav-toggle" onclick="closeNav()">
+                    <span class="close"></span>
                 </label>
 
-                <div class="closebtn"> 
-
-                    <input type="checkbox" id="nav-toggle">
-
-                    <label for="nav-toggle" onclick="closeNav()">
-                        <span class="close"></span>
-                    </label>
-
-                </div>
-            </div>
-
-            <div class="col-1">
-
-                <div class="topo">
-
-                    <a href="#" class="shadow image perfil"><img src="img/logo/logo9a.jpg" alt="Logo do Site do Daniel Nascimento" title="Logo do Site do Daniel Nascimento"/></a>
-                    <h1 class="title">Daniel Nascimento</h1>
-                    <h2 class="subtitulo">Desenvolvedor</h2>
-
-                </div>
-
-                <nav id="nav">
-                    <div class="nav">
-                        <ul>
-                            <li><a href="#inicio" id="link-inicio">Início<i class="icon solid fa fa-home"></i></a></li>
-                            <li><a href="#sobre" id="link-sobre">Sobre<i class="icon solid fa fa-user"></i></a></li>
-                            <li><a href="#educacao" id="link-sobre">Educação<i class="fas fa-user-graduate"></i></a></li>
-                            <li><a href="#habilidade" id="link-sobre">Habilidades<i class="fas fa-chart-bar"></i></a></li>
-                            <li><a href="#portfolio" id="link-portfolio">Portfólio<i class="icon fa solid fa-th"></i></a></li>
-                            <li><a href="#contato" id="link-contato">Contato<i class="icon solid fa fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                </nav>
-
-                <div id="icons">
-                    <div class="icons">
-                        <ul>
-                            <li><a href="https://www.instagram.com/danielpnascimento/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li><a href="https://github.com/danielpnascimento" target="_blank"><i class="icon brands fab fa-github"></i></a></li>
-                            <li><a href="mailto:daniel.p.nasciment@gmail.com?subject=Olá, envie sua mensagem, responderei em breve. Obrigado!%20" target="_blank"><i class="icon solid fa fa-envelope"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-
             </div>
         </div>
 
+        <div class="col-1">
 
+            <div class="topo">
 
-        <div class="col-2">
-
-            <div class="myBtnTopo">
-                <button onclick="topFunction()" id="myBtnTopo" title="Vá para o topo">
-                    <i class="fas fa-angle-up fa-blink fa-rotate-270 fa-lg"></i>
-                    <a>INÍCIO</a>
-                </button>
+                <a href="#" class="shadow image perfil"><img src="img/logo/logo9a.jpg"
+                        alt="Logo do Site do Daniel Nascimento" title="Logo do Site do Daniel Nascimento" /></a>
+                <h1 class="title">Daniel Nascimento</h1>
+                <h2 class="subtitulo">Desenvolvedor</h2>
 
             </div>
 
-            <header id="inicio">
-
-                <div class="inicio">
-
-                    <h1>Daniel Nascimento</h1>
-                    <h3 class="text"></h3>
-
-                    <a href="#portfolio"><button class="btnInicio">P o r t f ó l i o</button></a>
-
-                    <div class="palavra">
-                        <span>1JO</span><br>
-                        <div id="linha-horizontal"></div>
-                        <span>13</span><br>
-                        <div id="linha-horizontal-2"></div>
-                        <span>07</span>
-                    </div>
-
-                </div>
-            </header>
-
-            <main class="content">
-
-                <section id="sobre">
-
-                    <h2 class="titulopagina" data-animation="fade">SOBRE</h2>
-
-                    <div class="sobtextoimg">
-
-                        <div class="sobtexto" data-animation="left">
-
-                            <h3 class="nome">Daniel<br>Nascimento</h3>
-
-                            <p> &nbsp Olá, seja bem-vindo ao meu portfólio, sou desenvolvedor formado em 12/2018 e iniciando meu próximo e atual objetivo profissional na área de TI, que é a migração para a área de desenvolvimento e trabalhar com aplicações web e mobile, focado em um design/layout inovador e sua responsividade, usabilidade e desempenho.
-                                </br>
-                                <span id="dots"></span>
-                                <span id="mais">
-                                    <br>
-                                    &nbsp Iniciei formalmente minha carreira em TI em 2008 na área de suporte para uma grande instituição privada nacional de interesse público. Mas já vinha apanhando e aprendendo informática na raça desde meus 19 anos em que 75% de forma autodidata e 25% das dúvidas esclarecidas quando ia comprar algum periférico na R. Santa Ifigênia – SP e acabava perguntando “ensinando as vezes” ou em livro de montagem e manutenção que raramente surgia, porque internet discada após a 00:00 não ajudava, quando obtive meu primeiro computador com processador Duron 1.8Ghz, 256Mb de memória e 20gb de HD com o Windows ME em 2002, antes da era da banda larga está disponível nesse basilll. Era tudo mato rsrs “que dizer, 56kb/s e no máximo 100kb/s com alterações na placa de rede e sem falar nos discadores”. É acho que estou ficando velho, será?!
-                                    </br>
-                                    <br>
-                                    &nbsp E desde então venho evoluindo e migrando nas vertentes da área de TI desde Suporte N1, N2, N3, Service Desk, Hardwares, Softwares, Administração de Redes, Gestão e Gerenciamento de Processos de TI, Liderança de Equipe e agora Desenvolvimento. E durante esse meu ciclo obtive um vasto conhecimento profissional e interpessoal, com atribuição e colaboração de valores das melhores práticas em processo de TI para as organizações por onde ingressei, após a sua aprovação. 
-                                    </br>
-                                    <br>
-                                    &nbsp A área de TI é uma das principais áreas que passei e encontra se em constante atualização e inovação, uma das profissões que mais me identifiquei com meu perfil de criação. E minhas principais atualizações a destacar são a certificação em ITIL e a graduação em Sistema de Informação até o momento. A qual após o término da graduação com a devolução do meu tempo “totalmente confiscado”, estou em uma imersão da minha prática no Front End, antes de retomar e prosseguir para o Back End e o Mobile. Que no decorrer desse período, foi o inicial adquirido utilizando a linguagem Java tanto para Desktop, Web e Mobile, onde tive o prazer de criar meu primeiro app 100% funcional de uma calc, com Android Studio para um trabalho da faculdade. Sendo uma solicitação e ideia totalmente simples, porém foi o início do meu destravamento e expansão para outros projetos pré-formulados, que estão aguardando a automatização, além da contemplação desse portfólio!
-                                    </br>
-                                    <br>
-                                    &nbsp Gosto de viagens, filmes e uma boa culinária caseira... além de gostar de tecnologia, hardwares, water cooler custom e agora desenvolver sistemas. 
-                                    </br>
-                                    <br>
-                                    &nbsp E sou incessantemente grato a Deus, por esse meu “teste” chamado vida, independente dos diversos desafios e conquistas que me proporcionou!
-                                </span>
-                            </p>
-                            </br>
-                            <button class="leia" onclick="myFunction()" id="myBtnLeia" >Mais sobre mim</button>
-
-                        </div>
-
-                        <div class="imgsob0" data-animation="right">
-                            <img src="img/sobre/Sobre 16fRed10.jpg" alt="Imagem do Sobre"/>
-                        </div>
-
-                    </div>
-
-                </section>
-
-                <section id="educacao">
-
-                    <h2 class="titulopagina" data-animation="fade">EDUCAÇÃO</h2>
-
-                    <div class="background-edu" data-animation="bottom">
-                        <div id="particle-canvas">
-
-                            <div class="container">
-
-                                <div class="timeline-block timeline-block-right">
-                                    <div class="green"></div>
-                                    <div class="timeline-content">
-                                        <h3>2020</h3>
-                                        <span>Design Gráfico Adobe Photoshop e Illustrator</span>
-                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
-                                        <!--<p>Design Gráfico Adobe Photoshop e Illustrator</p>-->
-                                    </div>
-                                </div>
-
-                                <div class="timeline-block timeline-block-left">
-                                    <div class="white"></div>
-                                    <div class="timeline-content">
-                                        <!--<h3>2019</h3>-->
-                                        <h3>&nbsp</h3>
-                                        <span>&nbsp</span>
-                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
-                                    </div>
-                                </div>
-
-                                <div class="timeline-block timeline-block-right">
-                                    <div class="green"></div>
-                                    <div class="timeline-content">
-                                        <h3>2018</h3>
-                                        <span>Conclusão</span>
-                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
-                                    </div>
-                                </div>
-
-                                <div class="timeline-block timeline-block-left">
-                                    <div class="green"></div>
-                                    <div class="timeline-content">
-                                        <h3>&nbsp</h3>
-                                        <!-- <h3>&nbsp</h3>-->
-                                        <span>Graduado em Sistema de Informação</span>
-                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
-                                        <!--<p>Graduado em Sistema de Informação</p>-->
-                                    </div>
-                                </div>
-
-                                <div class="timeline-block timeline-block-right">
-                                    <div class="green"></div>
-                                    <div class="timeline-content">
-                                        <h3>&nbsp</h3>
-                                        <span>&nbsp</span>
-                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
-                                    </div>
-                                </div>
-                                <div class="timeline-block timeline-block-left">
-                                    <div class="green"></div>
-                                    <div class="timeline-content">
-                                        <h3>2015</h3>
-                                        <span>Início</span>
-                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
-                                    </div>
-                                </div>
-
-                                <div class="timeline-block timeline-block-right">
-                                    <div class="white"></div>
-                                    <div class="timeline-content">
-                                        <h3>&nbsp</h3>
-                                        <span>&nbsp</span>
-                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
-                                    </div>
-                                </div>
-                                <div class="timeline-block timeline-block-left">
-                                    <div class="green"></div>
-                                    <div class="timeline-content">
-                                        <h3>2013</h3>
-                                        <span>Certificado em Itil v3 Foundation</span>
-                                        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
-                                        <!--<p>Certificado em Itil v3 Foundation</p>-->
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-
-
-                <section id="habilidade">
-
-                    <h2 class="titulopagina" data-animation="fade">HABILIDADE</h2>
-
-                    <div class="habilidade">
-
-                        <p data-animation="left">
-                            &nbsp Minhas habilidades “iniciais” estão em constante evolução e aperfeiçoamento, com a utilização nas presentes e as atuais ferramentas de tecnologias de desenvolvimento: No Front End com Hmtl5, Css3, Js e Bootstrap. E no Back End na linguagem em C e Java. E em Banco de dados com a linguagem em PL/SQL, utilizando o gerenciamento de banco de dados MySQL Workbench. Na criação e edição de conteúdo, design e layout utilizando o Photoshop, Illustrator e o Xd. E com o Github para testes finais das aplicações.  E prosseguindo! </p>
-
-                        <div class="icones">
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_html5.svg" alt="Imagem Icone Html5"/>
-                                <h4>Html5</h4>
-                            </div>
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_css3.svg" alt="Imagem Icone Css3"/>
-                                <h4>Css3</h4>
-                            </div>
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_js.svg" alt="Imagem Icone Javascript"/>
-                                <h4>Javascript</h4>
-                            </div>
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_bootstrap.svg" alt="Imagem Icone Bootstrap"/>
-                                <h4>Bootstrap</h4>
-                            </div>
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_java.svg" alt="Imagem Icone Java"/>
-                                <h4>Java</h4>
-                            </div>
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_sql.svg" alt="Imagem Icone Sql"/>
-                                <h4>Pl/Sql</h4>
-                            </div>
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_mysql.svg" alt="Imagem Icone Mysql Workbench"/>
-                                <h4>Mysql Workbench</h4>
-                            </div>
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_photoshop.svg" alt="Imagem Icone Photoshop"/>
-                                <h4>Photoshop</h4>
-                            </div>
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_illustrator.svg" alt="Imagem Icone Illustrator"/>
-                                <h4>Illustrator</h4>
-                            </div>
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_xd.svg" alt="Imagem Icone Xd"/>
-                                <h4>Xd</h4>
-                            </div>
-                            <div class="iconImg" data-animation="right">
-                                <img src="img/habilidade/icon_github.svg" alt="Imagem Icone Github"/>
-                                <h4>Github</h4>
-                            </div>
-                        </div>
-                    </div>
-
-                </section>
-
-                <section id="portfolio">  
-
-                    <div>
-                        <h2 class="titulopagina" data-animation="fade">PORTFÓLIO</h2>
-
-                        <div class="swiper-container" data-animation="right">
-
-                            <div class="swiper-wrapper">
-                                <!-- Slide 1-->
-                                <div class="swiper-slide" >
-                                    <div class="card">
-                                        <img src="img/portfolio/img_1.jpg" alt="Imagem de Site de Engenharia Civil">
-                                    </div>
-                                    <div class="card-text">
-                                        <h3>Criação de Site de Engenharia Civil</h3>
-                                        <span>Desenvolvido com Bootstrap 5 Puro, com uma lib de animação e uma leve melhorias.</span>
-                                        <h4>Projeto e Empresa Fictícia!</h4>
-                                        <div class="icon-recursos"> 
-                                            <i class="fab fa-html5"></i>
-                                            <i class="fab fa-css3-alt"></i>
-                                            <i class="fab fa-js-square"></i>
-                                            <i class="fab fa-bootstrap"></i>
-                                        </div>
-                                        <a href="https://dnengenhariaeconstrucoes.netlify.app" target="_blank">
-                                            <button>
-                                                <i class="fas fa-globe"></i>&nbsp Veja o Site
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Slide 2-->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="img/portfolio/img_2.jpg" alt="">
-                                    </div>
-                                    <div class="card-text">
-                                        <h3>Criação de Site de Resort</h3>
-                                        <span>Desenvolvido com a API de Js da Swiper.</span>
-                                        <h4>Projeto e Empresa Fictícia!</h4>
-                                        <div class="icon-recursos"> 
-                                            <i class="fab fa-html5"></i>
-                                            <i class="fab fa-css3-alt"></i>
-                                            <i class="fab fa-js-square"></i>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300"><g fill="none" fill-rule="evenodd"><circle cx="150" cy="150" r="150" fill="#a2a2a2"></circle><path fill="#28292d" fill-rule="nonzero" d="M190.2 200.9c0-5.4-1.05-10.05-3.15-13.95-2.1-3.9-4.95-7.4-8.55-10.5-3.6-3.1-7.9-5.9-12.9-8.4s-10.4-5.15-16.2-7.95c-6.8-3.2-13.65-6.6-20.55-10.2-6.9-3.6-13.1-7.8-18.6-12.6-5.5-4.8-9.95-10.35-13.35-16.65-3.4-6.3-5.1-13.65-5.1-22.05 0-7 1.3-13.95 3.9-20.85 2.6-6.9 6.4-13.05 11.4-18.45s11.25-9.8 18.75-13.2c7.5-3.4 16.25-5.1 26.25-5.1 7.4 0 14.25.95 20.55 2.85 6.3 1.9 11.95 4.35 16.95 7.35s9.4 6.3 13.2 9.9c3.8 3.6 6.9 7.1 9.3 10.5l-18.9 15.3c-1.8-2.6-4.05-5.2-6.75-7.8-2.7-2.6-5.8-4.95-9.3-7.05-3.5-2.1-7.35-3.8-11.55-5.1-4.2-1.3-8.7-1.95-13.5-1.95-5.8 0-10.85.9-15.15 2.7-4.3 1.8-7.95 4.2-10.95 7.2-3 3-5.25 6.45-6.75 10.35S117 93.1 117 97.1c0 5 1.1 9.35 3.3 13.05 2.2 3.7 5.3 7.15 9.3 10.35 4 3.2 8.9 6.3 14.7 9.3 5.8 3 12.3 6.1 19.5 9.3 8 3.6 15.25 7.35 21.75 11.25 6.5 3.9 12 8.15 16.5 12.75s7.95 9.8 10.35 15.6c2.4 5.8 3.6 12.6 3.6 20.4 0 9.2-1.65 17.45-4.95 24.75-3.3 7.3-7.85 13.5-13.65 18.6-5.8 5.1-12.65 9-20.55 11.7-7.9 2.7-16.35 4.05-25.35 4.05s-17.1-1.25-24.3-3.75c-7.2-2.5-13.6-5.8-19.2-9.9-5.6-4.1-10.4-8.8-14.4-14.1-4-5.3-7.2-10.65-9.6-16.05l21-12.6c1.8 4.2 4.15 8.25 7.05 12.15 2.9 3.9 6.25 7.35 10.05 10.35 3.8 3 8.15 5.4 13.05 7.2 4.9 1.8 10.25 2.7 16.05 2.7 5 0 9.85-.7 14.55-2.1 4.7-1.4 8.85-3.5 12.45-6.3 3.6-2.8 6.5-6.25 8.7-10.35 2.2-4.1 3.3-8.95 3.3-14.55z"></path></g></svg>
-                                        </div>
-                                        <a href="https://dnmontanharesort.netlify.app/" target="_blank">
-                                            <button>
-                                                <i class="fas fa-globe"></i>&nbsp Veja o Site
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Slide 3-->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="img/portfolio/img_3.jpg" alt="">
-                                    </div>
-                                    <div class="card-text">
-                                        <h3>Breve!</h3>
-                                        <div class="icon-recursos"> 
-                                            <i class="fas fa-chalkboard-teacher"></i>
-                                            <i class="fas fa-mug-hot"></i>
-                                        </div>
-                                        <a>
-                                            <button>
-                                                <i class="fas fa-globe"></i>&nbsp Veja o Site
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Slide 4-->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="img/portfolio/img_4.jpg" alt="">
-                                    </div>
-                                    <div class="card-text">
-                                        <h3>Breve!</h3>
-                                        <div class="icon-recursos"> 
-                                            <i class="fas fa-chalkboard-teacher"></i>
-                                            <i class="fas fa-mug-hot"></i>
-                                        </div>
-                                        <a>
-                                            <button>
-                                                <i class="fas fa-globe"></i>&nbsp Veja o Site
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Slide 5-->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="img/portfolio/img_5.jpg" alt="">
-                                    </div>
-                                    <div class="card-text">
-                                        <h3>Breve!</h3>
-                                        <div class="icon-recursos"> 
-                                            <i class="fas fa-chalkboard-teacher"></i>
-                                            <i class="fas fa-mug-hot"></i>
-                                        </div>
-                                        <a>
-                                            <button>
-                                                <i class="fas fa-globe"></i>&nbsp Veja o Site
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Slide 6-->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="img/portfolio/img_6.jpg" alt="">
-                                    </div>
-                                    <div class="card-text">
-                                        <h3>Breve!</h3>
-                                        <div class="icon-recursos"> 
-                                            <i class="fas fa-chalkboard-teacher"></i>
-                                            <i class="fas fa-mug-hot"></i>                                           
-                                        </div>
-                                        <a href="" target="_blank">
-                                            <a>
-                                                <button>
-                                                    <i class="fas fa-globe"></i>&nbsp Veja o Site
-                                                </button>
-                                            </a>
-                                    </div>
-                                </div>
-                                <!--Slide 7-->
-                                <div class="swiper-slide">
-                                    <div class="card">
-                                        <img src="img/portfolio/img_7.jpg" alt="">
-                                    </div>
-                                    <div class="card-text">
-                                        <h3>Breve!</h3>
-                                        <div class="icon-recursos"> 
-                                            <i class="fas fa-chalkboard-teacher"></i>
-                                            <i class="fas fa-mug-hot"></i>
-                                        </div>
-                                        <a href="" target="_blank">
-                                            <a>
-                                                <button>
-                                                    <i class="fas fa-globe"></i>&nbsp Veja o Site
-                                                </button>
-                                            </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <div class="swiper-pagination"></div>
-
-                            <div class="swiper-button-prev">
-                                <i class="fas fa-angle-left fa-lg"></i>
-                            </div> 
-                            <div class="swiper-button-next">
-                                <i class="fas fa-angle-right fa-lg"></i>
-                            </div> 
-
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-                <section id="contato">
-
-                    <div class="contato">
-
-                        <h2 class="titulopagina" data-animation="fade">CONTATO</h2>
-
-                        <div class="background-cont">
-
-                            <form class="form" name="contact" method="POST" data-netlify="true" data-animation="bottom">
-                                <h2>Opa, a hora e agora!!<br>Como posso te ajudar?</h2>
-                                <span class="barra"></span>
-                                <span class="barra1"></span>
-
-                                <label class="form-item">
-                                    <input type="text" name="name" placeholder="Nome"/>
-                                </label>
-                                <label class="form-item">
-                                    <input type="email" name="email" placeholder="Email"/>
-                                </label>
-                                <label class="form-item">
-                                    <input type="text" name="assunto" placeholder="Assunto"/>
-                                </label>
-
-                                <label>
-                                    <textarea class="input-text" name="message" placeholder="Escreva sua mensagem"></textarea>
-                                </label>
-
-                                <div class="enviar">
-                                    <button type="submit" class="btn">ENVIAR MENSAGEM</button>
-                                </div>
-
-                            </form>
-
-                            <div class="contatodireto">
-                                <div class="email" data-animation="left">
-                                    <a href="mailto:daniel.p.nasciment@gmail.com?subject=Olá, envie sua mensagem, responderei em breve. Obrigado!%20" target="_blank"><i class="icon solid fa fa-envelope"></i>&nbsp Email</a>
-                                    <h1>daniel.p.nasciment@gmail.com</h1>
-                                </div>
-                                <div class="whats" data-animation="right">
-                                    <a href="https://api.whatsapp.com/send?phone=5511972197978" target="_blank"><i class="fab fa-whatsapp"></i>&nbsp Whatsapp</a>
-                                    <h1>011 972197978</h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </section>
-
-            </main>
-
-
-            <footer id="footer">
-                <div id="copyright">
-                    <ul class="copyright">
-                        <li>
-                            <h4>DN</h4>
-                            <a>&copy;</a>
-                            <p>2020 - 2024 Todos os direitos reservados.</p>
+            <nav id="nav">
+                <div class="nav">
+                    <ul>
+                        <li><a href="#inicio" id="link-inicio">Início<i class="icon solid fa fa-home"></i></a></li>
+                        <li><a href="#sobre" id="link-sobre">Sobre<i class="icon solid fa fa-user"></i></a></li>
+                        <li><a href="#educacao" id="link-sobre">Educação<i class="fas fa-user-graduate"></i></a></li>
+                        <li><a href="#habilidade" id="link-sobre">Habilidades<i class="fas fa-chart-bar"></i></a></li>
+                        <li><a href="#portfolio" id="link-portfolio">Portfólio<i class="icon fa solid fa-th"></i></a>
                         </li>
-                        <li>
-                            <p>Desenvolvido por: Daniel Nascimento</p>
+                        <li><a href="#contato" id="link-contato">Contato<i class="icon solid fa fa-envelope"></i></a>
                         </li>
-                        <li>
-                           
-
-                            <i class="fas fa-tags"></i>
-                            <p>v2.2.17</p>
-                        </li> 
                     </ul>
-
                 </div>
-            </footer>
+            </nav>
+
+            <div id="icons">
+                <div class="icons">
+                    <ul>
+                        <li><a href="https://www.instagram.com/danielpnascimento/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://github.com/danielpnascimento" target="_blank"><i
+                                    class="icon brands fab fa-github"></i></a></li>
+                        <li><a href="mailto:daniel.p.nasciment@gmail.com?subject=Olá, envie sua mensagem, responderei em breve. Obrigado!%20"
+                                target="_blank"><i class="icon solid fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="col-2">
+
+        <div class="myBtnTopo">
+            <button onclick="topFunction()" id="myBtnTopo" title="Vá para o topo">
+                <i class="fas fa-angle-up fa-blink fa-rotate-270 fa-lg"></i>
+                <a>INÍCIO</a>
+            </button>
+
         </div>
 
-        <script src="js/js_menulateral.js"></script>
-        <script src="js/js_botaotop.js"></script>
-        <script src="js/js_animationscroll.js"></script>
-        <script src="js/js_scramble.js"></script>
-        <script src="js/js_leia.js"></script>
-        <script src="js/js_animationeduca.js"></script>
-        <script src="js/swiper-bundle.js"></script>
-        <script src="js/js_portfolio-swiper.js"></script>
-        <script src="js/js_count_visit.js"></script>
-        <script src="js/js_preloader.js"></script>
+        <header id="inicio">
 
-    </body>
+            <div class="inicio">
+
+                <h1>Daniel Nascimento</h1>
+                <h3 class="text"></h3>
+
+                <a href="#portfolio"><button class="btnInicio">P o r t f ó l i o</button></a>
+
+                <div class="palavra">
+                    <span>1JO</span><br>
+                    <div id="linha-horizontal"></div>
+                    <span>13</span><br>
+                    <div id="linha-horizontal-2"></div>
+                    <span>07</span>
+                </div>
+
+            </div>
+        </header>
+
+        <main class="content">
+
+            <section id="sobre">
+
+                <h2 class="titulopagina" data-animation="fade">SOBRE</h2>
+
+                <div class="sobtextoimg">
+
+                    <div class="sobtexto" data-animation="left">
+
+                        <h3 class="nome">Daniel<br>Nascimento</h3>
+
+                        <p> &nbsp Olá, seja bem-vindo ao meu portfólio, sou desenvolvedor formado em 12/2018 e iniciando
+                            meu próximo e atual objetivo profissional na área de TI, que é a migração para a área de
+                            desenvolvimento e trabalhar com aplicações web e mobile, focado em um design/layout inovador
+                            e sua responsividade, usabilidade e desempenho.
+                            </br>
+                            <span id="dots"></span>
+                            <span id="mais">
+                                <br>
+                                &nbsp Iniciei formalmente minha carreira em TI em 2008 na área de suporte para uma
+                                grande instituição privada nacional de interesse público. Mas já vinha apanhando e
+                                aprendendo informática na raça desde meus 19 anos em que 75% de forma autodidata e 25%
+                                das dúvidas esclarecidas quando ia comprar algum periférico na R. Santa Ifigênia – SP e
+                                acabava perguntando “ensinando as vezes” ou em livro de montagem e manutenção que
+                                raramente surgia, porque internet discada após a 00:00 não ajudava, quando obtive meu
+                                primeiro computador com processador Duron 1.8Ghz, 256Mb de memória e 20gb de HD com o
+                                Windows ME em 2002, antes da era da banda larga está disponível nesse basilll. Era tudo
+                                mato rsrs “que dizer, 56kb/s e no máximo 100kb/s com alterações na placa de rede e sem
+                                falar nos discadores”. É acho que estou ficando velho, será?!
+                                </br>
+                                <br>
+                                &nbsp E desde então venho evoluindo e migrando nas vertentes da área de TI desde Suporte
+                                N1, N2, N3, Service Desk, Hardwares, Softwares, Administração de Redes, Gestão e
+                                Gerenciamento de Processos de TI, Liderança de Equipe e agora Desenvolvimento. E durante
+                                esse meu ciclo obtive um vasto conhecimento profissional e interpessoal, com atribuição
+                                e colaboração de valores das melhores práticas em processo de TI para as organizações
+                                por onde ingressei, após a sua aprovação.
+                                </br>
+                                <br>
+                                &nbsp A área de TI é uma das principais áreas que passei e encontra se em constante
+                                atualização e inovação, uma das profissões que mais me identifiquei com meu perfil de
+                                criação. E minhas principais atualizações a destacar são a certificação em ITIL e a
+                                graduação em Sistema de Informação até o momento. A qual após o término da graduação com
+                                a devolução do meu tempo “totalmente confiscado”, estou em uma imersão da minha prática
+                                no Front End, antes de retomar e prosseguir para o Back End e o Mobile. Que no decorrer
+                                desse período, foi o inicial adquirido utilizando a linguagem Java tanto para Desktop,
+                                Web e Mobile, onde tive o prazer de criar meu primeiro app 100% funcional de uma calc,
+                                com Android Studio para um trabalho da faculdade. Sendo uma solicitação e ideia
+                                totalmente simples, porém foi o início do meu destravamento e expansão para outros
+                                projetos pré-formulados, que estão aguardando a automatização, além da contemplação
+                                desse portfólio!
+                                </br>
+                                <br>
+                                &nbsp Gosto de viagens, filmes e uma boa culinária caseira... além de gostar de
+                                tecnologia, hardwares, water cooler custom e agora desenvolver sistemas.
+                                </br>
+                                <br>
+                                &nbsp E sou incessantemente grato a Deus, por esse meu “teste” chamado vida,
+                                independente dos diversos desafios e conquistas que me proporcionou!
+                            </span>
+                        </p>
+                        </br>
+                        <button class="leia" onclick="myFunction()" id="myBtnLeia">Mais sobre mim</button>
+
+                    </div>
+
+                    <div class="imgsob0" data-animation="right">
+                        <img src="img/sobre/Sobre 16fRed10.jpg" alt="Imagem do Sobre" />
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="educacao">
+
+                <h2 class="titulopagina" data-animation="fade">EDUCAÇÃO</h2>
+
+                <div class="background-edu" data-animation="bottom">
+                    <div id="particle-canvas">
+
+                        <div class="container">
+
+                            <div class="timeline-block timeline-block-right">
+                                <div class="green"></div>
+                                <div class="timeline-content">
+                                    <h3>2020</h3>
+                                    <span>Design Gráfico Adobe Photoshop e Illustrator</span>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
+                                    <!--<p>Design Gráfico Adobe Photoshop e Illustrator</p>-->
+                                </div>
+                            </div>
+
+                            <div class="timeline-block timeline-block-left">
+                                <div class="white"></div>
+                                <div class="timeline-content">
+                                    <!--<h3>2019</h3>-->
+                                    <h3>&nbsp</h3>
+                                    <span>&nbsp</span>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
+                                </div>
+                            </div>
+
+                            <div class="timeline-block timeline-block-right">
+                                <div class="green"></div>
+                                <div class="timeline-content">
+                                    <h3>2018</h3>
+                                    <span>Conclusão</span>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
+                                </div>
+                            </div>
+
+                            <div class="timeline-block timeline-block-left">
+                                <div class="green"></div>
+                                <div class="timeline-content">
+                                    <h3>&nbsp</h3>
+                                    <!-- <h3>&nbsp</h3>-->
+                                    <span>Graduado em Sistema de Informação</span>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
+                                    <!--<p>Graduado em Sistema de Informação</p>-->
+                                </div>
+                            </div>
+
+                            <div class="timeline-block timeline-block-right">
+                                <div class="green"></div>
+                                <div class="timeline-content">
+                                    <h3>&nbsp</h3>
+                                    <span>&nbsp</span>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
+                                </div>
+                            </div>
+                            <div class="timeline-block timeline-block-left">
+                                <div class="green"></div>
+                                <div class="timeline-content">
+                                    <h3>2015</h3>
+                                    <span>Início</span>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
+                                </div>
+                            </div>
+
+                            <div class="timeline-block timeline-block-right">
+                                <div class="white"></div>
+                                <div class="timeline-content">
+                                    <h3>&nbsp</h3>
+                                    <span>&nbsp</span>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
+                                </div>
+                            </div>
+                            <div class="timeline-block timeline-block-left">
+                                <div class="green"></div>
+                                <div class="timeline-content">
+                                    <h3>2013</h3>
+                                    <span>Certificado em Itil v3 Foundation</span>
+                                    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>-->
+                                    <!--<p>Certificado em Itil v3 Foundation</p>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section id="habilidade">
+
+                <h2 class="titulopagina" data-animation="fade">HABILIDADE</h2>
+
+                <div class="habilidade">
+
+                    <p data-animation="left">
+                        &nbsp Minhas habilidades “iniciais” estão em constante evolução e aperfeiçoamento, com a
+                        utilização nas presentes e as atuais ferramentas de tecnologias de desenvolvimento: No Front End
+                        com Hmtl5, Css3, Js e Bootstrap. E no Back End na linguagem em C e Java. E em Banco de dados com
+                        a linguagem em PL/SQL, utilizando o gerenciamento de banco de dados MySQL Workbench. Na criação
+                        e edição de conteúdo, design e layout utilizando o Photoshop, Illustrator e o Xd. E com o Github
+                        para testes finais das aplicações. E prosseguindo! </p>
+
+                    <div class="icones">
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_html5.svg" alt="Imagem Icone Html5" />
+                            <h4>Html5</h4>
+                        </div>
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_css3.svg" alt="Imagem Icone Css3" />
+                            <h4>Css3</h4>
+                        </div>
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_js.svg" alt="Imagem Icone Javascript" />
+                            <h4>Javascript</h4>
+                        </div>
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_bootstrap.svg" alt="Imagem Icone Bootstrap" />
+                            <h4>Bootstrap</h4>
+                        </div>
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_java.svg" alt="Imagem Icone Java" />
+                            <h4>Java</h4>
+                        </div>
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_sql.svg" alt="Imagem Icone Sql" />
+                            <h4>Pl/Sql</h4>
+                        </div>
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_mysql.svg" alt="Imagem Icone Mysql Workbench" />
+                            <h4>Mysql Workbench</h4>
+                        </div>
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_photoshop.svg" alt="Imagem Icone Photoshop" />
+                            <h4>Photoshop</h4>
+                        </div>
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_illustrator.svg" alt="Imagem Icone Illustrator" />
+                            <h4>Illustrator</h4>
+                        </div>
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_xd.svg" alt="Imagem Icone Xd" />
+                            <h4>Xd</h4>
+                        </div>
+                        <div class="iconImg" data-animation="right">
+                            <img src="img/habilidade/icon_github.svg" alt="Imagem Icone Github" />
+                            <h4>Github</h4>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="portfolio">
+
+                <div>
+                    <h2 class="titulopagina" data-animation="fade">PORTFÓLIO</h2>
+
+                    <div class="swiper-container" data-animation="right">
+
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1-->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/portfolio/img_1.jpg" alt="Imagem de Site de Engenharia Civil">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Criação de Site de Engenharia Civil</h3>
+                                    <span>Desenvolvido com Bootstrap 5 Puro, com uma lib de animação e uma leve
+                                        melhorias.</span>
+                                    <h4>Projeto e Empresa Fictícia!</h4>
+                                    <div class="icon-recursos">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                        <i class="fab fa-js-square"></i>
+                                        <i class="fab fa-bootstrap"></i>
+                                    </div>
+                                    <a href="https://dnengenhariaeconstrucoes.netlify.app" target="_blank">
+                                        <button>
+                                            <i class="fas fa-globe"></i>&nbsp Veja o Site
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Slide 2-->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/portfolio/img_2.jpg" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Criação de Site de Resort</h3>
+                                    <span>Desenvolvido com a API de Js da Swiper.</span>
+                                    <h4>Projeto e Empresa Fictícia!</h4>
+                                    <div class="icon-recursos">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                        <i class="fab fa-js-square"></i>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300">
+                                            <g fill="none" fill-rule="evenodd">
+                                                <circle cx="150" cy="150" r="150" fill="#a2a2a2"></circle>
+                                                <path fill="#28292d" fill-rule="nonzero"
+                                                    d="M190.2 200.9c0-5.4-1.05-10.05-3.15-13.95-2.1-3.9-4.95-7.4-8.55-10.5-3.6-3.1-7.9-5.9-12.9-8.4s-10.4-5.15-16.2-7.95c-6.8-3.2-13.65-6.6-20.55-10.2-6.9-3.6-13.1-7.8-18.6-12.6-5.5-4.8-9.95-10.35-13.35-16.65-3.4-6.3-5.1-13.65-5.1-22.05 0-7 1.3-13.95 3.9-20.85 2.6-6.9 6.4-13.05 11.4-18.45s11.25-9.8 18.75-13.2c7.5-3.4 16.25-5.1 26.25-5.1 7.4 0 14.25.95 20.55 2.85 6.3 1.9 11.95 4.35 16.95 7.35s9.4 6.3 13.2 9.9c3.8 3.6 6.9 7.1 9.3 10.5l-18.9 15.3c-1.8-2.6-4.05-5.2-6.75-7.8-2.7-2.6-5.8-4.95-9.3-7.05-3.5-2.1-7.35-3.8-11.55-5.1-4.2-1.3-8.7-1.95-13.5-1.95-5.8 0-10.85.9-15.15 2.7-4.3 1.8-7.95 4.2-10.95 7.2-3 3-5.25 6.45-6.75 10.35S117 93.1 117 97.1c0 5 1.1 9.35 3.3 13.05 2.2 3.7 5.3 7.15 9.3 10.35 4 3.2 8.9 6.3 14.7 9.3 5.8 3 12.3 6.1 19.5 9.3 8 3.6 15.25 7.35 21.75 11.25 6.5 3.9 12 8.15 16.5 12.75s7.95 9.8 10.35 15.6c2.4 5.8 3.6 12.6 3.6 20.4 0 9.2-1.65 17.45-4.95 24.75-3.3 7.3-7.85 13.5-13.65 18.6-5.8 5.1-12.65 9-20.55 11.7-7.9 2.7-16.35 4.05-25.35 4.05s-17.1-1.25-24.3-3.75c-7.2-2.5-13.6-5.8-19.2-9.9-5.6-4.1-10.4-8.8-14.4-14.1-4-5.3-7.2-10.65-9.6-16.05l21-12.6c1.8 4.2 4.15 8.25 7.05 12.15 2.9 3.9 6.25 7.35 10.05 10.35 3.8 3 8.15 5.4 13.05 7.2 4.9 1.8 10.25 2.7 16.05 2.7 5 0 9.85-.7 14.55-2.1 4.7-1.4 8.85-3.5 12.45-6.3 3.6-2.8 6.5-6.25 8.7-10.35 2.2-4.1 3.3-8.95 3.3-14.55z">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                    <a href="https://dnmontanharesort.netlify.app/" target="_blank">
+                                        <button>
+                                            <i class="fas fa-globe"></i>&nbsp Veja o Site
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Slide 3-->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/portfolio/img_3.jpg" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Breve!</h3>
+                                    <div class="icon-recursos">
+                                        <i class="fas fa-chalkboard-teacher"></i>
+                                        <i class="fas fa-mug-hot"></i>
+                                    </div>
+                                    <a>
+                                        <button>
+                                            <i class="fas fa-globe"></i>&nbsp Veja o Site
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Slide 4-->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/portfolio/img_4.jpg" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Breve!</h3>
+                                    <div class="icon-recursos">
+                                        <i class="fas fa-chalkboard-teacher"></i>
+                                        <i class="fas fa-mug-hot"></i>
+                                    </div>
+                                    <a>
+                                        <button>
+                                            <i class="fas fa-globe"></i>&nbsp Veja o Site
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Slide 5-->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/portfolio/img_5.jpg" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Breve!</h3>
+                                    <div class="icon-recursos">
+                                        <i class="fas fa-chalkboard-teacher"></i>
+                                        <i class="fas fa-mug-hot"></i>
+                                    </div>
+                                    <a>
+                                        <button>
+                                            <i class="fas fa-globe"></i>&nbsp Veja o Site
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Slide 6-->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/portfolio/img_6.jpg" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Breve!</h3>
+                                    <div class="icon-recursos">
+                                        <i class="fas fa-chalkboard-teacher"></i>
+                                        <i class="fas fa-mug-hot"></i>
+                                    </div>
+                                    <a href="" target="_blank">
+                                        <a>
+                                            <button>
+                                                <i class="fas fa-globe"></i>&nbsp Veja o Site
+                                            </button>
+                                        </a>
+                                </div>
+                            </div>
+                            <!--Slide 7-->
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <img src="img/portfolio/img_7.jpg" alt="">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Breve!</h3>
+                                    <div class="icon-recursos">
+                                        <i class="fas fa-chalkboard-teacher"></i>
+                                        <i class="fas fa-mug-hot"></i>
+                                    </div>
+                                    <a href="" target="_blank">
+                                        <a>
+                                            <button>
+                                                <i class="fas fa-globe"></i>&nbsp Veja o Site
+                                            </button>
+                                        </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-prev">
+                            <i class="fas fa-angle-left fa-lg"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="fas fa-angle-right fa-lg"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section id="contato">
+
+                <div class="contato">
+
+                    <h2 class="titulopagina" data-animation="fade">CONTATO</h2>
+
+                    <div class="background-cont">
+
+                        <form class="form" name="contact" method="POST" data-netlify="true" data-animation="bottom">
+                            <h2>Opa, a hora e agora!!<br>Como posso te ajudar?</h2>
+                            <span class="barra"></span>
+                            <span class="barra1"></span>
+
+                            <label class="form-item">
+                                <input type="text" name="name" placeholder="Nome" />
+                            </label>
+                            <label class="form-item">
+                                <input type="email" name="email" placeholder="Email" />
+                            </label>
+                            <label class="form-item">
+                                <input type="text" name="assunto" placeholder="Assunto" />
+                            </label>
+
+                            <label>
+                                <textarea class="input-text" name="message"
+                                    placeholder="Escreva sua mensagem"></textarea>
+                            </label>
+
+                            <div class="enviar">
+                                <button type="submit" class="btn">ENVIAR MENSAGEM</button>
+                            </div>
+
+                        </form>
+
+                        <div class="contatodireto">
+                            <div class="email" data-animation="left">
+                                <a href="mailto:daniel.p.nasciment@gmail.com?subject=Olá, envie sua mensagem, responderei em breve. Obrigado!%20"
+                                    target="_blank"><i class="icon solid fa fa-envelope"></i>&nbsp Email</a>
+                                <h1>daniel.p.nasciment@gmail.com</h1>
+                            </div>
+                            <div class="whats" data-animation="right">
+                                <a href="https://api.whatsapp.com/send?phone=5511972197978" target="_blank"><i
+                                        class="fab fa-whatsapp"></i>&nbsp Whatsapp</a>
+                                <h1>011 972197978</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+
+        </main>
+
+
+        <footer id="footer">
+            <div id="copyright">
+                <ul class="copyright">
+                    <li>
+                        <h4>DN</h4>
+                        <a>&copy;</a>
+                        <p>2020 - 2025 Todos os direitos reservados.</p>
+                    </li>
+                    <li>
+                        <p>Desenvolvido por: Daniel Nascimento</p>
+                    </li>
+                    <li>
+
+
+                        <i class="fas fa-tags"></i>
+                        <p>v2.2.18</p>
+                    </li>
+                </ul>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/js_menulateral.js"></script>
+    <script src="js/js_botaotop.js"></script>
+    <script src="js/js_animationscroll.js"></script>
+    <script src="js/js_scramble.js"></script>
+    <script src="js/js_leia.js"></script>
+    <script src="js/js_animationeduca.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+    <script src="js/js_portfolio-swiper.js"></script>
+    <script src="js/js_count_visit.js"></script>
+    <script src="js/js_preloader.js"></script>
+
+</body>
+
 </html>
-
