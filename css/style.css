@@ -674,10 +674,15 @@ h3.nome{
 }
 
 .habilidade p{
-    display: flex;
     text-align:center;
     justify-content: center;
     padding: 0px 70px 20px 70px;
+}
+
+.habilidade span {
+  font-weight: 700;
+  font-size: 1em;
+  color: inherit;
 }
 
 .iconImg, img h4{
