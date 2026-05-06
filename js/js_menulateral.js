@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-var _status = document.getElementById("nav-toggle");
+var _status = document.getElementById("nav-toggle-open");
 var _contIn = document.getElementById("mySidenav");
 
 function openNav() {
@@ -27,7 +27,7 @@ function closeNav() {
 //  Fecha o menu ao clicar fora
 document.addEventListener("click", function(event) {
     // verifica se clicou fora do menu e fora do botão
-    if (!_contIn.contains(event.target) && !event.target.closest("label[for='nav-toggle']")) {
+    if (!_contIn.contains(event.target) && !event.target.closest("label[for='nav-toggle-open']")) {
         closeNav();
         _status.checked = false; // garante que o checkbox volte pro estado fechado
     }

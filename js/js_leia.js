@@ -13,13 +13,13 @@ function myFunction() {
     if (dots.style.display === "none") {
         dots.style.display = "inline";
         btnText.innerHTML = "Mais sobre mim";
-//        oculta o texto acima após o clique para deixar o fechar visivel
         moreText.style.display = "none";
+        document.getElementById("sobre").scrollIntoView({ behavior: 'smooth' });
     } else {
         dots.style.display = "none";
         btnText.innerHTML = "Fechar";
         moreText.style.display = "inline";
     }
 
-    
+
 }
