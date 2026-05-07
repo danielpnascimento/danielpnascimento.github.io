@@ -1,4 +1,3 @@
-
 /* 
     Created on : 17 de nov. de 2020, 17:06:33
     Author     : DAN
@@ -41,14 +40,31 @@
 
 
 /*Tags sendo zeradas*/
-html, body, div, span,
-h1, h2, h3, h4, h5, h6, p, a,
-em, img, strong, ul, li,
-footer, header, nav, section{
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+em,
+img,
+strong,
+ul,
+li,
+footer,
+header,
+nav,
+section {
     margin: 0;
     padding: 0;
     border: 0;
-    list-style:none;
+    list-style: none;
     text-decoration: none;
     color: inherit;
 
@@ -65,11 +81,21 @@ html {
     padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 400;
 }
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a{
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
     color: inherit;
     text-decoration: none;
 }
@@ -101,7 +127,7 @@ body {
 .col-2 {
     display: flex;
     flex-direction: column;
-    margin-left:17.72%;
+    margin-left: 17.72%;
 }
 
 footer {
@@ -109,13 +135,13 @@ footer {
     padding: 2.5em 2.5em 2.5em 2.5em;
 }
 
-#sobre  {
+#sobre {
     padding: 0.4em;
 }
 
 /******Inicio efeito para a logo,title e sub*****/
 
-.topo{
+.topo {
     margin-top: calc(24% + 0vh);
     text-align: center;
 }
@@ -134,19 +160,19 @@ footer {
     width: 100%;
 }
 
-.shadow::before, .shadow::after {
+.shadow::before,
+.shadow::after {
     z-index: -1;
-    content:'';
+    content: '';
     position: absolute;
     width: calc(100% + 6px);
     height: calc(100% + 6px);
     top: -3px;
     left: -3px;
     background: linear-gradient(45deg,
-        #a2a2a2, #33ffcc, #28292d,
-        #a2a2a2, #33ffcc, #28292d,
-        #a2a2a2, #33ffcc, #28292d
-        );
+            #a2a2a2, #33ffcc, #28292d,
+            #a2a2a2, #33ffcc, #28292d,
+            #a2a2a2, #33ffcc, #28292d);
 
     background-size: 300%;
     animation: shadow 15s linear infinite;
@@ -154,24 +180,26 @@ footer {
 }
 
 .shadow::after {
-    filter:blur(10px);
+    filter: blur(10px);
 }
 
 @keyframes shadow {
-    0%{
-        background-position:0 0;
+    0% {
+        background-position: 0 0;
     }
-    50%{
-        background-position:300%;
+
+    50% {
+        background-position: 300%;
     }
-    100%{
-        background-position:0 0;
+
+    100% {
+        background-position: 0 0;
     }
 }
 
 .title {
     padding: 0.4em 0 0 0;
-    color:#ffffff;
+    color: #ffffff;
     font-size: 1.3em;
 }
 
@@ -188,27 +216,28 @@ footer {
 #nav ul {
     display: flex;
     flex-direction: column;
-    align-items:  flex-end;
+    align-items: flex-end;
     margin: calc(2% + 2.2vh);
 }
 
 nav a {
     text-decoration: none;
-    display:inline-block;
-    padding: 0 0px 0 10px ;
+    display: inline-block;
+    padding: 0 0px 0 10px;
     background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 300%;
     transition: all 0.4s;
-    letter-spacing:2px;
+    letter-spacing: 2px;
     border-radius: 3px;
     line-height: calc(0% + 6vh);
-    white-space:nowrap;
-    font-size: 1.15em ;
+    white-space: nowrap;
+    font-size: 1.15em;
 }
 
-.nav a:hover{
+.nav a:hover,
+.nav a.active {
     background-position: 100%;
-    color:#28292d;
+    color: #28292d;
     transform: translateX(16px);
 }
 
@@ -220,10 +249,10 @@ nav a {
 
 /****Inicio icones redes sociais*****/
 
-.icons ul{
+.icons ul {
     position: absolute;
     bottom: 1.5em;
-    align-items:flex-end;
+    align-items: flex-end;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -231,8 +260,8 @@ nav a {
     width: calc(100% - 0vh);
 }
 
-.icons i{
-    font-size: 1.15em ;
+.icons i {
+    font-size: 1.15em;
 }
 
 .icons a {
@@ -245,11 +274,11 @@ nav a {
 
 /****Fim icones redes sociais*****/
 
-.titulopagina{
+.titulopagina {
     text-align: center;
     padding: 1em 0 1.2em 0;
     font-size: 15.5pt;
-    color:  #28292d;
+    color: #28292d;
     font-family: 'Source Sans Pro';
 }
 
@@ -267,7 +296,7 @@ nav a {
     cursor: pointer;
     border-radius: 3px;
     transform: rotate(-270deg);
-    letter-spacing:1.2px;
+    letter-spacing: 1.2px;
     box-shadow: 0.1px 0px 0px 0.7px #ffffff;
     font-family: 'Source Sans Pro';
 }
@@ -280,7 +309,7 @@ nav a {
 #myBtnTopo:hover {
     background-position: 100%;
     color: #28292d;
-    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 250%;
     transition: all 0.4s;
     box-shadow: none;
@@ -304,15 +333,16 @@ nav a {
 
 /*Inicio botão animado do menu responsivo*/
 
-.closebtn, .bt_menulateral {
+.closebtn,
+.bt_menulateral {
     display: none;
 }
 
-input[type='checkbox']{
+input[type='checkbox'] {
     display: none;
 }
 
-.open{
+.open {
     width: 30px;
     position: relative;
     left: 10px;
@@ -328,11 +358,13 @@ input[type='checkbox']{
     cursor: pointer;
 }
 
-.open, .open::before, .open::after{
+.open,
+.open::before,
+.open::after {
     height: 3px;
     background-color: #28292d;
     display: inline-block;
-    transition: all 0.5s cubic-bezier(0.50,-0.05,0.60,0.53);
+    transition: all 0.5s cubic-bezier(0.50, -0.05, 0.60, 0.53);
     border-radius: 3px;
     cursor: pointer;
     background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
@@ -342,40 +374,43 @@ input[type='checkbox']{
 
 }
 
-.open:hover, .open:hover::before, .open:hover::after{
+.open:hover,
+.open:hover::before,
+.open:hover::after {
     background-position: 100%;
-    color:#33ffcc;
+    color: #33ffcc;
     box-shadow: none;
 }
 
-.open::before, .open::after{
+.open::before,
+.open::after {
     content: "";
     width: 15px;
     position: absolute;
 }
 
-.open::before{
+.open::before {
     transform: translateY(-9px);
     transform-origin: right;
 }
 
-.open::after{
+.open::after {
     transform: translateY(9px);
     right: 0;
     transform-origin: left;
 }
 
-input[type="checkbox"]:checked + label .open::before{
+input[type="checkbox"]:checked+label .open::before {
     transform: translate(0) rotate(450deg);
     background-color: #ffffff;
 }
 
-input[type="checkbox"]:checked + label .open{
+input[type="checkbox"]:checked+label .open {
     transform: rotate(45deg);
     background-color: #ffffff;
 }
 
-input[type="checkbox"]:checked + label .open::after{
+input[type="checkbox"]:checked+label .open::after {
     transform: translate(0) rotate(450deg);
     background-color: #ffffff;
 }
@@ -384,7 +419,7 @@ input[type="checkbox"]:checked + label .open::after{
 
 /*Inicio do Inicio*/
 
-.inicio{
+.inicio {
     display: flex;
     flex-direction: row;
     background-attachment: fixed;
@@ -400,26 +435,26 @@ input[type="checkbox"]:checked + label .open::after{
 
 }
 
-.inicio h1{
+.inicio h1 {
     text-transform: uppercase;
     position: fixed;
     left: 51.5%;
     transform: translate(-50%, -130%);
     font-size: calc(1vw + 1vw + 0.1vmin);
-    letter-spacing:0.40em;
+    letter-spacing: 0.40em;
 
 }
 
-.inicio h3{
+.inicio h3 {
     position: fixed;
     left: 44.3%;
     transform: translate(-48%, 0%);
     font-size: calc(0.5vw + 0.5vw + 0.1vmin);
-    letter-spacing:0.40em;
+    letter-spacing: 0.40em;
 }
 
-button.btnInicio{
-    text-transform:uppercase;
+button.btnInicio {
+    text-transform: uppercase;
     position: fixed;
     border: none;
     outline: none;
@@ -438,13 +473,13 @@ button.btnInicio{
 .btnInicio:hover {
     background-position: 100%;
     color: #28292d;
-    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 250%;
     transition: all 0.4s;
     box-shadow: none;
 }
 
-.palavra{
+.palavra {
     position: fixed;
     left: 24.8%;
     transform: translate(-50%, -63%);
@@ -458,7 +493,7 @@ button.btnInicio{
     background-color: #28292d;
     border-radius: 3px;
     margin: 0.8em 0 0.8em 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 
 }
 
@@ -468,18 +503,18 @@ button.btnInicio{
     background-color: #28292d;
     border-radius: 3px;
     margin: 0.8em 0 0.8em 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 /*Fim do Inicio*/
 
 /*Inicio do Sobre*/
 
-#sobre{
+#sobre {
     padding-bottom: 5em;
 }
 
-.sobtextoimg{
+.sobtextoimg {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -488,21 +523,22 @@ button.btnInicio{
     padding-top: 2em;
 }
 
-.sobtexto, .imgsob0{
+.sobtexto,
+.imgsob0 {
     padding: calc(0.5% - 0px);
     max-width: 50%;
 }
 
-.sobtexto h3{
-    padding-bottom: 0.5em ;
+.sobtexto h3 {
+    padding-bottom: 0.5em;
 }
 
-.imgsob0 img{
+.imgsob0 img {
     max-width: 100%;
     padding-top: 2em;
 }
 
-h3.nome{
+h3.nome {
     color: #28292d;
     font-size: 16pt;
     line-height: 1em;
@@ -510,7 +546,7 @@ h3.nome{
     font-family: 'Source Sans Pro';
 }
 
-.sobtexto p{
+.sobtexto p {
     line-height: 1.2em;
 }
 
@@ -518,7 +554,7 @@ h3.nome{
     display: none;
 }
 
-.leia{
+.leia {
     border: none;
     outline: none;
     padding: 0.6em 1em;
@@ -534,7 +570,7 @@ h3.nome{
 .leia:hover {
     background-position: 100%;
     color: #28292d;
-    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 250%;
     transition: all 0.4s;
     box-shadow: none;
@@ -551,13 +587,13 @@ h3.nome{
 /*Inicio do Educação*/
 
 /*Tamanho do background conforme as telas*/
-#educacao{
+#educacao {
     height: 600px;
     margin-bottom: 50px;
 }
 
 /*limita a altura geral do background e #particle*/
-.background-edu{
+.background-edu {
     width: 100%;
     max-height: 80%;
     background-color: #28292d;
@@ -565,7 +601,8 @@ h3.nome{
 }
 
 /*Animação "efeito" conforme o tamanho do local que irá ficar*/
-.background-edu, #particle-canvas{
+.background-edu,
+#particle-canvas {
     height: 100%;
     width: 100%;
     position: relative;
@@ -640,7 +677,8 @@ h3.nome{
 }
 
 /*Separação igual dos pontos*/
-.green, .white{
+.green,
+.white {
     margin: 15px 0;
 }
 
@@ -669,12 +707,12 @@ h3.nome{
 
 /*Inicio do habilidade*/
 
-#habilidade{
+#habilidade {
     padding-bottom: 8em;
 
 }
 
-.icones{
+.icones {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -682,26 +720,27 @@ h3.nome{
     align-items: center;
 }
 
-.habilidade p{
+.habilidade p {
     /* display: flex; */
-    text-align:center;
+    text-align: center;
     justify-content: center;
     padding: 0px 70px 20px 70px;
 }
 
 .habilidade span {
-  font-weight: 700;  
-  font-size: 1em; 
-  color: inherit; 
+    font-weight: 700;
+    font-size: 1em;
+    color: inherit;
 }
 
-.iconImg, img h4{
+.iconImg,
+img h4 {
     text-align: center;
     padding: 0px 8px 8px 8px;
 }
 
-.iconImg img{
-    min-width:40px;
+.iconImg img {
+    min-width: 40px;
     max-height: 40px;
     filter: invert(10%) sepia(9%) saturate(600%) hue-rotate(190deg) brightness(100%) contrast(86%);
 }
@@ -722,10 +761,10 @@ h3.nome{
     overflow: hidden;
     border-radius: 6px;
     border: 1px solid #28292d;
-    box-sizing:  content-box;
+    box-sizing: content-box;
 }
 
-.card img{
+.card img {
     width: 280px;
     height: 500px;
     overflow: hidden;
@@ -761,7 +800,7 @@ h3.nome{
     font-family: 'Source Sans Pro Ital';
 }
 
-.card-text .icon-recursos i{
+.card-text .icon-recursos i {
     padding: 0.12em;
     color: #a2a2a2;
     padding-top: 0.4em;
@@ -775,20 +814,20 @@ h3.nome{
     position: relative;
 }
 
-.icon-recursos img{
+.icon-recursos img {
     top: 4px;
     width: 16px;
     height: 16px;
     position: relative;
-    
+
 }
 
-.card-text i{
+.card-text i {
     font-size: 1.15em;
 }
 
 .card-text button {
-    color:#ffffff;
+    color: #ffffff;
     background-color: #28292d;
     border-radius: 3px;
     cursor: pointer;
@@ -803,14 +842,14 @@ h3.nome{
 .card-text button:hover {
     color: #28292d;
     background-position: 100%;
-    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 250%;
     transition: all 0.7s;
     outline: none;
     border: 1px solid #28292d;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     width: 30px;
     height: 3px;
     border-radius: 6px;
@@ -868,7 +907,7 @@ h3.nome{
 .swiper-button-next:hover {
     background-position: 100%;
     color: #28292d;
-    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 300%;
     transition: all 0.4s;
     box-shadow: none;
@@ -879,25 +918,26 @@ h3.nome{
 
 /*///Inicio do contato\\\\*/
 
-.contato{
+.contato {
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
 }
 
-.contatodireto{
+.contatodireto {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
 }
 
-.contatodireto i{
+.contatodireto i {
     font-size: 1.15em;
 }
 
-.contatodireto .email, .whats{
+.contatodireto .email,
+.whats {
     display: block;
     flex-direction: column;
     padding: 30px;
@@ -905,15 +945,15 @@ h3.nome{
     font-weight: 600;
 }
 
-.contatodireto h1{
-    font-size: 1.15em ;
+.contatodireto h1 {
+    font-size: 1.15em;
 }
 
-.titulopagina{
+.titulopagina {
     text-align: center;
     padding: 1em 0 1.2em 0;
     font-size: 15.5pt;
-    color:  #28292d;
+    color: #28292d;
     font-family: 'Source Sans Pro';
 }
 
@@ -921,11 +961,11 @@ h3.nome{
     background-color: #f6f8f7;
 }
 
-.form h2{
+.form h2 {
     font-size: 1.2em;
     margin-bottom: 10px;
     font-family: 'Source Sans Pro';
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
 /*barra do fale conosco*/
@@ -934,7 +974,7 @@ h3.nome{
     width: 140px;
     margin-top: 10px;
     border-radius: 5px;
-    background-color:#28292d;
+    background-color: #28292d;
     display: block;
 }
 
@@ -944,14 +984,14 @@ h3.nome{
     width: 80px;
     margin-top: 10px;
     border-radius: 5px;
-    background-color:#28292d;
+    background-color: #28292d;
     display: block;
 }
 
 /* Estilo do Formulário de Contato */
 
 /*Tamanho do formulario*/
-.form{
+.form {
     margin-left: auto;
     margin-right: auto;
     max-width: 450px;
@@ -959,7 +999,7 @@ h3.nome{
 }
 
 /*Linhas do input e seus titulos*/
-.form-item input{
+.form-item input {
     margin-top: 20px;
     margin-bottom: 20px;
     box-sizing: border-box;
@@ -974,26 +1014,33 @@ h3.nome{
     color: #888;
     border-radius: 3px 3px 0px 0px;
 
-    &:focus{
+    &:focus {
         border-bottom-color: #33ffcc;
 
-        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            color:#33ffcc;
+        &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: #33ffcc;
         }
-        &::-moz-placeholder { /* Firefox 19+ */
-            color:#33ffcc;
+
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: #33ffcc;
         }
-        &:-ms-input-placeholder { /* IE 10+ */
-            color:#33ffcc;
+
+        &:-ms-input-placeholder {
+            /* IE 10+ */
+            color: #33ffcc;
         }
-        &:-moz-placeholder { /* Firefox 18- */
-            color:#33ffcc;
+
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            color: #33ffcc;
         }
     }
 }
 
 /*Campo de texto*/
-form textarea{
+form textarea {
     resize: none;
     height: 160px;
     width: 100%;
@@ -1005,19 +1052,19 @@ form textarea{
 }
 
 /*Botão*/
-.enviar{
+.enviar {
     display: flex;
     justify-content: center;
 }
 
-.enviar button{
+.enviar button {
     margin-top: 15px;
-    color:#ffffff;
+    color: #ffffff;
     background-color: #28292d;
     cursor: pointer;
     border-radius: 3px;
     padding: 0.8em 1.5em;
-    white-space:nowrap;
+    white-space: nowrap;
     letter-spacing: 0.4px;
     font-size: 0.9em;
     outline: none;
@@ -1029,7 +1076,7 @@ form textarea{
 .enviar :hover {
     color: #28292d;
     background-position: 100%;
-    background-image: linear-gradient(120deg,transparent 50%, #33ffcc 50%);
+    background-image: linear-gradient(120deg, transparent 50%, #33ffcc 50%);
     background-size: 250%;
     transition: all 0.7s;
 
@@ -1039,7 +1086,7 @@ form textarea{
 
 
 /*///Inicio do Footer\\\\*/
-footer{
+footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1052,7 +1099,7 @@ footer{
     padding-right: 0.3em;
 }
 
-.copyright li{
+.copyright li {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -1061,19 +1108,19 @@ footer{
 }
 
 /*Espaçamento entre eles*/
-.copyright i{
+.copyright i {
     padding: 0 2.5px;
 }
 
-.copyright a{
+.copyright a {
     font-size: 1.1em;
 }
 
-.copyright h4{
+.copyright h4 {
     padding: 0 0px 0 2px;
 }
 
-.copyright p{
+.copyright p {
     padding: 0 10px 0 2px;
 }
 
@@ -1116,7 +1163,7 @@ footer{
 
 /*///Icone de pré carregamento da pagina e adcionado um js para desativação\\\*/
 
-#loader{
+#loader {
     z-index: 99999;
     position: fixed;
     width: 100%;
@@ -1141,48 +1188,61 @@ footer{
     -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
     animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
 }
+
 .sk-cube-grid .sk-cube1 {
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
+
 .sk-cube-grid .sk-cube2 {
     -webkit-animation-delay: 0.3s;
     animation-delay: 0.3s;
 }
+
 .sk-cube-grid .sk-cube3 {
     -webkit-animation-delay: 0.4s;
     animation-delay: 0.4s;
 }
+
 .sk-cube-grid .sk-cube4 {
     -webkit-animation-delay: 0.1s;
     animation-delay: 0.1s;
 }
+
 .sk-cube-grid .sk-cube5 {
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
+
 .sk-cube-grid .sk-cube6 {
     -webkit-animation-delay: 0.3s;
     animation-delay: 0.3s;
 }
+
 .sk-cube-grid .sk-cube7 {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
 }
+
 .sk-cube-grid .sk-cube8 {
     -webkit-animation-delay: 0.1s;
     animation-delay: 0.1s;
 }
+
 .sk-cube-grid .sk-cube9 {
     -webkit-animation-delay: 0.2s;
     animation-delay: 0.2s;
 }
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
-    0%, 70%, 100% {
+
+    0%,
+    70%,
+    100% {
         -webkit-transform: scale3D(1, 1, 1);
         transform: scale3D(1, 1, 1);
     }
+
     35% {
         -webkit-transform: scale3D(0, 0, 1);
         transform: scale3D(0, 0, 1);
@@ -1190,13 +1250,16 @@ footer{
 }
 
 @keyframes sk-cubeGridScaleDelay {
-    0%, 70%, 100% {
+
+    0%,
+    70%,
+    100% {
         -webkit-transform: scale3D(1, 1, 1);
         transform: scale3D(1, 1, 1);
     }
+
     35% {
         -webkit-transform: scale3D(0, 0, 1);
         transform: scale3D(0, 0, 1);
     }
 }
-
