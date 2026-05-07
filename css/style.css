@@ -1005,9 +1005,8 @@ img h4 {
     box-sizing: border-box;
     border: none;
     border-bottom: 1px solid #000;
-    padding: 10px 1em 0.5em 1px;
+    padding: 10px 1em 0.5em 10px;
     display: block;
-    box-sizing: border-box;
     width: 100%;
     outline: none;
     background: #ffffff;
@@ -1049,6 +1048,7 @@ form textarea {
     outline: none;
     border-radius: 3px;
     box-sizing: border-box;
+    padding: 10px 10px;
 }
 
 /*Botão*/
