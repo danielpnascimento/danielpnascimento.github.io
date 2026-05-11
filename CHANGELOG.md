@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.32](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.31...v2.2.32) (2026-05-11)
+
 ### [2.2.31](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.30...v2.2.31) (2026-05-11)
 
 ### 2.2.30 (2026-05-11)
