@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.33](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.32...v2.2.33) (2026-05-12)
+
+
+### Bug Fixes
+
+* atualização do icone de versionamento ([2395f85](https://github.com/danielpnascimento/danielpnascimento.github.io/commit/2395f85ffc630c6efeca0a59bd801565aeda1294))
+
 ### [2.2.32](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.31...v2.2.32) (2026-05-11)
 
 ### [2.2.31](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.30...v2.2.31) (2026-05-11)
