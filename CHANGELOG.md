@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.37](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.36...v2.2.37) (2026-05-12)
+
+
+### Bug Fixes
+
+* corrigido fluxo automático do versionamento semântico ([39d0702](https://github.com/danielpnascimento/danielpnascimento.github.io/commit/39d0702f1de395f38318ec8bbbe7c3abfc4d3013))
+
 ### [2.2.36](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.35...v2.2.36) (2026-05-12)
 
 
