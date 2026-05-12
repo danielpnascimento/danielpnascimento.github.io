@@ -1,6 +1,6 @@
 {
     "name": "danielpnascimento.github.io",
-    "version": "2.2.33",
+    "version": "2.2.34",
     "scripts": {
         "release": "standard-version",
         "postrelease": "node generate-version.js"

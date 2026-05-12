@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.34](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.33...v2.2.34) (2026-05-12)
+
+
+### Bug Fixes
+
+* adiciona controle de cache no versionamento ([9cd581f](https://github.com/danielpnascimento/danielpnascimento.github.io/commit/9cd581fd49b6a94bfc59dc1537c9721b24e78371))
+
 ### [2.2.33](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.32...v2.2.33) (2026-05-12)
 
 
