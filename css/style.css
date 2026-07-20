@@ -229,9 +229,10 @@ nav a {
     transition: all 0.4s;
     letter-spacing: 2px;
     border-radius: 3px;
-    line-height: calc(0% + 6vh);
+    line-height: calc(0% + 4.5vh);
     white-space: nowrap;
     font-size: 1.15em;
+    margin-top: 2px;
 }
 
 .nav a:hover,
