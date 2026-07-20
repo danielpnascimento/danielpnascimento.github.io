@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.42](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.36...v2.2.42) (2026-07-20)
+
+
+### Bug Fixes
+
+* Adcionado o Linkedin ([28c51ae](https://github.com/danielpnascimento/danielpnascimento.github.io/commit/28c51aeaf610824dee5950d0cdf08d062b43b68f))
+* Ajuste de font no input e textarea de Contato ([cfe15f9](https://github.com/danielpnascimento/danielpnascimento.github.io/commit/cfe15f945ef265fdf02b3ec6917d30f69e80d6b6))
+* Ajustes no nav ([2bc57f0](https://github.com/danielpnascimento/danielpnascimento.github.io/commit/2bc57f0e3e36b36ccb368eb370df210d11614f09))
+* Correção de texto de Contato ([9c89657](https://github.com/danielpnascimento/danielpnascimento.github.io/commit/9c89657cc48a4b5ae9877c45de11a4c114c19eba))
+* Correção de texto no Habilidade ([589f24d](https://github.com/danielpnascimento/danielpnascimento.github.io/commit/589f24d0f8a549040e52a89bef87bb4870d729f9))
+* corrigido fluxo automático do versionamento semântico ([39d0702](https://github.com/danielpnascimento/danielpnascimento.github.io/commit/39d0702f1de395f38318ec8bbbe7c3abfc4d3013))
+
 ### [2.2.41](https://github.com/danielpnascimento/danielpnascimento.github.io/compare/v2.2.36...v2.2.41) (2026-07-20)
 
 
