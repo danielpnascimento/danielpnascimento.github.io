@@ -1012,6 +1012,7 @@ img h4 {
     background: #ffffff;
     color: #888;
     border-radius: 3px 3px 0px 0px;
+    font-family: 'Source Sans Pro';
 
     &:focus {
         border-bottom-color: #33ffcc;
@@ -1049,6 +1050,7 @@ form textarea {
     border-radius: 3px;
     box-sizing: border-box;
     padding: 10px 10px;
+    font-family: 'Source Sans Pro';
 }
 
 /*Botão*/
